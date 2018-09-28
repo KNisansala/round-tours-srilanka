@@ -56,7 +56,7 @@
 
         <!-- blog breadcrumb version one strat here -->
         <section class="breadcrumb-blog-version-one">
-            <div class="single-bredcurms" style="background-image:url('images/bercums/be1.jpg');">
+            <div class="single-bredcurms" style="background-image:url('images/bercums/package1.jpg');">
                 <div class="container">
                     <div class="row">
                         <div class="col-sm-12">

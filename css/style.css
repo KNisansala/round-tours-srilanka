@@ -90,6 +90,7 @@ Tags: 	hotel, resort, tour, tourism, tourist, tours website, travel, traveler, t
 }
 .image-bg-padding-100 {
     padding: 100px 0;
+    padding-bottom:66px;
 }
 .border-raduis-3 {
     border-radius: 3px;
@@ -192,6 +193,7 @@ body {
 }
 .section-paddings {
     padding-top:30px;
+    margin-bottom:77px;
 }
 /*=====basce css end here=========*/
 /*============================== theme buttons css goes here ===============================*/

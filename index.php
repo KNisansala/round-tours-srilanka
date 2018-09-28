@@ -423,7 +423,7 @@
 
                             <div class="package-details">
                                 <div class="package-places">
-                                    <h4>Rafting</h4>
+                                    <a href="tour-packages.php"><h4>Rafting</h4> </a>
                                     <span> <i class="fa fa-clock-o"></i> 4Days, 5Nights Stay</span>
                                     <div class="details">
                                         <p><span>Included</span>: Flight Facility, 5 Star Hotel, Sightseeing, Transfers, Meals.</p>
@@ -879,7 +879,7 @@
                             <figcaption>
                                 <a href="images/gallery/gal1.jpg"><i class="fa fa-pencil"></i></a>
                                 <h4>Place <span>Eiffel Tower</span></h4>
-                               
+
                             </figcaption>
                         </figure>
                     </div> <!-- end single gallery -->
@@ -890,7 +890,7 @@
                             <figcaption>
                                 <a href="images/gallery/gal2L.jpg"><i class="fa fa-pencil"></i></a>
                                 <h4>Place <span>Eiffel Tower</span></h4>
-                                
+
                             </figcaption>
                         </figure>
                     </div> <!-- end single gallery -->
@@ -901,7 +901,7 @@
                             <figcaption>
                                 <a href="images/gallery/gal3L.jpg"><i class="fa fa-pencil"></i></a>
                                 <h4>Place <span>Eiffel Tower</span></h4>
-                               
+
                             </figcaption>
                         </figure>
                     </div> <!-- end single gallery -->
@@ -912,7 +912,7 @@
                             <figcaption>
                                 <a href="images/gallery/1.jpg"><i class="fa fa-pencil"></i></a>
                                 <h4>Place <span>Eiffel Tower</span></h4>
-                                
+
                             </figcaption>
                         </figure>
                     </div> <!-- end single gallery -->
@@ -923,7 +923,7 @@
                             <figcaption>
                                 <a href="images/gallery/1.jpg"><i class="fa fa-pencil"></i></a>
                                 <h4>Place <span>Eiffel Tower</span></h4>
-                                
+
                             </figcaption>
                         </figure>
                     </div> <!--single gallery end -->
@@ -934,7 +934,7 @@
                             <figcaption>
                                 <a href="images/gallery/1.jpg"><i class="fa fa-pencil"></i></a>
                                 <h4>Place <span>Eiffel Tower</span></h4>
-                              
+
                             </figcaption>
                         </figure>
                     </div>
@@ -946,7 +946,7 @@
                             <figcaption>
                                 <a href="images/gallery/1.jpg"><i class="fa fa-pencil"></i></a>
                                 <h4>Place <span>Eiffel Tower</span></h4>
-                               
+
                             </figcaption>
                         </figure>
                     </div> <!--single gallery end -->
@@ -957,7 +957,7 @@
                             <figcaption>
                                 <a href="images/gallery/1.jpg"><i class="fa fa-pencil"></i></a>
                                 <h4>Place <span>Eiffel Tower</span></h4>
-                             
+
                             </figcaption>
                         </figure>
                     </div> <!--single gallery end -->

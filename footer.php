@@ -93,7 +93,7 @@
             <div class="col-md-3 col-sm-6 f-phone-responsive">
                 <div class="single-footer">
                     <div class="footer-title">
-                        <h3>Destination</h3>
+                        <h3>Photo Albam</h3>
                     </div>
                     <ul class="footer-gallery">
                         <li>
