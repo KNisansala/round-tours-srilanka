@@ -292,30 +292,30 @@
                 <li class="qqq">
                     <a href="javascript:void(0);" class="menu-toggle">
                         <i class="material-icons">chevron_right</i>
-                        <span>Attraction</span>
+                        <span>Destination</span>
                     </a>
                     <ul class="ml-menu">
                         <li>
-                            <a href="create-attraction.php">
+                            <a href="create-destination.php">
                                 <i class="material-icons">add</i>
                                 <span>Add New</span>
                             </a>
                         </li>
                         <li>
-                            <a href="manage-attraction.php">
+                            <a href="manage-destination.php">
                                 <i class="material-icons">list</i>
                                 <span>Manage</span>
                             </a>
                         </li>
                         <li>
-                            <a href="arrange-attraction.php">
+                            <a href="arrange-destination.php">
                                 <i class="material-icons">compare_arrows</i>
                                 <span>Arrange</span>
                             </a>
                         </li>
                     </ul>
                 </li>
-                <li class="qqq">
+<!--                <li class="qqq">
                     <a href="javascript:void(0);" class="menu-toggle">
                         <i class="material-icons">chevron_right</i>
                         <span>Activity</span>
@@ -340,8 +340,8 @@
                             </a>
                         </li>
                     </ul>
-                </li>
-                <li class="qqq">
+                </li>-->
+<!--                <li class="qqq">
                     <a href="javascript:void(0);" class="menu-toggle">
                         <i class="material-icons">chevron_right</i>
                         <span>Pages</span>
@@ -361,7 +361,7 @@
                         </li>
 
                     </ul>
-                </li>
+                </li>-->
                 <li>
                     <a href="javascript:void(0);" class="menu-toggle">
                         <i class="material-icons">chevron_right</i>
@@ -388,7 +388,7 @@
                         </li>
                     </ul>
                 </li>
-                 <li>
+<!--                 <li>
                     <a href="javascript:void(0);" class="menu-toggle">
                         <i class="material-icons">chevron_right</i>
                         <span>Tour Package-Normal</span>
@@ -413,8 +413,8 @@
                             </a>
                         </li>
                     </ul>
-                 </li>
-                <li>
+                 </li>-->
+<!--                <li>
                     <a href="javascript:void(0);" class="menu-toggle">
                         <i class="material-icons">chevron_right</i>
                         <span>Service</span>
@@ -439,7 +439,7 @@
                             </a>
                         </li>
                     </ul>
-                </li>
+                </li>-->
 <!--                     <li>
                     <a href="view-album-photos.php?id=1" class="menu-toggle">
                         <i class="material-icons">chevron_right</i>
@@ -473,7 +473,7 @@
                         </li>
                     </ul>
                 </li>
-                <li>
+<!--                <li>
                     <a href="javascript:void(0);" class="menu-toggle">
                         <i class="material-icons">chevron_right</i>
                         <span>Offer</span>
@@ -498,9 +498,9 @@
                             </a>
                         </li>
                     </ul>
-                </li>
+                </li>-->
                 
-                 <li class="qqq">
+<!--                 <li class="qqq">
                     <a href="javascript:void(0);" class="menu-toggle">
                         <i class="material-icons">chevron_right</i>
                         <span>Product Type</span>
@@ -525,9 +525,9 @@
                             </a>
                         </li>
                     </ul>
-                </li>
+                </li>-->
               
-                <li>
+<!--                <li>
                     <a href="javascript:void(0);" class="menu-toggle">
                         <i class="material-icons">chevron_right</i>
                         <span>Room</span>
@@ -552,7 +552,7 @@
                             </a>
                         </li>
                     </ul>
-                </li>
+                </li>-->
                 <li>
                     <a href="javascript:void(0);" class="menu-toggle">
                         <i class="material-icons">chevron_right</i>

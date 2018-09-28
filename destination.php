@@ -13,8 +13,8 @@
         <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
         <!-- Favi icon -->
         <link rel="shortcut icon" type="image/x-icon" href="images/logo/logo2.png"
-        <!-- bootstrap v3.3.6 css -->
-        <link rel="stylesheet" href="css/bootstrap.min.css">
+              <!-- bootstrap v3.3.6 css -->
+              <link rel="stylesheet" href="css/bootstrap.min.css">
         <!-- animate css -->
         <link rel="stylesheet" href="css/animate.css">
         <!-- Button Hover animate css -->
@@ -89,7 +89,7 @@
                             </div>
                             <div class="blog-content">
                                 <div class="blog-post-content">
-                                    <h4>Tips for taking a long-term trip with kids.</h4>
+                                    <a href="View-Destination.php"><h4>Tips for taking a long-term trip with kids.</h4></a>
                                     <p>Lorem ipsum dolor sit amet consepctetur adipiscing elit Etiam at ipsum at ligula vestibulum sodales Sed luctus.</p>
                                 </div>
                                 <div class="read-more-btn">
