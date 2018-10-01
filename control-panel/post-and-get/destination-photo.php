@@ -7,7 +7,7 @@ if (isset($_POST['create'])) {
     $DESTINATION_PHOTO = new DestinationPhoto(NULL);
     $VALID = new Validator();
 
-    $DESTINATION_PHOTO->attraction = $_POST['id'];
+    $DESTINATION_PHOTO->destination = $_POST['id'];
     $DESTINATION_PHOTO->caption = mysql_real_escape_string($_POST['caption']);
 
 
@@ -26,8 +26,8 @@ if (isset($_POST['create'])) {
         $handle->file_new_name_ext = 'jpg';
         $handle->image_ratio_crop = 'C';
         $handle->file_new_name_body = $img;
-        $handle->image_x = 360;
-        $handle->image_y = 265;
+        $handle->image_x = 900;
+        $handle->image_y = 500;
 
         $handle->Process($dir_dest);
 
@@ -43,8 +43,8 @@ if (isset($_POST['create'])) {
         $handle->file_new_name_ext = 'jpg';
         $handle->image_ratio_crop = 'C';
         $handle->file_new_name_body = $img;
-        $handle->image_x = 135;
-        $handle->image_y = 189;
+        $handle->image_x = 300;
+        $handle->image_y = 175;
 
         $handle->Process($dir_dest_thumb);
 

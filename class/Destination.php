@@ -23,7 +23,7 @@ class Destination {
     public function __construct($id) {
         if ($id) {
 
-            $query = "SELECT `id`,`title`,`image_name`,`short_description`,`description`,`queue` FROM `attraction` WHERE `id`=" . $id;
+            $query = "SELECT `id`,`title`,`image_name`,`short_description`,`description`,`queue` FROM `destination` WHERE `id`=" . $id;
 
             $db = new Database();
 
@@ -42,7 +42,7 @@ class Destination {
 
     public function create() {
 
-        $query = "INSERT INTO `attraction` (`title`,`image_name`,`short_description`,`description`,`queue`) VALUES  ('"
+        $query = "INSERT INTO `destination` (`title`,`image_name`,`short_description`,`description`,`queue`) VALUES  ('"
                 . $this->title . "','"
                 . $this->image_name . "', '"
                 . $this->short_description . "', '"
@@ -64,7 +64,7 @@ class Destination {
 
     public function all() {
 
-        $query = "SELECT * FROM `attraction` ORDER BY queue ASC";
+        $query = "SELECT * FROM `destination` ORDER BY queue ASC";
         $db = new Database();
         $result = $db->readQuery($query);
         $array_res = array();
@@ -78,7 +78,7 @@ class Destination {
 
     public function update() {
 
-        $query = "UPDATE  `attraction` SET "
+        $query = "UPDATE  `destination` SET "
                 . "`title` ='" . $this->title . "', "
                 . "`image_name` ='" . $this->image_name . "', "
                 . "`short_description` ='" . $this->short_description . "', "
@@ -101,9 +101,9 @@ class Destination {
 
         $this->deletePhotos();
 
-        unlink(Helper::getSitePath() . "upload/attraction/" . $this->image_name);
+        unlink(Helper::getSitePath() . "upload/destination/" . $this->image_name);
 
-        $query = 'DELETE FROM `attraction` WHERE id="' . $this->id . '"';
+        $query = 'DELETE FROM `destination` WHERE id="' . $this->id . '"';
 
         $db = new Database();
 
@@ -112,23 +112,23 @@ class Destination {
 
     public function deletePhotos() {
 
-        $ATTRACTION_PHOTO = new AttractionPhoto(NULL);
+        $DESTINATION_PHOTO = new AttractionPhoto(NULL);
 
-        $allPhotos = $ATTRACTION_PHOTO->getAttractionPhotosById($this->id);
+        $allPhotos = $DESTINATION_PHOTO->getAttractionPhotosById($this->id);
 
         foreach ($allPhotos as $photo) {
 
-            $IMG = $ATTRACTION_PHOTO->image_name = $photo["image_name"];
-            unlink(Helper::getSitePath() . "upload/attraction/gallery/" . $IMG);
-            unlink(Helper::getSitePath() . "upload/attraction/gallery/thumb/" . $IMG);
+            $IMG = $DESTINATION_PHOTO->image_name = $photo["image_name"];
+            unlink(Helper::getSitePath() . "upload/destination/gallery/" . $IMG);
+            unlink(Helper::getSitePath() . "upload/destination/gallery/thumb/" . $IMG);
 
-            $ATTRACTION_PHOTO->id = $photo["id"];
-            $ATTRACTION_PHOTO->delete();
+            $DESTINATION_PHOTO->id = $photo["id"];
+            $DESTINATION_PHOTO->delete();
         }
     }
 
     public function arrange($key, $img) {
-        $query = "UPDATE `attraction` SET `queue` = '" . $key . "'  WHERE id = '" . $img . "'";
+        $query = "UPDATE `destination` SET `queue` = '" . $key . "'  WHERE id = '" . $img . "'";
         $db = new Database();
         $result = $db->readQuery($query);
         return $result;
