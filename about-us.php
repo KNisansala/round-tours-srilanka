@@ -55,7 +55,7 @@
         <!-- header area end here -->
 
         <!-- blog breadcrumb version one strat here -->
-        <section class="breadcrumb-blog-version-one">
+        <section class="breadcrumb-blog-version-one" class="parallax">
             <div class="single-bredcurms" style="background-image:url('images/bercums/package1.jpg');">
                 <div class="container">
                     <div class="row">
@@ -69,135 +69,39 @@
             </div>
         </section><!-- blog breadcrumb version one end here -->
 
-        <section class="section-paddings single-package-area">
+
+
+        <section class="section-paddings welcome-area" >
             <div class="container">
                 <div class="row">
-                    <!-- single package tab with details -->
-                    <div class="col-md-12 col-sm-12">
-                        <h2>Round Tour Sri Lanka</h2>
+                    <div class="col-md-6">
+                        <div class="single-welcome-area">
+                            <div class="single-imag">
+                                <img src="images/welcome/wel2.jpg" alt="" class="img-thumbnail img-responsive">
+                            </div>
+                            <div class="overlay-image">
+                                <img src="images/welcome/wel1.jpg" alt="" class="img-thumbnail img-responsive">
+                            </div>
+                        </div>
+                    </div> <!-- welcome area left side end -->
 
+                    <div class="col-md-6">
+                        <div class="single-welcome-text">
+                            <div class="section-title-version-2">
+                                <h2>Round Tour Sri Lanka</h2>
 
-                        <img src="images/aboutas/1.jpg" alt="" class="img-responsove border-raduis-3">
+                                <div class="welcome-content">
+                                    <p> Tourist attractions people foreign sleep overnight housing. Gerimrany group discount tour operator. Airplane couchsurfing Moi scow ma ps uncharted luxury train guest tour operator German y busre laxation. Paris overnight Japan Tripit territory international carren tal Pacific outdoor Turkey. Country international to urist attractions mil es train Moscow guide. Japan horse riding money Bacel ona Buda pest yach t passport animals package China hitchh iking discover deal. Russia St. Petersburg Cuba creditcard bookin g discover Amst erdam flying. Freedom ani mals car rental booki ng. GEO Instagram group discount Brasil Germany gateway activ e lifestyle. Transit sailing kayak diary Europe chartering.</p>
 
-
-
-                        <!-- tab content start -->
-                        <div class="row">
-                            <!-- tabs content -->
-                            <div class="tab-content">
-                                <div role="tabpanel" class="tab-pane fade in active" id="description">
-                                    <div class="row">
-                                        <!-- left content -->
-                                        <div class="col-md-12 col-sm-12">
-                                            <div class="tour-description">
-
-                                                <p>Tourist attractions people foreign sleep overnight housing. Gerimrany group discount tour operator. Airplane couchsurfing Moi scow ma ps uncharted luxury train guest tour operator German y busre laxation. Paris overnight Japan Tripit territory international carren tal Pacific outdoor Turkey. Country international to urist attractions mil es train Moscow guide. Japan horse riding money Bacel ona Buda pest yach t passport animals package China hitchh iking discover deal. Russia St. Petersburg Cuba creditcard bookin g discover Amst erdam flying. Freedom ani mals car rental booki ng. GEO Instagram group discount Brasil Germany gateway activ e lifestyle. Transit sailing kayak diary Europe chartering.</p>
-                                            </div>
-
-                                        </div><!-- left-content -->
-
-                                        <!-- right content -->
-
-                                    </div>
                                 </div>
-
-                                <div role="tabpanel" class="tab-pane fade" id="itinerary">
-                                    <div class="row">
-                                        <div class="col-md-12 col-sm-12">
-                                            <div class="tour-description">
-                                                <h4>Tour Description</h4>
-                                                <div class="main-timeline">
-                                                    <!-- single timeline -->
-                                                    <div class="timeline">
-                                                        <div class="timeline-content left">
-                                                            <span class="timeline-icon">1</span>
-                                                            <h4>Day 1: Meeting The All Members</h4>
-                                                            <p>Tourist attractions people foreign sleep overnight housing. Gerimrany group discount tour operator. Airplane couchsurfing Moi scow ma ps uncharted luxury train guest tour operator German y busre laxation. Paris overnight Japan Tripit territory international carren tal Pacific outdoor Turkey. Country international to urist attractions mil es train Moscow guide. Japan horse riding money Bacel ona Buda pest yach.</p>
-                                                        </div>
-                                                    </div><!-- single timeline -->
-
-                                                    <!-- single timeline -->
-                                                    <div class="timeline">
-                                                        <div class="timeline-content left">
-                                                            <span class="timeline-icon">2</span>
-                                                            <h4>Day 2: Unforgettable Journey</h4>
-                                                            <p>Tourist attractions people foreign sleep overnight housing. Gerimrany group discount tour operator. Airplane couchsurfing Moi scow ma ps uncharted luxury train guest tour operator German y busre laxation. Paris overnight.</p>
-                                                        </div>
-                                                    </div><!-- single timeline -->
-
-                                                    <!-- single timeline -->
-                                                    <div class="timeline">
-                                                        <div class="timeline-content left">
-                                                            <span class="timeline-icon">3</span>
-                                                            <h4>Day 3: Night Party</h4>
-                                                            <p>Tourist attractions people foreign sleep overnight housing. Gerimrany group discount tour operator. Airplane couchsurfing Moi scow ma ps uncharted luxury train guest tour operator German y busre laxation. Paris overnight.</p>
-                                                        </div>
-                                                    </div><!-- single timeline -->
-
-                                                    <!-- single timeline -->
-                                                    <div class="timeline">
-                                                        <div class="timeline-content left">
-                                                            <span class="timeline-icon">4</span>
-                                                            <h4>Day 4: Time To Say Good Bay</h4>
-                                                            <p>Tourist attractions people foreign sleep overnight housing. Gerimrany group discount tour operator. Airplane couchsurfing Moi scow ma ps uncharted luxury train guest tour operator German y busre laxation. Paris overnight.</p>
-                                                        </div>
-                                                    </div><!-- single timeline -->
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div role="tabpanel" class="tab-pane fade" id="map">
-                                    <div class="row">
-                                        <div class="col-md-12 col-sm-12">
-                                            <div class="tour-description">
-                                                <h4>Map Tour</h4>
-                                                <!-- map -->
-                                                <div class="mapp" id="overlay">
-                                                    <iframe id="maping" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3350.701132954845!2d-96.89708368545975!3d32.879626086054884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864e9d666937c1f7%3A0xae26e896218f405!2sUSA+Bowl!5e0!3m2!1sbn!2sbd!4v1493296407400" allowfullscreen></iframe>
-                                                </div><!-- map -->
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- video tab content start -->
-                                <div role="tabpanel" class="tab-pane fade" id="video">
-                                    <div class="row">
-                                        <div class="col-md-12 col-sm-12">
-                                            <div class="tour-description">
-                                                <h4>Video</h4>
-                                                <!-- Video -->
-                                                <div class="tab-video-area video-bg">
-                                                    <div class="video-play-btn">
-                                                        <a href="https://www.youtube.com/watch?v=UQneDljrWm0" class="video_iframe"><span><i class="fa fa-play"></i></span></a>
-                                                    </div>
-                                                </div><!-- Video -->
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div><!-- video tab content end -->
-
-                                <!-- video tab content start -->
-                                <div role="tabpanel" class="tab-pane fade" id="reviews">
-                                    <div class="row">
-                                        <div class="col-md-12 col-sm-12">
-                                            <div class="tour-description">
-                                                <h4>Reviews</h4>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam nulla, omnis impedit possimus, quos inventore quo. Rem asperiores culpa, accusantium, reiciendis sint nihil excepturi minima officiis voluptatum omnis qui. Quisquam blanditiis quaerat commodi autem, ducimus, perspiciatis unde est nisi dolore consequatur expedita sint placeat inventore, alias, perferendis nobis adipisci tempore excepturi cupiditate harum odit ipsa deserunt. Quaerat praesentium odio voluptatem commodi vitae dolore, a amet suscipit eligendi ut repellendus ducimus tempora, est, tempore dignissimos expedita cupiditate quisquam minima dolores possimus. In porro vitae provident esse voluptas cum inventore magnam praesentium quaerat veritatis, explicabo non doloremque rerum, nulla maxime architecto, libero.</p>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam nulla, omnis impedit possimus, quos inventore quo. Rem asperiores culpa, accusantium, reiciendis sint nihil excepturi minima officiis voluptatum omnis qui. Quisquam blanditiis quaerat commodi autem, ducimus, perspiciatis unde est nisi dolore consequatur expedita sint placeat inventore, alias, perferendis nobis adipisci tempore excepturi cupiditate harum odit ipsa deserunt. Quaerat praesentium odio voluptatem commodi vitae dolore, a amet suscipit eligendi ut repellendus ducimus tempora, est, tempore dignissimos expedita cupiditate quisquam minima dolores possimus. In porro vitae provident esse voluptas cum inventore magnam praesentium quaerat veritatis, explicabo non doloremque rerum, nulla maxime architecto, libero.</p>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur totam accusamus, libero, eaque cupiditate veritatis placeat dignissimos voluptatum, alias similique ad laudantium perferendis dolore ipsa vero iure praesentium asperiores quia rem maxime rerum, labore sed. Dolorem, nisi, inventore! Explicabo vel cupiditate quidem at, deleniti nostrum. Possimus cumque, minima maxime at.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div><!-- video tab content end -->
-                            </div><!-- tabs content-->
-                        </div><!-- tab content end -->
-                    </div><!-- single package tab with details -->
+                            </div>
+                        </div>
+                    </div>  <!-- welcome area right side end -->
                 </div>
             </div>
-        </section>
+        </section> <!-- welcome area start end here -->
+
+
 
         <!-- footer start here -->
         <?php

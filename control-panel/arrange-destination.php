@@ -38,14 +38,14 @@ $DESTINATION = new Destination(NULL);
                                 <h2>Arrange Destination</h2>
                                 <ul class="header-dropdown">
                                     <li class="">
-                                        <a href="manage-attraction.php">
+                                        <a href="manage-destination.php">
                                             <i class="material-icons">list</i> 
                                         </a>
                                     </li>
                                 </ul>
                             </div>
                             <div class="body">
-                                <form method="post" action="post-and-get/attraction.php" class="form-horizontal" >
+                                <form method="post" action="post-and-get/destination.php" class="form-horizontal" >
                                     <div class="panel-body">
                                         <div class="row">
                                             <div class="col-md-12 arrange-container">

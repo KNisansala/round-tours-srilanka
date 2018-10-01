@@ -303,7 +303,7 @@
             </div>
         </section> <!-- welcome area start end here -->
 
-        <section class="tour-package-bg image-bg-padding-100">
+        <section class="tour-package-bg image-bg-padding-100 herounit-bg">
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12">
@@ -715,7 +715,7 @@
         <!-- Last minute offer end here -->
 
         <!-- testimonial area start here -->
-        <section class="testimonial-area image-bg-padding-100">
+        <section class="testimonial-area image-bg-padding-100 herounit-b1">
             <div class="testimonial-wrapper">
                 <div class="container">
                     <div class="row">
