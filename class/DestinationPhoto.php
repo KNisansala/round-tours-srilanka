@@ -7,14 +7,14 @@
  */
 
 /**
- * Description of Attraction_photo
+ * Description of destination_photo
  *
  * @author Suharshana DsW
  */
 class DestinationPhoto {
 
     public $id;
-    public $attraction;
+    public $destination;
     public $image_name;
     public $caption;
     public $queue;
@@ -22,14 +22,14 @@ class DestinationPhoto {
     public function __construct($id) {
         if ($id) {
 
-            $query = "SELECT `id`,`attraction`,`image_name`,`caption`,`queue` FROM `attraction_photo` WHERE `id`=" . $id;
+            $query = "SELECT `id`,`destination`,`image_name`,`caption`,`queue` FROM `destination_photo` WHERE `id`=" . $id;
 
             $db = new Database();
 
             $result = mysql_fetch_array($db->readQuery($query));
 
             $this->id = $result['id'];
-            $this->attraction = $result['attraction'];
+            $this->destination = $result['destination'];
             $this->image_name = $result['image_name'];
             $this->caption = $result['caption'];
             $this->queue = $result['queue'];
@@ -40,8 +40,8 @@ class DestinationPhoto {
 
     public function create() {
 
-        $query = "INSERT INTO `attraction_photo` (`attraction`,`image_name`,`caption`,`queue`) VALUES  ('"
-                . $this->attraction . "','"
+        $query = "INSERT INTO `destination_photo` (`destination`,`image_name`,`caption`,`queue`) VALUES  ('"
+                . $this->destination . "','"
                 . $this->image_name . "', '"
                 . $this->caption . "', '"
                 . $this->queue . "')";
@@ -61,7 +61,7 @@ class DestinationPhoto {
 
     public function all() {
 
-        $query = "SELECT * FROM `attraction_photo` ORDER BY queue ASC";
+        $query = "SELECT * FROM `destination_photo` ORDER BY queue ASC";
         $db = new Database();
         $result = $db->readQuery($query);
         $array_res = array();
@@ -75,8 +75,8 @@ class DestinationPhoto {
 
     public function update() {
 
-        $query = "UPDATE  `attraction_photo` SET "
-                . "`attraction` ='" . $this->attraction . "', "
+        $query = "UPDATE  `destination_photo` SET "
+                . "`destination` ='" . $this->destination . "', "
                 . "`image_name` ='" . $this->image_name . "', "
                 . "`caption` ='" . $this->caption . "', "
                 . "`queue` ='" . $this->queue . "' "
@@ -95,16 +95,16 @@ class DestinationPhoto {
 
     public function delete() {
 
-        $query = 'DELETE FROM `attraction_photo` WHERE id="' . $this->id . '"';
+        $query = 'DELETE FROM `destination_photo` WHERE id="' . $this->id . '"';
 
         $db = new Database();
 
         return $db->readQuery($query);
     }
 
-    public function getAttractionPhotosById($id) {
+    public function getDestinationPhotosById($id) {
 
-        $query = "SELECT * FROM `attraction_photo` WHERE `attraction`= $id ORDER BY queue ASC";
+        $query = "SELECT * FROM `destination_photo` WHERE `destination`= $id ORDER BY queue ASC";
 
         $db = new Database();
 
@@ -118,7 +118,7 @@ class DestinationPhoto {
     }
     
      public function arrange($key, $img) {
-        $query = "UPDATE `attraction_photo` SET `queue` = '" . $key . "'  WHERE id = '" . $img . "'";
+        $query = "UPDATE `destination_photo` SET `queue` = '" . $key . "'  WHERE id = '" . $img . "'";
         $db = new Database();
         $result = $db->readQuery($query);
         return $result;

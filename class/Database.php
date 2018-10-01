@@ -17,7 +17,7 @@ class Database {
 //    private $password = 'Masal@903430';
      
     private $host = 'localhost';
-    private $name = 'newadmin';
+    private $name = 'round_tour_srilanka';
     private $user = 'root';
     private $password = '';
 

@@ -148,9 +148,9 @@ $COUNT_TOUR = count(TourPackage::all());
                             </div>
                             <div class="body">
                                 <div class="list-group">
-                                    <a href="create-attraction.php"><button type="button" class="list-group-item">Add new</button></a>
-                                    <a href="manage-attraction.php"><button type="button" class="list-group-item">Manage</button></a>
-                                    <a href="arrange-attraction.php"><button type="button" class="list-group-item">Arrange</button></a>
+                                    <a href="create-destination.php"><button type="button" class="list-group-item">Add new</button></a>
+                                    <a href="manage-destination.php"><button type="button" class="list-group-item">Manage</button></a>
+                                    <a href="arrange-destination.php"><button type="button" class="list-group-item">Arrange</button></a>
                                 </div>
                             </div>
                         </div>
@@ -373,9 +373,9 @@ $COUNT_TOUR = count(TourPackage::all());
                                                             <i class="material-icons">more_vert</i>
                                                         </a>
                                                         <ul class="dropdown-menu pull-right">
-                                                            <li><a href="create-attraction.php">Create</a></li>
-                                                            <li><a href="manage-attraction.php">Manage</a></li>
-                                                            <li><a href="arrange-attraction.php">Arrange</a></li>
+                                                            <li><a href="create-destination.php">Create</a></li>
+                                                            <li><a href="manage-destination.php">Manage</a></li>
+                                                            <li><a href="arrange-destination.php">Arrange</a></li>
                                                         </ul>
                                                     </li>
                                                 </ul>

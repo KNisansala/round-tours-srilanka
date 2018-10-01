@@ -494,7 +494,7 @@
                         <div class="des-city">
                             <a href="View-Destination.php"><i class="fa fa-map-marker"></i>Dabulla</a>
                             <p>Lorem ipsum dolor sit amet consct .</p>
-                            <a href="View-Destination.php">Read More <i class="fa fa-angle-right"> </i></a>
+                            <!--<a href="View-Destination.php">Read More <i class="fa fa-angle-right"> </i></a>-->
                         </div>
                     </div> <!-- single popular destination  end-->
 
@@ -541,7 +541,7 @@
                         <div class="des-city">
                             <a href="View-Destination.php"><i class="fa fa-map-marker"></i>Arugam Bay</a>
                             <p>Lorem ipsum dolor sit amet consct .</p>
-                            <a href="Destination.php">Read More <i class="fa fa-angle-right"> </i></a>
+                            <a href="View-Destination.php">Read More <i class="fa fa-angle-right"> </i></a>
                         </div>
                     </div> <!-- single popular destination  end-->
 
@@ -554,7 +554,7 @@
                                 </div>-->
 
                 <div class="row">
-                    <a href="View-Destination.php" class="view-all hvr-fade">View All</a>
+                    <a href="Destination.php" class="view-all hvr-fade">View All</a>
                 </div>
             </div>
         </section> <!-- end popular destination-->
