@@ -5,7 +5,7 @@ $id = '';
 if (isset($_GET['id'])) {
     $id = $_GET['id'];
 }
-$ATTRACTION = new Attraction($id)
+$DESTINATION = new Destination($id)
 ?> 
 <!DOCTYPE html>
 
@@ -82,17 +82,17 @@ $ATTRACTION = new Attraction($id)
                                     <?php
                                     $DESTINATION_PHOTO = DestinationPhoto::getDestinationPhotosById($id);
                                     if (count($DESTINATION_PHOTO) > 0) {
-                                        foreach ($DESTINATION_PHOTO as $key => $attraction_photo) {
+                                        foreach ($DESTINATION_PHOTO as $key => $destination_photo) {
                                             ?>
-                                            <div class="col-md-3" id="div<?php echo $attraction_photo['id']; ?>">
+                                            <div class="col-md-3" id="div<?php echo $destination_photo['id']; ?>">
                                                 <div class="photo-img-container">
-                                                    <img src="../upload/destination/gallery/thumb/<?php echo $attraction_photo['image_name']; ?>" class="img-responsive ">
+                                                    <img src="../upload/destination/gallery/thumb/<?php echo $destination_photo['image_name']; ?>" class="img-responsive ">
                                                 </div>
                                                 <div class="img-caption">
-                                                    <p class="maxlinetitle"><?php echo $attraction_photo['caption']; ?></p>
+                                                    <p class="maxlinetitle"><?php echo $destination_photo['caption']; ?></p>
                                                     <div class="d">
-                                                        <a href="#" class="delete-attraction-photo" data-id="<?php echo $attraction_photo['id']; ?>"> <button class="glyphicon glyphicon-trash delete-btn"></button></a>
-                                                        <a href="edit-destination-photo.php?id=<?php echo $attraction_photo['id']; ?>"> <button class="glyphicon glyphicon-pencil edit-btn"></button></a>
+                                                        <a href="#" class="delete-attraction-photo" data-id="<?php echo $destination_photo['id']; ?>"> <button class="glyphicon glyphicon-trash delete-btn"></button></a>
+                                                        <a href="edit-destination-photo.php?id=<?php echo $destination_photo['id']; ?>"> <button class="glyphicon glyphicon-pencil edit-btn"></button></a>
                                                         <a href="arrange-destination-photos.php?id=<?php echo $id; ?>">  <button class="glyphicon glyphicon-random arrange-btn"></button></a>
                                                     </div>
                                                 </div>
