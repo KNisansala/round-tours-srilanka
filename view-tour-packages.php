@@ -1,14 +1,23 @@
+<?php
+include_once(dirname(__FILE__) . '/class/include.php');
+
+$id = '';
+if(isset($_GET['id'])) {
+    $id = $_GET['id'];
+}
+$TOUR = new TourPackage($id);
+
+?>
+
 <!DOCTYPE html>
 <html class="" lang="zxx">
-
-    <!-- Mirrored from getnajmul.com/theme/trabble/blog-single.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 07 Sep 2018 02:32:01 GMT -->
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <meta name="description" content="TRABBLE - Tour, Travel, Travel Agency Template">
         <meta name="keywords" content="Tour, Travel, Travel Agency Template">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Round Tours Sri Lanka</title>
+        <title><?php echo $TOUR->title; ?></title>
         <!-- Google Fonts Includes -->
         <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
         <!-- Favi icon -->
@@ -70,7 +79,7 @@
                                 <ul>
                                     <li><a href="index.php">Home</a></li>
                                     <li><a href="tour-packages.php.php">Tour Packages</a></li>
-                                    <li class="active"><a href="view-tour-packages.php">View Tour Packages</a></li>
+                                    <li class="active"><?php echo $TOUR->title; ?></li>
                                 </ul>
                             </div>
                         </div>

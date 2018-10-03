@@ -1,3 +1,6 @@
+<?php
+include_once(dirname(__FILE__) . '/class/include.php');
+?>
 <!DOCTYPE html>
 <html class="no-js" lang="zxx">
 
@@ -112,160 +115,6 @@
                                     </form>
                                 </div>
                             </div>
-                            <!-- end hotels form -->
-
-                            <!-- tour form -->
-                            <div class="tab-pane" id="tour">
-                                <div class="hotels-form">
-                                    <form action="#" method="post">
-                                        <div class="hotel-input-4-23 input-b-2">
-                                            <input type="text" name="s" id="keyword2" class="hotel-input-first" placeholder="Type Keyword">
-                                        </div>
-                                        <div class="hotel-input-4-23 input-b-2">
-                                            <select id='standard2' name='standard' class='custom-select'>
-                                                <option value=''>Select a Location</option>
-                                                <option value='Us'>America</option>
-                                                <option value='Canda'>Canada</option>
-                                                <option value='london'>London</option>
-                                                <option value='france'>Paris</option>
-                                                <option value='bd'>Bangladesh</option>
-                                            </select>
-                                        </div>
-                                        <div class="hotel-input-4-23 input-s-2">
-                                            <input type="text" name="s" id="datepicker2" class="hotel-input-first" placeholder="Check-In Date">
-                                        </div>
-                                        <div class="hotel-input-4-23 input-s-2">
-                                            <input type="number" name="s" id="guest2" class="hotel-input-first" placeholder="Number of Guest">
-                                        </div>
-                                        <div class="search-btn-2">
-                                            <button type="submit">Search</button>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div> <!-- end tour forms -->
-
-                            <!-- start flights form -->
-                            <div class="tab-pane" id="flights">
-                                <div class="hotels-form flights-form">
-                                    <form action="#" method="post">
-                                        <div class="tour-input-20 input-b">
-                                            <select id='standard3' name='standard' class='custom-select'>
-                                                <option value=''>Origin City or airport</option>
-                                                <option value='Us'>America</option>
-                                                <option value='Canda'>Canada</option>
-                                                <option value='london'>London</option>
-                                                <option value='france'>Paris</option>
-                                                <option value='bd'>Bangladesh</option>
-                                            </select>
-                                        </div>
-                                        <div class="tour-input-20 input-b">
-                                            <select id='standard4' name='standard' class='custom-select'>
-                                                <option value=''>Destination City</option>
-                                                <option value='Us'>America</option>
-                                                <option value='Canda'>Canada</option>
-                                                <option value='london'>London</option>
-                                                <option value='france'>Paris</option>
-                                                <option value='bd'>Bangladesh</option>
-                                            </select>
-                                        </div>
-                                        <div class="tour-input-15 input-s">
-                                            <input type="text" name="s" id="datepicker3" class="hotel-input-first" placeholder="Daparture date">
-                                        </div>
-
-                                        <div class="tour-input-15 input-s">
-                                            <input type="text" name="s" id="datepicker4" class="hotel-input-first" placeholder="Return date">
-                                        </div>
-
-                                        <div class="tour-input-15 input-b">
-                                            <select id='nosearch' name='standard' class='custom-select'>
-                                                <option value=''>Economy</option>
-                                                <option value='Economy'>Economy</option>
-                                                <option value='Business'>Business</option>
-                                            </select>
-                                        </div>
-
-                                        <div class="tour-input-15 border-right-none  input-s">
-                                            <select id='nosearch1' name='standard' class='custom-select'>
-                                                <option value=''>Adult</option>
-                                                <option value='1'>1</option>
-                                                <option value='2'>2</option>
-                                                <option value='3'>3</option>
-                                                <option value='4'>4</option>
-                                                <option value='5'>5</option>
-                                                <option value='6'>6</option>
-                                                <option value='7'>7</option>
-                                                <option value='8'>8</option>
-                                                <option value='9'>9</option>
-                                                <option value='10'>10</option>
-                                            </select>
-                                        </div>
-                                        <div class="tour-input-15  input-s">
-                                            <select id='nosearch2' name='standard' class='custom-select'>
-                                                <option value=''>Kids</option>
-                                                <option value='1'>1</option>
-                                                <option value='2'>2</option>
-                                                <option value='3'>3</option>
-                                                <option value='4'>4</option>
-                                                <option value='5'>5</option>
-                                                <option value='6'>6</option>
-                                                <option value='7'>7</option>
-                                                <option value='8'>8</option>
-                                                <option value='9'>9</option>
-                                                <option value='10'>10</option>
-                                            </select>
-                                        </div>
-                                        <div class="search-btn-2">
-                                            <button type="submit">Search</button>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div> <!-- end flight forms -->
-
-                            <!-- start vehicles form -->
-                            <div class="tab-pane" id="vehicles">
-                                <div class="hotels-form">
-                                    <form action="#" method="post">
-                                        <div class="hotel-input-4-23">
-                                            <input type="text" name="s" id="pickupdate" class="hotel-input-first" placeholder="Pickup Date & time">
-                                        </div>
-                                        <div class="hotel-input-4-23">
-                                            <input type="number" name="s" id="Hours" class="hotel-input-first" placeholder="Hours">
-                                        </div>
-                                        <div class="hotel-input-4-23">
-                                            <input type="text" name="s" id="Location" class="hotel-input-first" placeholder="Pickup Location">
-                                        </div>
-                                        <div class="hotel-input-4-23">
-                                            <input type="text" name="s" id="Location2" class="hotel-input-first" placeholder="Drop Location">
-                                        </div>
-                                        <div class="search-btn-2">
-                                            <button type="submit"> Book </button>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div> <!-- end vehicles form -->
-
-                            <!-- start ship forms -->
-                            <div class="tab-pane" id="ship">
-                                <div class="hotels-form">
-                                    <form action="#" method="post">
-                                        <div class="hotel-input-4-23">
-                                            <input type="text" name="s" id="shippickupdate" class="hotel-input-first" placeholder="Pickup Date & time">
-                                        </div>
-                                        <div class="hotel-input-4-23">
-                                            <input type="number" name="s" id="time" class="hotel-input-first" placeholder="Hours">
-                                        </div>
-                                        <div class="hotel-input-4-23">
-                                            <input type="text" name="s" id="Location3" class="hotel-input-first" placeholder="Pickup Location">
-                                        </div>
-                                        <div class="hotel-input-4-23">
-                                            <input type="text" name="s" id="Location4" class="hotel-input-first" placeholder="Drop Location">
-                                        </div>
-                                        <div class="search-btn-2">
-                                            <button type="submit">Search</button>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div> <!-- end ship forms -->
                         </div>
                     </div>
                 </div> <!-- tab content 2 end -->
@@ -314,140 +163,53 @@
                     </div>
                     <!-- tour packages carosual -->
                     <div class="popular-packages-carasoul owl-carousel">
-                        <div class="single-package-carasoul">
-                            <div class="package-location">
-                                <img src="images/packages/pac1.jpg" alt="">
-                                <span>$150</span>
-                            </div>
+                        <?php
+                        foreach (TourPackage::all() as $tour) {
+                            ?>
+                            <div class="single-package-carasoul">
+                                <div class="package-location">
+                                    <img src="upload/tour-package/<?php echo $tour['image_name']; ?>" alt="">
+                                    <span>$<?php echo $tour['price']; ?></span>
+                                </div>
 
-                            <div class="package-details">
-                                <div class="package-places">
-                                    <a href="tour-packages.php"> <h4> Festival </h4></a> 
-                                    <span> <i class="fa fa-clock-o"></i> 4 Days, 5 Nights Stay</span>
-                                    <div class="details">
-                                        <p><span>Included</span>: Flight Facility, 5 Star Hotel, Sightseeing, Transfers, Meals.</p>
+                                <div class="package-details">
+                                    <div class="package-places">
+                                        <a href="view-tour-packages.php?id=<?php echo $tour['id']; ?>"> <h4> <?php echo $tour['title']; ?> </h4></a> 
+                                        <span> <i class="fa fa-clock-o"></i> 4 Days, 5 Nights Stay</span>
+                                        <div class="details">
+                                            <p><?php
+                                                if (strlen($tour['short_description']) > 110) {
+                                                    echo substr($tour['short_description'], 0, 110) . '...';
+                                                } else {
+                                                    echo $tour['short_description'];
+                                                }
+                                                ?></p>
+
+                                        </div>
+                                    </div>
+                                    <div class="package-ratings-review">
+                                        <ul class="two-column">
+                                            <li>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                            </li>
+                                            <li>
+                                                <p>(27 Reviews)</p>
+                                            </li>
+                                        </ul>
                                     </div>
                                 </div>
-                                <div class="package-ratings-review">
-                                    <ul class="two-column">
-                                        <li>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                        </li>
-                                        <li>
-                                            <p>(27 Reviews)</p>
-                                        </li>
-                                    </ul>
+                                <div class="package-long-btn hvr-shutter-out-horizontal">
+                                    <a href="view-tour-packages.php?id=<?php echo $tour['id']; ?>"> <h4> Read More </h4></a> 
                                 </div>
                             </div>
-                            <div class="package-long-btn hvr-shutter-out-horizontal">
-                                <a href="tour-packages.php"> <h4> View All </h4></a> 
-                            </div>
-                        </div>
+                            <?php
+                        }
+                        ?>
 
-                        <div class="single-package-carasoul">
-                            <div class="package-location">
-                                <img src="images/packages/pac2.jpg" alt="">
-                                <span>$150</span>
-                            </div>
-                            <div class="package-details">
-                                <div class="package-places">
-                                    <a href="tour-packages.php">   <h4>Wild</h4> </a>
-                                    <span> <i class="fa fa-clock-o"></i> 4 Days, 5 Nights Stay</span>
-                                    <div class="details">
-                                        <p><span>Included</span>: Flight Facility, 5 Star Hotel, Sightseeing, Transfers, Meals.</p>
-                                    </div>
-                                </div>
-                                <div class="package-ratings-review">
-                                    <ul class="two-column">
-                                        <li>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                        </li>
-                                        <li>
-                                            <p>(27 Reviews)</p>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="package-long-btn hvr-shutter-out-horizontal">
-                                <a href="tour-packages.php"> View all </a>
-                            </div>
-                        </div>
-
-                        <div class="single-package-carasoul">
-                            <div class="package-location">
-                                <img src="images/packages/pac3.jpg" alt="">
-                                <span>$150</span>
-                            </div>
-
-                            <div class="package-details">
-                                <div class="package-places">
-                                    <a href="view-tour-packages.php"><h4> Down South </h4></a>
-                                    <span> <i class="fa fa-clock-o"></i> 4 Days, 5 Nights Stay</span>
-                                    <div class="details">
-                                        <p><span>Included</span>: Flight Facility, 5 Star Hotel, Sightseeing, Transfers, Meals.</p>
-                                    </div>
-                                </div>
-                                <div class="package-ratings-review">
-                                    <ul class="two-column">
-                                        <li>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                        </li>
-                                        <li>
-                                            <p>(27 Reviews)</p>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="package-long-btn hvr-shutter-out-horizontal">
-                                <a href="booking.php">View all</a>
-                            </div>
-                        </div>
-
-                        <div class="single-package-carasoul">
-                            <div class="package-location">
-                                <img src="images/packages/pac4.jpg" alt="">
-                                <span>$150</span>
-                            </div>
-
-                            <div class="package-details">
-                                <div class="package-places">
-                                    <a href="tour-packages.php"><h4>Rafting</h4> </a>
-                                    <span> <i class="fa fa-clock-o"></i> 4Days, 5Nights Stay</span>
-                                    <div class="details">
-                                        <p><span>Included</span>: Flight Facility, 5 Star Hotel, Sightseeing, Transfers, Meals.</p>
-                                    </div>
-                                </div>
-                                <div class="package-ratings-review">
-                                    <ul class="two-column">
-                                        <li>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                        </li>
-                                        <li>
-                                            <p>(27 Reviews)</p>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="package-long-btn hvr-shutter-out-horizontal">
-                                <a href="booking.php">View all</a>
-                            </div>
-                        </div>
                     </div> <!-- tour packages carosual end -->
                 </div>
             </div>
@@ -468,250 +230,50 @@
                     </div>
                 </div>
                 <div class="destination-slider-active owl-carousel">
-                    <div class="single-destination">
-                        <figure>
-                            <a href="View-Destination.php"><img src="images/destination/de1.jpg" alt="">
-                            </a>
-                            <figcaption>
-                                <a href="View-Destination.php" class="travel-booking-btn hvr-shutter-out-horizontal">Read More</a>
-                            </figcaption>
-                        </figure>
-                        <div class="des-city">
-                            <a href="View-Destination.php"><i class="fa fa-map-marker"></i>Yala</a>
-                            <p>Lorem ipsum dolor sit amet consct .</p>
-                            <a href="View-Destination.php">Read More <i class="fa fa-angle-right"> </i></a>
-                        </div>
-                    </div> <!-- single popular destination  end-->
+                    <?php
+                    foreach (Destination::all() as $destination) {
+                        ?>
 
-                    <div class="single-destination">
-                        <figure>
-                            <a href="View-Destination.php"><img src="images/destination/de2.jpg" alt="">
-                            </a>
-                            <figcaption>
-                                <a href="View-Destination.php" class="travel-booking-btn hvr-shutter-out-horizontal">Read More</a>
-                            </figcaption>
-                        </figure>
-                        <div class="des-city">
-                            <a href="View-Destination.php"><i class="fa fa-map-marker"></i>Dabulla</a>
-                            <p>Lorem ipsum dolor sit amet consct .</p>
-                            <!--<a href="View-Destination.php">Read More <i class="fa fa-angle-right"> </i></a>-->
-                        </div>
-                    </div> <!-- single popular destination  end-->
+                        <div class="single-destination">
+                            <figure>
+                                <a href="View-Destination.php"><img src="upload/destination/<?php echo $destination['image_name']; ?>" alt="">
+                                </a>
+                                <figcaption>
+                                    <a href="View-Destination.php" class="travel-booking-btn hvr-shutter-out-horizontal">Read More</a>
 
-                    <div class="single-destination">
-                        <figure>
-                            <a href="View-Destination.php"><img src="images/destination/de3.jpg" alt="">
-                            </a>
-                            <figcaption>
-                                <a href="View-Destination.php" class="travel-booking-btn hvr-shutter-out-horizontal">Read More</a>
-                            </figcaption>
-                        </figure>
-                        <div class="des-city">
-                            <a href="View-Destination.php"><i class="fa fa-map-marker"></i>Hikkaduwa</a>
+                                </figcaption>
+                            </figure>
+                            <div class="des-city">
+                                <a href="View-Destination.php"><i class="fa fa-map-marker"></i> <h4> <?php echo $destination['title']; ?> </a>
+                                <p><?php
+                                                if (strlen($destination['short_description']) > 40) {
+                                                    echo substr($destination['short_description'], 0, 40) . '...';
+                                                } else {
+                                                    echo $destination['short_description'];
+                                                }
+                                                ?></p>
+                                
+                                
+                                
+                            </div>
+                        </div> <!-- single popular destination  end-->
 
-                            <p>Lorem ipsum dolor sit amet consct .</p>
-                            <a href="View-Destination.php">Read More <i class="fa fa-angle-right"> </i></a>
-                        </div>
-                    </div> <!-- single popular destination  end-->
 
-                    <div class="single-destination">
-                        <figure>
-                            <a href="View-Destination.php"><img src="images/destination/de4.jpg" alt="">
-                            </a>
-                            <figcaption>
-                                <a href="View-Destination.php" class="travel-booking-btn hvr-shutter-out-horizontal">Read More</a>
-                            </figcaption>
-                        </figure>
-                        <div class="des-city">
-                            <a href="View-Destination.php"><i class="fa fa-map-marker"></i>Galle</a>
 
-                            <p>Lorem ipsum dolor sit amet consct .</p>
-                            <a href="View-Destination.php">Read More <i class="fa fa-angle-right"> </i></a>
-                        </div>
-                    </div> <!-- single popular destination  end-->
 
-                    <div class="single-destination">
-                        <figure>
-                            <a href="View-Destination.php"><img src="images/destination/de5.jpg" alt="">
-                            </a>
-                            <figcaption>
-                                <a href="View-Destination.php" class="travel-booking-btn hvr-shutter-out-horizontal">Read More</a>
-                            </figcaption>
-                        </figure>
-                        <div class="des-city">
-                            <a href="View-Destination.php"><i class="fa fa-map-marker"></i>Arugam Bay</a>
-                            <p>Lorem ipsum dolor sit amet consct .</p>
-                            <a href="View-Destination.php">Read More <i class="fa fa-angle-right"> </i></a>
-                        </div>
-                    </div> <!-- single popular destination  end-->
+
+                        <?php
+                    }
+                    ?>
 
                 </div>
 
-                <!--                <div class="col-md-12 col-sm-12 col-xs-12"> 
-                
-                                    <a href="#" class="travel-viewall-btn hvr-shutter-out-horizontal">View All</a>
-                
-                                </div>-->
 
                 <div class="row">
                     <a href="Destination.php" class="view-all hvr-fade">View All</a>
                 </div>
             </div>
-        </section> <!-- end popular destination-->
-
-        <!-- discount offer start here -->
-       <!--        <section class="discount-bg">
-                   <div class="container">
-                       <div class="row">
-                           <div class="col-sm-12">
-                               <div class="discount-content text-center">
-                                   <h2>50% Discount Offer!</h2>
-                                   <h3>Italy – All Stunning Places</h3>
-                                   <h4><span>$800</span> - 2 Persons - 4day, 5night Stay</h4>
-                                   <div class="discount-btn">
-                                       <a href="#" class="travel-primary-btn hvr-fade">Book Now</a>
-                                   </div>
-                               </div>
-                           </div>
-                       </div>
-                   </div>
-               </section> -->
-        <!-- discount offer end here -->
-
-        <!-- Last minute offer start here -->
-<!--        <section class="section-paddings offer-package">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-12">
-                        <div class="section-title-version-2-black text-center">
-                            <h2>Latest Offer</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit Etiam at ipsum at ligula vestibulum </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-6 col-sm-6 col xs-12">
-                        <div class="single-offer">
-                            <div class="row">
-                                <div class="col-md-6 col-sm-6 col-xs-12 package-pho-res">
-                                    <div class="single-offer-image">
-                                        <img src="images/offer/1.jpg" alt="">
-                                        <span>30%off</span>
-                                    </div>
-                                </div>
-                                <div class="single-offers-elemetns">
-                                    <div class="col-md-6 col-sm-6 col-xs-12 package-pho-res-text">
-                                        <div class="single-offer-details">
-                                            <div class="offer-title">
-                                                <h4>Best tours in Thailand</h4>
-                                                <p>4Days, 5Nights <del>$550</del> <span>$500</span>
-                                                </p>
-                                            </div>
-                                            <div class="offer-details">
-                                                <p>Lorem ipsum dolor sit amet consct etur adipiscing elit, sed do eiusmo tempor incididunt ut labore magn a aliqua .</p>
-                                                <div class="offer-btn">
-                                                    <a href="#" class="travel-booking-btn-lg hvr-shutter-out-horizontal">Book Now</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>  end single  offer 
-
-                    <div class="col-md-6 col-sm-6 col xs-12">
-                        <div class="single-offer">
-                            <div class="row">
-                                <div class="col-md-6 col-sm-6 col-xs-12 package-pho-res">
-                                    <div class="single-offer-image">
-                                        <img src="images/offer/2.jpg" alt="">
-                                        <span>20%off</span>
-                                    </div>
-                                </div>
-                                <div class="single-offers-elemetns">
-                                    <div class="col-md-6 col-sm-6 col-xs-12 package-pho-res-text">
-                                        <div class="single-offer-details">
-                                            <div class="offer-title">
-                                                <h4>Best tours in Mexico</h4>
-                                                <p>4Days, 5Nights <del>$450</del> <span>$400</span>
-                                                </p>
-                                            </div>
-                                            <div class="offer-details">
-                                                <p>Lorem ipsum dolor sit amet consct etur adipiscing elit, sed do eiusmo tempor incididunt ut labore magn a aliqua .</p>
-                                                <div class="offer-btn">
-                                                    <a href="#" class="travel-booking-btn-lg hvr-shutter-out-horizontal">Book Now</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>  end single  offer 
-
-                    <div class="col-md-6 col-sm-6 col xs-12">
-                        <div class="single-offer">
-                            <div class="row">
-                                <div class="col-md-6 col-sm-6 col-xs-12 package-pho-res-text">
-                                    <div class="single-offer-image">
-                                        <img src="images/offer/3.jpg" alt="">
-                                        <span>10%off</span>
-                                    </div>
-                                </div>
-                                <div class="single-offers-elemetns">
-                                    <div class="col-md-6 col-sm-6 col-xs-12 package-pho-res">
-                                        <div class="single-offer-details">
-                                            <div class="offer-title">
-                                                <h4>Best tours in Paris</h4>
-                                                <p>4Days, 5Nights <del>$550</del> <span>$500</span>
-                                                </p>
-                                            </div>
-                                            <div class="offer-details">
-                                                <p>Lorem ipsum dolor sit amet consct etur adipiscing elit, sed do eiusmo tempor incididunt ut labore magn a aliqua .</p>
-                                                <div class="offer-btn">
-                                                    <a href="#" class="travel-booking-btn-lg hvr-shutter-out-horizontal">Book Now</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>   end single  offer 
-
-                    <div class="col-md-6 col-sm-6 col xs-12">
-                        <div class="single-offer">
-                            <div class="row">
-                                <div class="col-md-6 col-sm-6 col-xs-12 package-pho-res">
-                                    <div class="single-offer-image">
-                                        <img src="images/offer/4.jpg" alt="">
-                                        <span>40%off</span>
-                                    </div>
-                                </div>
-                                <div class="single-offers-elemetns">
-                                    <div class="col-md-6 col-sm-6 col-xs-12 package-pho-res">
-                                        <div class="single-offer-details">
-                                            <div class="offer-title">
-                                                <h4>Best tours in India</h4>
-                                                <p>4Days, 5Nights <del>$550</del> <span>$500</span>
-                                                </p>
-                                            </div>
-                                            <div class="offer-details">
-                                                <p>Lorem ipsum dolor sit amet consct etur adipiscing elit, sed do eiusmo tempor incididunt ut labore magn a aliqua .</p>
-                                                <div class="offer-btn">
-                                                    <a href="#" class="travel-booking-btn-lg hvr-shutter-out-horizontal">Book Now</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>  end single  offer 
-                </div>
-            </div>
-        </section> -->
+        </section> 
         <!-- Last minute offer end here -->
 
         <!-- testimonial area start here -->
