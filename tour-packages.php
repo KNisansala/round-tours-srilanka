@@ -1,8 +1,9 @@
+<?php
+include_once(dirname(__FILE__) . '/class/include.php');
+?>
 <!DOCTYPE html>
 <html class="no-js" lang="zxx">
-
-    <!-- Mirrored from getnajmul.com/theme/trabble/package-version-two.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 07 Sep 2018 02:31:41 GMT -->
-    <head>
+ <head>
         <meta charset="UTF-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <meta name="description" content="TRABBLE - Tour, Travel, Travel Agency Template">
@@ -78,18 +79,31 @@
             <div class="container">
                 <div class="row">
                     <!-- single package -->
+                    <?php
+                        foreach (TourPackage::all() as $AllTour) {
+                            ?>
                     <div class="col-md-4 col-sm-6 col-xs-12">
                         <div class="single-package-carasoul">
                             <div class="package-location">
-                                <img src="images/packages/pack1.jpg" alt="">
-                                <span>$150</span>
+                                <img src="upload/tour-package/<?php echo $AllTour['image_name'];?>" alt="">
+                                <span>
+                                 <?php echo $AllTour['price']; ?>$
+                                </span>
                             </div>
                             <div class="package-details">
                                 <div class="package-places">
-                                    <a href="view-tour-packages.php">   <h4>Dubai – All Stunning Places</h4></a>    
+                                    <a href="view-tour-packages.php"><h4><?php echo $AllTour['title']; ?></h4></a>    
                                     <span> <i class="fa fa-clock-o"></i> 4Days, 5Nights Stay</span>
                                     <div class="details">
-                                        <p><span>Included</span>: Flight Facility, 5 Star Hotel, Sightseeing, Transfers, Meals.</p>
+                                        <p><span>Included</span> : <?php
+                                                if (strlen($AllTour['short_description']) > 40) {
+                                                    echo substr($AllTour['short_description'], 0, 40) . '...';
+                                                } else {
+                                                    echo $AllTour['short_description'];
+                                                }
+                                                ?>
+                                        </p>
+                                                                                
                                     </div>
                                 </div>
                                 <div class="package-ratings-review">
@@ -111,287 +125,15 @@
                                 <a href="view-tour-packages.php">View</a>
                             </div>
                         </div>
-                    </div><!--End single package -->
+                    </div>
+                    
+                    <?php
+                      }
+                    ?>
+                    
+                    <!--End single package -->
 
-                    <div class="col-md-4 col-sm-6 col-xs-12">
-                        <div class="single-package-carasoul">
-                            <div class="package-location">
-                                <img src="images/packages/pack2.jpg" alt="">
-                                <span>$150</span>
-                            </div>
-                            <div class="package-details">
-                                <div class="package-places">
-                                    <a href="view-tour-packages.php"> <h4>Paris – All Stunning Places</h4></a>
-                                    <span> <i class="fa fa-clock-o"></i> 4Days, 5Nights Stay</span>
-                                    <div class="details">
-                                        <p><span>Included</span>: Flight Facility, 5 Star Hotel, Sightseeing, Transfers, Meals.</p>
-                                    </div>
-                                </div>
-                                <div class="package-ratings-review">
-                                    <ul class="two-column">
-                                        <li>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                        </li>
-                                        <li>
-                                            <p>(27 Reviews)</p>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="package-long-btn hvr-shutter-out-horizontal">
-                                <a href="view-tour-packages.php">View</a>
-                            </div>
-                        </div>
-                    </div><!--End single package -->
-
-                    <div class="col-md-4 col-sm-6 col-xs-12">
-                        <div class="single-package-carasoul">
-                            <div class="package-location">
-                                <img src="images/packages/pack3.jpg" alt="">
-                                <span>$150</span>
-                            </div>
-                            <div class="package-details">
-                                <div class="package-places">
-                                    <a href="view-tour-packages.php">  <h4>Italy – All Stunning Places</h4></a>
-                                    <span> <i class="fa fa-clock-o"></i> 4Days, 5Nights Stay</span>
-                                    <div class="details">
-                                        <p><span>Included</span>: Flight Facility, 5 Star Hotel, Sightseeing, Transfers, Meals.</p>
-                                    </div>
-                                </div>
-                                <div class="package-ratings-review">
-                                    <ul class="two-column">
-                                        <li>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                        </li>
-                                        <li>
-                                            <p>(27 Reviews)</p>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="package-long-btn hvr-shutter-out-horizontal">
-                                <a href="view-tour-packages.php">View</a>
-                            </div>
-                        </div>
-                    </div><!--End single package -->
-
-                    <div class="col-md-4 col-sm-6 col-xs-12">
-                        <div class="single-package-carasoul">
-                            <div class="package-location">
-                                <img src="images/packages/pack4.jpg" alt="">
-                                <span>$150</span>
-                            </div>
-                            <div class="package-details">
-                                <div class="package-places">
-                                    <a href="view-tour-packages.php"> <h4>Thailand – All Stunning Places</h4></a>
-                                    <span> <i class="fa fa-clock-o"></i> 4Days, 5Nights Stay</span>
-                                    <div class="details">
-                                        <p><span>Included</span>: Flight Facility, 5 Star Hotel, Sightseeing, Transfers, Meals.</p>
-                                    </div>
-                                </div>
-                                <div class="package-ratings-review">
-                                    <ul class="two-column">
-                                        <li>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                        </li>
-                                        <li>
-                                            <p>(27 Reviews)</p>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="package-long-btn hvr-shutter-out-horizontal">
-                                <a href="view-tour-packages.php">View</a>
-                            </div>
-                        </div>
-                    </div><!--End single package -->
-
-                    <div class="col-md-4 col-sm-6 col-xs-12">
-                        <div class="single-package-carasoul">
-                            <div class="package-location">
-                                <img src="images/packages/pack5.jpg" alt="">
-                                <span>$150</span>
-                            </div>
-                            <div class="package-details">
-                                <div class="package-places">
-                                    <a href="view-tour-packages.php">  <h4>England – All Stunning Places</h4></a>
-                                    <span> <i class="fa fa-clock-o"></i> 4Days, 5Nights Stay</span>
-                                    <div class="details">
-                                        <p><span>Included</span>: Flight Facility, 5 Star Hotel, Sightseeing, Transfers, Meals.</p>
-                                    </div>
-                                </div>
-                                <div class="package-ratings-review">
-                                    <ul class="two-column">
-                                        <li>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                        </li>
-                                        <li>
-                                            <p>(27 Reviews)</p>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="package-long-btn hvr-shutter-out-horizontal">
-                                <a href="view-tour-packages.php">View</a>
-                            </div>
-                        </div>
-                    </div><!--End single package -->
-
-                    <div class="col-md-4 col-sm-6 col-xs-12">
-                        <div class="single-package-carasoul">
-                            <div class="package-location">
-                                <img src="images/packages/pack6.jpg" alt="">
-                                <span>$150</span>
-                            </div>
-                            <div class="package-details">
-                                <div class="package-places">
-                                    <a href="view-tour-packages.php">  <h4>India – All Stunning Places</h4></a> 
-                                    <span> <i class="fa fa-clock-o"></i> 4Days, 5Nights Stay</span>
-                                    <div class="details">
-                                        <p><span>Included</span>: Flight Facility, 5 Star Hotel, Sightseeing, Transfers, Meals.</p>
-                                    </div>
-                                </div>
-                                <div class="package-ratings-review">
-                                    <ul class="two-column">
-                                        <li>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                        </li>
-                                        <li>
-                                            <p>(27 Reviews)</p>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="package-long-btn hvr-shutter-out-horizontal">
-                                <a href="view-tour-packages.php">View</a>
-                            </div>
-                        </div>
-                    </div><!--End single package -->
-
-                    <div class="col-md-4 col-sm-6 col-xs-12">
-                        <div class="single-package-carasoul">
-                            <div class="package-location">
-                                <img src="images/packages/pack7.jpg" alt="">
-                                <span>$150</span>
-                            </div>
-                            <div class="package-details">
-                                <div class="package-places">
-                                    <a href="view-tour-packages.php">  <h4>England – All Stunning Places</h4></a>
-                                    <span> <i class="fa fa-clock-o"></i> 4Days, 5Nights Stay</span>
-                                    <div class="details">
-                                        <p><span>Included</span>: Flight Facility, 5 Star Hotel, Sightseeing, Transfers, Meals.</p>
-                                    </div>
-                                </div>
-                                <div class="package-ratings-review">
-                                    <ul class="two-column">
-                                        <li>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                        </li>
-                                        <li>
-                                            <p>(27 Reviews)</p>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="package-long-btn hvr-shutter-out-horizontal">
-                                <a href="view-tour-packages.php">View</a>
-                            </div>
-                        </div>
-                    </div><!--End single package -->
-
-                    <div class="col-md-4 col-sm-6 col-xs-12">
-                        <div class="single-package-carasoul">
-                            <div class="package-location">
-                                <img src="images/packages/pack9.jpg" alt="">
-                                <span>$150</span>
-                            </div>
-                            <div class="package-details">
-                                <div class="package-places">
-                                    <a href="view-tour-packages.php">   <h4>Paris – All Stunning Places</h4></a>
-                                    <span> <i class="fa fa-clock-o"></i> 4Days, 5Nights Stay</span>
-                                    <div class="details">
-                                        <p><span>Included</span>: Flight Facility, 5 Star Hotel, Sightseeing, Transfers, Meals.</p>
-                                    </div>
-                                </div>
-                                <div class="package-ratings-review">
-                                    <ul class="two-column">
-                                        <li>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                        </li>
-                                        <li>
-                                            <p>(27 Reviews)</p>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="package-long-btn hvr-shutter-out-horizontal">
-                                <a href="view-tour-packages.php">View</a>
-                            </div>
-                        </div>
-                    </div><!--End single package -->
-
-                    <div class="col-md-4 col-sm-6 col-xs-12">
-                        <div class="single-package-carasoul">
-                            <div class="package-location">
-                                <img src="images/packages/pack8.jpg" alt="">
-                                <span>$150</span>
-                            </div>
-                            <div class="package-details">
-                                <div class="package-places">
-                                    <a href="view-tour-packages.php">     <h4>India – All Stunning Places</h4> </a>
-                                    <span> <i class="fa fa-clock-o"></i> 4Days, 5Nights Stay</span>
-                                    <div class="details">
-                                        <p><span>Included</span>: Flight Facility, 5 Star Hotel, Sightseeing, Transfers, Meals.</p>
-                                    </div>
-                                </div>
-                                <div class="package-ratings-review">
-                                    <ul class="two-column">
-                                        <li>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                        </li>
-                                        <li>
-                                            <p>(27 Reviews)</p>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="package-long-btn hvr-shutter-out-horizontal">
-                                <a href="view-tour-packages.php">View</a>
-                            </div>
-                        </div>
-                    </div><!--End single package -->
+                    
                 </div>             
             </div>
         </section><!-- single popular destination  end-->

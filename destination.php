@@ -1,7 +1,8 @@
+<?php
+include_once(dirname(__FILE__) . '/class/include.php');
+?>
 <!DOCTYPE html>
 <html class="no-js" lang="zxx">
-
-    <!-- Mirrored from getnajmul.com/theme/trabble/blog-version-two.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 07 Sep 2018 02:32:00 GMT -->
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -81,166 +82,50 @@
             <div class="container">
                 <div class="row">
                     <!-- single travel blog-->
-                    <div class="col-md-4 col-sm-6 col-xs-12">
-                        <div class="single-travel-blog single-travel-blog-2">
-                            <div class="blog-image">
-                                <a href="View-Destination.php"><img src="images/destination/del4.jpg" alt="">
-                                </a>
-                            </div>
-                            <div class="blog-content">
-                                <div class="blog-post-content">
-                                    <a href="View-Destination.php"><h4>Tips for taking a long-term trip with kids.</h4></a>
-                                    <p>Lorem ipsum dolor sit amet consepctetur adipiscing elit Etiam at ipsum at ligula vestibulum sodales Sed luctus.</p>
+                    <?php
+                    foreach (Destination::all() as $destination) {
+                        ?>
+                        <div class="col-md-4 col-sm-6 col-xs-12">
+                            <div class="single-travel-blog single-travel-blog-2">
+                                <div class="blog-image">
+                                    <a href="View-Destination.php"><img src="upload/destination/thumb1/<?php echo $destination['image_name'];?>" alt="">
+                                    </a>
                                 </div>
-                                <div class="read-more-btn">
-                                    <a href="View-Destination.php">Read More <i class="fa fa-angle-right"> </i></a>
+                                <div class="blog-content">
+                                    <div class="blog-post-content">
+                                        <a href="View-Destination.php"><h4><?php echo $destination['title']; ?></h4></a>
+                                        <p>
+                                           <?php
+                                                if (strlen($destination['short_description']) > 100) {
+                                                    echo substr($destination['short_description'], 0, 90) . '...';
+                                                } else {
+                                                    echo $destination['short_description'];
+                                                }
+                                                ?>
+                                            
+                                        </p>
+                                    </div>
+                                    <div class="read-more-btn">
+                                        <a href="View-Destination.php">Read More <i class="fa fa-angle-right"> </i></a>
+                                    </div>
+                                    <ul class="soical-share">
+                                        <li><a href="#"><i class="fa fa-facebook"></i></a>
+                                        </li>
+                                        <li><a href="#"><i class="fa fa-twitter"></i></a>
+                                        </li>
+                                        <li><a href="#"><i class="fa fa-youtube-play"></i></a>
+                                        </li>
+                                    </ul>
                                 </div>
-                                <ul class="soical-share">
-                                    <li><a href="#"><i class="fa fa-facebook"></i></a>
-                                    </li>
-                                    <li><a href="#"><i class="fa fa-twitter"></i></a>
-                                    </li>
-                                    <li><a href="#"><i class="fa fa-youtube-play"></i></a>
-                                    </li>
-                                </ul>
                             </div>
                         </div>
-                    </div><!-- single travel guide & security end-->
 
-                    <!-- single travel blog-->
-                    <div class="col-md-4 col-sm-6 col-xs-12">
-                        <div class="single-travel-blog single-travel-blog-2">
-                            <div class="blog-image">
-                                <a href="View-Destination.php"><img src="images/destination/del5.jpg" alt="">
-                                </a>
-                            </div>
-                            <div class="blog-content">
-                                <div class="blog-post-content">
-                                    <a href="View-Destination.php"> <h4>Tips for taking a long-term trip with kids.</h4></a>
-                                    <p>Lorem ipsum dolor sit amet consepctetur adipiscing elit Etiam at ipsum at ligula vestibulum sodales Sed luctus.</p>
-                                </div>
-                                <div class="read-more-btn">
-                                    <a href="View-Destination.php">Read More <i class="fa fa-angle-right"> </i></a>
-                                </div>
-                                <ul class="soical-share">
-                                    <li><a href="#"><i class="fa fa-facebook"></i></a>
-                                    </li>
-                                    <li><a href="#"><i class="fa fa-twitter"></i></a>
-                                    </li>
-                                    <li><a href="#"><i class="fa fa-youtube-play"></i></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div><!-- single travel guide & security end-->
+                        <?php
+                    }
+                    ?>
+                    <!-- single travel guide & security end-->
 
-                    <!-- single travel blog-->
-                    <div class="col-md-4 col-sm-6 col-xs-12">
-                        <div class="single-travel-blog single-travel-blog-2">
-                            <div class="blog-image">
-                                <a href="View-Destination.php"><img src="images/destination/del3.jpg" alt="">
-                                </a>
-                            </div>
-                            <div class="blog-content">
-                                <div class="blog-post-content">
-                                    <a href="View-Destination.php"> <h4>Tips for taking a long-term trip with kids.</h4></a>
-                                    <p>Lorem ipsum dolor sit amet consepctetur adipiscing elit Etiam at ipsum at ligula vestibulum sodales Sed luctus.</p>
-                                </div>
-                                <div class="read-more-btn">
-                                    <a href="View-Destination.php">Read More <i class="fa fa-angle-right"> </i></a>
-                                </div>
-                                <ul class="soical-share">
-                                    <li><a href="#"><i class="fa fa-facebook"></i></a>
-                                    </li>
-                                    <li><a href="#"><i class="fa fa-twitter"></i></a>
-                                    </li>
-                                    <li><a href="#"><i class="fa fa-youtube-play"></i></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div><!-- single travel guide & security end-->
 
-                    <!-- single travel blog-->
-                    <div class="col-md-4 col-sm-6 col-xs-12">
-                        <div class="single-travel-blog single-travel-blog-2">
-                            <div class="blog-image">
-                                <a href="View-Destination.php"><img src="images/destination/del1.jpg" alt="">
-                                </a>
-                            </div>
-                            <div class="blog-content">
-                                <div class="blog-post-content">
-                                    <a href="View-Destination.php"> <h4>Tips for taking a long-term trip with kids.</h4></a>
-                                    <p>Lorem ipsum dolor sit amet consepctetur adipiscing elit Etiam at ipsum at ligula vestibulum sodales Sed luctus.</p>
-                                </div>
-                                <div class="read-more-btn">
-                                    <a href="View-Destination.php">Read More <i class="fa fa-angle-right"> </i></a>
-                                </div>
-                                <ul class="soical-share">
-                                    <li><a href="#"><i class="fa fa-facebook"></i></a>
-                                    </li>
-                                    <li><a href="#"><i class="fa fa-twitter"></i></a>
-                                    </li>
-                                    <li><a href="#"><i class="fa fa-youtube-play"></i></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div><!-- single travel guide & security end-->
-
-                    <!-- single travel blog-->
-                    <div class="col-md-4 col-sm-6 col-xs-12">
-                        <div class="single-travel-blog single-travel-blog-2">
-                            <div class="blog-image">
-                                <a href="View-Destination.php"><img src="images/destination/del6.jpg" alt="">
-                                </a>
-                            </div>
-                            <div class="blog-content">
-                                <div class="blog-post-content">
-                                    <a href="View-Destination.php"> <h4>Tips for taking a long-term trip with kids.</h4></a>
-                                    <p>Lorem ipsum dolor sit amet consepctetur adipiscing elit Etiam at ipsum at ligula vestibulum sodales Sed luctus.</p>
-                                </div>
-                                <div class="read-more-btn">
-                                    <a href="View-Destination.php">Read More <i class="fa fa-angle-right"> </i></a>
-                                </div>
-                                <ul class="soical-share">
-                                    <li><a href="#"><i class="fa fa-facebook"></i></a>
-                                    </li>
-                                    <li><a href="#"><i class="fa fa-twitter"></i></a>
-                                    </li>
-                                    <li><a href="#"><i class="fa fa-youtube-play"></i></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div><!-- single travel guide & security end-->
-
-                    <!-- single travel blog-->
-                    <div class="col-md-4 col-sm-6 col-xs-12">
-                        <div class="single-travel-blog single-travel-blog-2">
-                            <div class="blog-image">
-                                <a href="View-Destination.php"><img src="images/destination/del7.jpg" alt="">
-                                </a>
-                            </div>
-                            <div class="blog-content">
-                                <div class="blog-post-content">
-                                    <a href="View-Destination.php"> <h4>Tips for taking a long-term trip with kids.</h4></a>
-                                    <p>Lorem ipsum dolor sit amet consepctetur adipiscing elit Etiam at ipsum at ligula vestibulum sodales Sed luctus.</p>
-                                </div>
-                                <div class="read-more-btn">
-                                    <a href="View-Destination.php">Read More <i class="fa fa-angle-right"> </i></a>
-                                </div>
-                                <ul class="soical-share">
-                                    <li><a href="#"><i class="fa fa-facebook"></i></a>
-                                    </li>
-                                    <li><a href="#"><i class="fa fa-twitter"></i></a>
-                                    </li>
-                                    <li><a href="#"><i class="fa fa-youtube-play"></i></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div><!-- single travel guide & security end-->
                 </div>              
             </div>
         </section><!-- single popular destination  end-->

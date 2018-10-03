@@ -119,9 +119,9 @@ class Destination {
         foreach ($allPhotos as $photo) {
 
             $IMG = $DESTINATION_PHOTO->image_name = $photo["image_name"];
-            unlink(Helper::getSitePath() . "upload/destination/gallery/" . $IMG);
-            unlink(Helper::getSitePath() . "upload/destination/gallery/thumb/" . $IMG);
-
+            unlink(Helper::getSitePath() . "upload/destination/" . $IMG);
+            unlink(Helper::getSitePath() . "upload/destination/thumb/" . $IMG);
+            unlink(Helper::getSitePath() . "upload/destination/thumb1/" . $IMG);
             $DESTINATION_PHOTO->id = $photo["id"];
             $DESTINATION_PHOTO->delete();
         }
