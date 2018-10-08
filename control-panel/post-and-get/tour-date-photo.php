@@ -133,8 +133,9 @@ if (isset($_POST['update'])) {
 
     $VALID = new Validator();
     $VALID->check($TOUR_DATE_PHOTO, [
-        'caption' => ['required' => TRUE],
-        'image_name' => ['required' => TRUE]
+        'caption' => ['required' => TRUE]
+//                ,
+//        'image_name' => ['required' => TRUE]
     ]);
 
     if ($VALID->passed()) {

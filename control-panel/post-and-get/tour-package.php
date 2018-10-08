@@ -14,7 +14,7 @@ if (isset($_POST['create'])) {
 
     $dir_dest = '../../upload/tour-package/';
     $dir_dest_thumb = '../../upload/tour-package/thumb/';
-
+    $dir_dest_thumb1 = '../../upload/tour-package/thumb1/';
     $handle = new Upload($_FILES['image']);
 
     $imgName = null;
@@ -37,10 +37,25 @@ if (isset($_POST['create'])) {
         $handle->file_new_name_ext = 'jpg';
         $handle->image_ratio_crop = 'C';
         $handle->file_new_name_body = Helper::randamId();
-        $handle->image_x = 135;
-        $handle->image_y = 189;
+        $handle->image_x = 65;
+        $handle->image_y = 65;
 
         $handle->Process($dir_dest_thumb);
+
+        if ($handle->processed) {
+            $info = getimagesize($handle->file_dst_pathname);
+            $imgName = $handle->file_dst_name;
+        }
+
+
+        $handle->image_resize = true;
+        $handle->file_new_name_ext = 'jpg';
+        $handle->image_ratio_crop = 'C';
+        $handle->file_new_name_body = Helper::randamId();
+        $handle->image_x = 190;
+        $handle->image_y = 111;
+
+        $handle->Process($dir_dest_thumb1);
 
         if ($handle->processed) {
             $info = getimagesize($handle->file_dst_pathname);
@@ -90,7 +105,7 @@ if (isset($_POST['create'])) {
 if (isset($_POST['update'])) {
     $dir_dest = '../../upload/tour-package/';
     $dir_dest_thumb = '../../upload/tour-package/thumb/';
-
+    $dir_dest_thumb1 = '../../upload/tour-package/thumb1/';
     $handle = new Upload($_FILES['image']);
 
     $imgName = null;
@@ -117,8 +132,8 @@ if (isset($_POST['update'])) {
         $handle->file_new_name_ext = FALSE;
         $handle->image_ratio_crop = 'C';
         $handle->file_new_name_body = $_POST ["oldImageName"];
-        $handle->image_x = 135;
-        $handle->image_y = 189;
+        $handle->image_x = 65;
+        $handle->image_y = 65;
 
         $handle->Process($dir_dest_thumb);
 
@@ -126,6 +141,23 @@ if (isset($_POST['update'])) {
             $info = getimagesize($handle->file_dst_pathname);
             $imgName = $handle->file_dst_name;
         }
+        
+        $handle->image_resize = true;
+        $handle->file_new_name_body = TRUE;
+        $handle->file_overwrite = TRUE;
+        $handle->file_new_name_ext = FALSE;
+        $handle->image_ratio_crop = 'C';
+        $handle->file_new_name_body = $_POST ["oldImageName"];
+        $handle->image_x = 190;
+        $handle->image_y = 111;
+
+        $handle->Process($dir_dest_thumb1);
+
+        if ($handle->processed) {
+            $info = getimagesize($handle->file_dst_pathname);
+            $imgName = $handle->file_dst_name;
+        }
+        
     }
 
     $TOUR_PACKAGE = new TourPackage($_POST['id']);

@@ -88,12 +88,12 @@ include_once(dirname(__FILE__) . '/class/include.php');
                         <div class="col-md-4 col-sm-6 col-xs-12">
                             <div class="single-travel-blog single-travel-blog-2">
                                 <div class="blog-image">
-                                    <a href="View-Destination.php"><img src="upload/destination/thumb1/<?php echo $destination['image_name'];?>" alt="">
+                                    <a href="#"><img src="upload/destination/thumb1/<?php echo $destination['image_name'];?>" alt="">
                                     </a>
                                 </div>
                                 <div class="blog-content">
                                     <div class="blog-post-content">
-                                        <a href="View-Destination.php"><h4><?php echo $destination['title']; ?></h4></a>
+                                        <a href="view-destination.php?id=<?php echo $destination['id'];?>"><h4><?php echo $destination['title']; ?></h4></a>
                                         <p>
                                            <?php
                                                 if (strlen($destination['short_description']) > 100) {
@@ -106,7 +106,7 @@ include_once(dirname(__FILE__) . '/class/include.php');
                                         </p>
                                     </div>
                                     <div class="read-more-btn">
-                                        <a href="View-Destination.php">Read More <i class="fa fa-angle-right"> </i></a>
+                                        <a href="view-destination.php?id=<?php echo $destination['id'];?>">Read More <i class="fa fa-angle-right"> </i></a>
                                     </div>
                                     <ul class="soical-share">
                                         <li><a href="#"><i class="fa fa-facebook"></i></a>

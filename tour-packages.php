@@ -92,7 +92,7 @@ include_once(dirname(__FILE__) . '/class/include.php');
                             </div>
                             <div class="package-details">
                                 <div class="package-places">
-                                    <a href="view-tour-packages.php"><h4><?php echo $AllTour['title']; ?></h4></a>    
+                                    <a href="view-tour-packages.php?id=<?php echo $AllTour['id']; ?>"><h4><?php echo $AllTour['title']; ?></h4></a>    
                                     <span> <i class="fa fa-clock-o"></i> 4Days, 5Nights Stay</span>
                                     <div class="details">
                                         <p><span>Included</span> : <?php
@@ -122,7 +122,7 @@ include_once(dirname(__FILE__) . '/class/include.php');
                                 </div>
                             </div>
                             <div class="package-long-btn hvr-shutter-out-horizontal">
-                                <a href="view-tour-packages.php">View</a>
+                                <a href="view-tour-packages.php?id=<?php echo $AllTour['id']; ?>">View</a>
                             </div>
                         </div>
                     </div>

@@ -1,7 +1,9 @@
+<?php
+include_once(dirname(__FILE__) . '/class/include.php');
+?>
+
 <!DOCTYPE html>
 <html class="no-js" lang="zxx">
-
-    <!-- Mirrored from getnajmul.com/theme/trabble/index-4.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 07 Sep 2018 02:31:10 GMT -->
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -11,10 +13,10 @@
         <title>Round Tour Sri Lanka</title>
         <!-- Google Fonts Includes -->
         <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
-     <!-- Favi icon -->
+        <!-- Favi icon -->
         <link rel="shortcut icon" type="image/x-icon" href="images/logo/logo2.png"
-        <!-- bootstrap v3.3.6 css -->
-        <link rel="stylesheet" href="css/bootstrap.min.css">
+              <!-- bootstrap v3.3.6 css -->
+              <link rel="stylesheet" href="css/bootstrap.min.css">
         <!-- animate css -->
         <link rel="stylesheet" href="css/animate.css">
         <!-- Button Hover animate css -->
@@ -66,6 +68,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-sm-12">
+                            
                             <div class="bredcrums-content">
                                 <h2>Photo Album</h2>
                                 <ul>
@@ -84,109 +87,28 @@
             <div class="container">
                 <div class="row">
                     <!-- single destination -->
+                    <?php
+                    foreach (PhotoAlbum::all() as $photoAlbum) {
+                        ?>
                     <div class="col-md-3 col-sm-3 col-xs-12">
                         <figure>
-                            <a href="images/gallery/gl1.jpeg" class="" data-fancybox="images" >
+                            <a href="upload/photo-album/<?php echo $photoAlbum['image_name']; ?>" class="" data-fancybox="images" >
                                 <figcaption>
                                     <i class="fa fa-search" style="font-size:30px;color:#ffff;"></i>
                                 </figcaption>
-                                <img src="images/gallery/g1.jpg" alt="">
+                                <img src="upload/photo-album/thumb/<?php echo $photoAlbum['image_name']; ?>" alt="">
+                                
                             </a>
 
                         </figure>
                     </div>
+                    <?php
+                    }
+                        ?>
                     <!-- single destination -->
-                    <!-- single destination -->
-                    <div class="col-md-3 col-sm-3 col-xs-12">
-                        <figure>
-                            <a href="images/gallery/gl2.jpg" data-fancybox="images">
-                                <figcaption>
-                                    <i class="fa fa-search" style="font-size:30px;color:#ffff;"></i>
-                                </figcaption>
-                                <img src="images/gallery/g2.jpg" alt="">
-                            </a>
-
-                        </figure>
-                    </div>
-                    <!-- single destination -->
-                    <!-- single destination -->
-                    <div class="col-md-3 col-sm-3 col-xs-12">
-                        <figure>
-                            <a href="images/gallery/gl3.jpg"  data-fancybox="images">
-
-                                <figcaption>
-                                    <i class="fa fa-search" style="font-size:30px;color:#ffff;"></i>
-                                </figcaption>
-                                <img src="images/gallery/g3.jpg" alt="">
-                            </a>
-                        </figure>
-
-                    </div>
-                    <!-- single destination -->
-                    <!-- single destination -->
-                    <div class="col-md-3 col-sm-3 col-xs-12">
-                        <figure>
-                            <a href="images/gallery/gl4.jpg"  data-fancybox="images">                             
-
-                                <figcaption>
-                                    <i class="fa fa-search" style="font-size:30px;color:#ffff;"></i>
-                                </figcaption>
-                                <img src="images/gallery/g4.jpg" alt="">
-                            </a>
-                        </figure>
-                    </div>
-                    <!-- single destination -->
-                    <!-- single destination -->
-                    <div class="col-md-3 col-sm-3 col-xs-12">
-                        <figure>
-                            <a href="images/gallery/gl5.jpg" data-fancybox="images">
-
-                                <figcaption>
-                                    <i class="fa fa-search" style="font-size:30px;color:#ffff;"></i>
-                                </figcaption>
-                                <img src="images/gallery/g5.jpg" alt="">
-                            </a>
-                        </figure>
-                    </div>
-                    <!-- single destination -->
-                    <!-- single destination -->
-                    <div class="col-md-3 col-sm-3 col-xs-12">
-                        <figure>
-                            <a href="images/gallery/gl6.jpg" data-fancybox="images">
-
-                                <figcaption>
-                                    <i class="fa fa-search" style="font-size:30px;color:#ffff;"></i>
-                                </figcaption>
-                                <img src="images/gallery/g6.jpg" alt="">
-                            </a>
-                        </figure>
-                    </div>
-                    <!-- single destination -->
-                    <!-- single destination -->
-                    <div class="col-md-3 col-sm-3 col-xs-12">
-                        <figure>
-                            <a href="images/gallery/gl7.jpg" data-fancybox="images">
-
-                                <figcaption>
-                                    <i class="fa fa-search" style="font-size:30px;color:#ffff;"></i>
-                                </figcaption>
-                                <img src="images/gallery/g7.jpg" alt="">
-                            </a>
-                        </figure>
-                    </div>
-                    <!-- single destination -->
-                    <!-- single destination -->
-                    <div class="col-md-3 col-sm-3 col-xs-12">
-                        <figure>
-                            <a href="images/gallery/gl8.jpg" data-fancybox="images">
-                                <figcaption>
-                                    <i class="fa fa-search" style="font-size:30px;color:#ffff;"></i>
-                                </figcaption>
-                                <img src="images/gallery/g8.jpg" alt="">
-                            </a>
-                        </figure>
-                    </div>
-                    <!-- single destination -->
+                    
+                    
+                    
                 </div>
             </div>
         </section>

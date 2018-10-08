@@ -136,14 +136,15 @@ img {
     overflow: hidden;
 }
 p {
-    margin: 15px 0 15px;
-    font-size: 15px;
+    margin: 15px 13px 15px;
+    font-size: 14px;
     color: #727272;
-    font-weight: 400;
+    font-weight: 100;
     font-family: 'Poppins', sans-serif;
+    text-align:justify;
 }
 h1, h2, h3, h4, h5, h6 {
-    margin: 0 0 10px;
+    margin: 0 15px 10px;
     font-family: 'Poppins', sans-serif;
 }
 a {
@@ -153,6 +154,7 @@ a {
 }
 a:hover {
     text-decoration: none;
+    color:#7479a6;
 }
 a:active, a:hover {
     outline: 0 none;
@@ -957,7 +959,7 @@ header {
     font-size: 18px;
 }
 .destination-slider-active .single-destination .des-city a i {
-    margin-right: 10px;
+    margin-right: -10px;
 }
 .destination-slider-active .single-destination .des-city h4 {
     color: #727272;
@@ -1759,6 +1761,7 @@ header {
     color: #ffffff;
 }
 .section-title-version-2-white p, .section-title-version-2-black p {
+    text-align: center;
     color: #ffffff;
     font-size: 15px;
     padding-bottom: 45px;
@@ -3094,6 +3097,7 @@ header {
     position: relative;
     overflow: hidden;
     margin-bottom: 30px;
+    margin-left:-16px;
 }
 .top-destination-area figure img {
     transition: all ease-in-out 0.5s;
@@ -4080,6 +4084,7 @@ aside .booking-form .form-group .booking-confirm {
 /*===================================================== 57.Blog single section start here =======================================================*/
 .single {
     background: #f5f5f5;
+    margin-bottom: 2px;
 }
 .single .single-blog .blog-head {
     position: relative;
@@ -4322,7 +4327,8 @@ aside .booking-form .form-group .booking-confirm {
     background: #fff;
     padding: 15px;
     margin-bottom: 30px;
-    height:279px;    
+    height:129px;
+    margin-bottom: 4px;    
 }
 .single .blog-sidebar .single-sidebar h2 {
     text-transform: capitalize;
@@ -4782,4 +4788,52 @@ viewdisidis{
     padding: 100px 0;
     position: relative;
     background-attachment: fixed;
+}
+
+.sideimg{
+    padding-left: 17px;
+    padding-bottom:30px;
+}
+.qua{
+    padding-top: 0px;
+    margin-right: -56px;
+    margin-left: -39px;
+    font-size: 14px;
+}
+.back{
+    background-color:#ffffff;
+    padding-top: 26px;
+    padding-bottom: 17px;
+    margin-top: 31px;
+}
+.category h3{
+    font-size: 15px;
+
+}
+
+.category p{
+    font-size: 14px;
+    margin-top: -3px;
+}
+.blog-sidebar h3{
+    font-size: 19px;
+}
+.daySty{
+    color:#1da1f2;
+}
+.hearderline{
+    display: block;
+    clear: both;
+    border-top: solid 1px #2390ec;
+    margin: 20px 0 40px 0;
+}
+.tourpack{
+    text-align:center;
+}
+.a{
+    color: #a6dae1;
+}
+
+.booknow{
+    margin-top: 49px;
 }
