@@ -279,321 +279,216 @@ include_once(dirname(__FILE__) . '/class/include.php');
             </div>
         </section> 
         <!-- Last minute offer end here -->
-
-        <!-- testimonial area start here -->
-        <section class="testimonial-area image-bg-padding-100 herounit-b1">
-            <div class="testimonial-wrapper">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12 col-sm-12 col-xs-12">
-                            <div class="section-title-white text-center mbt-100">
-                                <h2>What travellers Say About Us</h2>
-                            </div>
-                        </div>
+    <!-- testimonial area start here (single)-->
+    <section class="testimonial-area-5">
+        <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="section-title-white text-center mbt-100">
+                    <h2>What travellers Say About Us</h2>
+                </div>
+            </div>
+        </div>
+        <div class="testimonial-5-active owl-carousel">
+            <?php
+            foreach (Comments::all() as $gustComment) {
+                ?>
+                <!-- single testimonial start -->
+                <div class="single-testimonial">
+                    <img src="upload/comments/<?php echo $gustComment['image_name']; ?>" alt="1" class="img-circle">
+                    <div class="testimonial-messages">
+                        <p><?php
+                            echo $gustComment['comment'];
+                            ?></p>
                     </div>
-                    <div class="row">
-                        <div class="custom-width text-center">
-                            <!-- start top media -->
-                            <div class="top-testimonial-image row slick-pagination">
-                                <div class="carousel-images slider-nav">
-                                    <div>
-                                        <img src="images/client/1.jpg" alt="1" class="img-circle">
-                                    </div>
-                                    <div>
-                                        <img src="images/client/2.jpg" alt="3" class="img-circle">
-                                    </div>
-                                    <div>
-                                        <img src="images/client/3.jpg" alt="2" class="img-circle">
-                                    </div>
+                    <div class="author-bio">
+                        <h3><?php echo $gustComment['name']; ?></h3>
+                        <span><?php echo $gustComment['title']; ?></span>
+                    </div>
+                </div>
 
-                                    <div>
-                                        <img src="images/client/2.jpg" alt="2" class="img-circle">
-                                    </div>
-                                    <div>
-                                        <img src="images/client/6.jpg" alt="2" class="img-circle">
-                                    </div>
-                                </div>
-                            </div>
-                        </div><!-- end top media images -->
+                <?php
+            }
+            ?>
+            <!-- single testimonial end -->
+        </div>
+    </section><!-- testimonial area end here -->
 
-                        <div class="block-text row">
-                            <div class="carousel-text slider-for col-sm-8 col-sm-offset-2">
-                                <div class="testimonial-message">
-                                    <div class="message">
-                                        <p>Lorem ipsum dolor sit amet, consecteituer adipiscing eluit, sed diapm nonummy nibhu euismod tincidunt ut laoreet dolor you magna aliquam erat volutpat. Ut wisi enim adefra miniumyp veniam, quis nostrud exerci tation ullavolutpat.</p>
-                                    </div>
-                                    <div class="rating">
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                    </div>
-                                    <div class="client-bio">
-                                        <h4>Jhonthan Smith</h4>
-                                        <span>London Trip Travelers</span>
-                                    </div>
-                                </div> <!-- client testimonial end -->
 
-                                <div class="testimonial-message">
-                                    <div class="message">
-                                        <p>Lorem ipsum dolor sit amet, consecteituer adipiscing eluit, sed diapm nonummy nibhu euismod tincidunt ut laoreet dolor you magna aliquam erat volutpat. Ut wisi enim adefra miniumyp veniam, quis nostrud.</p>
-                                    </div>
-                                    <div class="rating">
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                    </div>
-                                    <div class="client-bio">
-                                        <h4>Daniel Baci</h4>
-                                        <span>Thailand Trip Travelers</span>
-                                    </div>
-                                </div> <!-- client testimonial end -->
 
-                                <div class="testimonial-message">
-                                    <div class="message">
-                                        <p>Lorem ipsum dolor sit amet, consecteituer adipiscing eluit, sed diapm nonummy nibhu euismod tincidunt ut laoreet dolor you magna aliquam erat volutpat. Ut wisi enim adefra miniumyp veniam, quis nostrud.</p>
-                                    </div>
-                                    <div class="rating">
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                    </div>
-                                    <div class="client-bio">
-                                        <h4>John Doe</h4>
-                                        <span>USA Trip Travelers</span>
-                                    </div>
-                                </div> <!-- client testimonial end -->
 
-                                <div class="testimonial-message">
-                                    <div class="message">
-                                        <p>Lorem ipsum dolor sit amet, consecteituer adipiscing eluit, sed diapm nonummy nibhu euismod tincidunt ut laoreet dolor you magna aliquam erat volutpat. Ut wisi enim adefra miniumyp veniam, quis nostrud.</p>
-                                    </div>
-                                    <div class="rating">
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                    </div>
-                                    <div class="client-bio">
-                                        <h4>Jhonthan Smith</h4>
-                                        <span>London Trip Travelers</span>
-                                    </div>
-                                </div>	<!-- client testimonial end -->
 
-                                <div class="testimonial-message">
-                                    <div class="message">
-                                        <p>Lorem ipsum dolor sit amet, consecteituer adipiscing eluit, sed diapm nonummy nibhu euismod tincidunt ut laoreet dolor you magna aliquam erat volutpat. Ut wisi enim adefra miniumyp veniam, quis nostrud.</p>
-                                    </div>
-                                    <div class="rating">
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                    </div>
-                                    <div class="client-bio">
-                                        <h4>Jhonthan Smith</h4>
-                                        <span>London Trip Travelers</span>
-                                    </div>
-                                </div> <!-- client testimonial end -->
 
-                                <div class="testimonial-message">
-                                    <div class="message">
-                                        <p>Lorem ipsum dolor sit amet, consecteituer adipiscing eluit, sed diapm nonummy nibhu euismod tincidunt ut laoreet dolor you magna aliquam erat volutpat. Ut wisi enim adefra miniumyp veniam, quis nostrud</p>
-                                    </div>
-                                    <div class="rating">
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                    </div>
-                                    <div class="client-bio">
-                                        <h4>Jhonthan Smith</h4>
-                                        <span>London Trip Travelers</span>
-                                    </div>
-                                </div> <!-- client testimonial end -->
-                            </div> <!-- /.block-text -->
-                        </div>
+
+
+
+
+    <section class="section-paddings">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="section-title-version-2-black text-center">
+                        <h2>Gallery from Travelars</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit Etiam at ipsum at ligula vestibulum </p>
                     </div>
                 </div>
             </div>
-        </section> 
+            <!-- gallery iteam start here -->
+            <div class="grid-3">
+                <div class="col-sm-12 col-md-6 grid-item">
+                    <figure>
+                        <img src="images/gallery/gal1.jpg" alt="">
+                        <figcaption>
+                            <a href="images/gallery/gal1.jpg"><i class="fa fa-pencil"></i></a>
+                            <h4>Place <span>Eiffel Tower</span></h4>
 
+                        </figcaption>
+                    </figure>
+                </div> <!-- end single gallery -->
 
-        <section class="section-paddings">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-12">
-                        <div class="section-title-version-2-black text-center">
-                            <h2>Gallery from Travelars</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit Etiam at ipsum at ligula vestibulum </p>
-                        </div>
-                    </div>
+                <div class="col-sm-6 col-md-3 grid-item">
+                    <figure>
+                        <img src="images/gallery/gal2.jpg" alt="">
+                        <figcaption>
+                            <a href="images/gallery/gal2L.jpg"><i class="fa fa-pencil"></i></a>
+                            <h4>Place <span>Eiffel Tower</span></h4>
+
+                        </figcaption>
+                    </figure>
+                </div> <!-- end single gallery -->
+
+                <div class="col-sm-6 col-md-3 grid-item">
+                    <figure>
+                        <img src="images/gallery/gal3.jpg" alt="">
+                        <figcaption>
+                            <a href="images/gallery/gal3L.jpg"><i class="fa fa-pencil"></i></a>
+                            <h4>Place <span>Eiffel Tower</span></h4>
+
+                        </figcaption>
+                    </figure>
+                </div> <!-- end single gallery -->
+
+                <div class="col-sm-6 col-md-3 grid-item">
+                    <figure>
+                        <img src="images/gallery/gal4.jpg" alt="">
+                        <figcaption>
+                            <a href="images/gallery/1.jpg"><i class="fa fa-pencil"></i></a>
+                            <h4>Place <span>Eiffel Tower</span></h4>
+
+                        </figcaption>
+                    </figure>
+                </div> <!-- end single gallery -->
+
+                <div class="col-sm-6 col-md-3 grid-item">
+                    <figure>
+                        <img src="images/gallery/gal5.jpg" alt="">
+                        <figcaption>
+                            <a href="images/gallery/1.jpg"><i class="fa fa-pencil"></i></a>
+                            <h4>Place <span>Eiffel Tower</span></h4>
+
+                        </figcaption>
+                    </figure>
+                </div> <!--single gallery end -->
+
+                <div class=" col-sm-6 col-md-3 grid-item">
+                    <figure>
+                        <img src="images/gallery/gal6.jpg" alt="">
+                        <figcaption>
+                            <a href="images/gallery/1.jpg"><i class="fa fa-pencil"></i></a>
+                            <h4>Place <span>Eiffel Tower</span></h4>
+
+                        </figcaption>
+                    </figure>
                 </div>
-                <!-- gallery iteam start here -->
-                <div class="grid-3">
-                    <div class="col-sm-12 col-md-6 grid-item">
-                        <figure>
-                            <img src="images/gallery/gal1.jpg" alt="">
-                            <figcaption>
-                                <a href="images/gallery/gal1.jpg"><i class="fa fa-pencil"></i></a>
-                                <h4>Place <span>Eiffel Tower</span></h4>
+                <!--single gallery end -->
+                <!--single gallery -->
+                <div class="col-sm-6 col-md-3 grid-item">
+                    <figure>
+                        <img src="images/gallery/gal7.jpg" alt="">
+                        <figcaption>
+                            <a href="images/gallery/1.jpg"><i class="fa fa-pencil"></i></a>
+                            <h4>Place <span>Eiffel Tower</span></h4>
 
-                            </figcaption>
-                        </figure>
-                    </div> <!-- end single gallery -->
+                        </figcaption>
+                    </figure>
+                </div> <!--single gallery end -->
 
-                    <div class="col-sm-6 col-md-3 grid-item">
-                        <figure>
-                            <img src="images/gallery/gal2.jpg" alt="">
-                            <figcaption>
-                                <a href="images/gallery/gal2L.jpg"><i class="fa fa-pencil"></i></a>
-                                <h4>Place <span>Eiffel Tower</span></h4>
+                <div class="col-sm-6 col-md-3 grid-item">
+                    <figure>
+                        <img src="images/gallery/gal8.jpg" alt="">
+                        <figcaption>
+                            <a href="images/gallery/1.jpg"><i class="fa fa-pencil"></i></a>
+                            <h4>Place <span>Eiffel Tower</span></h4>
 
-                            </figcaption>
-                        </figure>
-                    </div> <!-- end single gallery -->
+                        </figcaption>
+                    </figure>
+                </div> <!--single gallery end -->
+            </div> <!-- gallery item end here -->
+        </div>
+    </section> <!-- gallery section end here -->
 
-                    <div class="col-sm-6 col-md-3 grid-item">
-                        <figure>
-                            <img src="images/gallery/gal3.jpg" alt="">
-                            <figcaption>
-                                <a href="images/gallery/gal3L.jpg"><i class="fa fa-pencil"></i></a>
-                                <h4>Place <span>Eiffel Tower</span></h4>
+    <!-- footer start here -->
+    <?php
+    include './footer.php';
+    ?>
+    <!-- end footer -->
 
-                            </figcaption>
-                        </figure>
-                    </div> <!-- end single gallery -->
+    <div class="to-top pos-rtive">
+        <a href="#"><i class = "fa fa-angle-up"></i></a>
+    </div> <!-- Scroll to top jump button end-->
 
-                    <div class="col-sm-6 col-md-3 grid-item">
-                        <figure>
-                            <img src="images/gallery/gal4.jpg" alt="">
-                            <figcaption>
-                                <a href="images/gallery/1.jpg"><i class="fa fa-pencil"></i></a>
-                                <h4>Place <span>Eiffel Tower</span></h4>
-
-                            </figcaption>
-                        </figure>
-                    </div> <!-- end single gallery -->
-
-                    <div class="col-sm-6 col-md-3 grid-item">
-                        <figure>
-                            <img src="images/gallery/gal5.jpg" alt="">
-                            <figcaption>
-                                <a href="images/gallery/1.jpg"><i class="fa fa-pencil"></i></a>
-                                <h4>Place <span>Eiffel Tower</span></h4>
-
-                            </figcaption>
-                        </figure>
-                    </div> <!--single gallery end -->
-
-                    <div class=" col-sm-6 col-md-3 grid-item">
-                        <figure>
-                            <img src="images/gallery/gal6.jpg" alt="">
-                            <figcaption>
-                                <a href="images/gallery/1.jpg"><i class="fa fa-pencil"></i></a>
-                                <h4>Place <span>Eiffel Tower</span></h4>
-
-                            </figcaption>
-                        </figure>
-                    </div>
-                    <!--single gallery end -->
-                    <!--single gallery -->
-                    <div class="col-sm-6 col-md-3 grid-item">
-                        <figure>
-                            <img src="images/gallery/gal7.jpg" alt="">
-                            <figcaption>
-                                <a href="images/gallery/1.jpg"><i class="fa fa-pencil"></i></a>
-                                <h4>Place <span>Eiffel Tower</span></h4>
-
-                            </figcaption>
-                        </figure>
-                    </div> <!--single gallery end -->
-
-                    <div class="col-sm-6 col-md-3 grid-item">
-                        <figure>
-                            <img src="images/gallery/gal8.jpg" alt="">
-                            <figcaption>
-                                <a href="images/gallery/1.jpg"><i class="fa fa-pencil"></i></a>
-                                <h4>Place <span>Eiffel Tower</span></h4>
-
-                            </figcaption>
-                        </figure>
-                    </div> <!--single gallery end -->
-                </div> <!-- gallery item end here -->
-            </div>
-        </section> <!-- gallery section end here -->
-
-        <!-- footer start here -->
-        <?php
-        include './footer.php';
-        ?>
-        <!-- end footer -->
-
-        <div class="to-top pos-rtive">
-            <a href="#"><i class = "fa fa-angle-up"></i></a>
-        </div> <!-- Scroll to top jump button end-->
-
-        <!-- ============================
-                JavaScript Files
-        ============================= -->
-        <!-- jquery latest version -->
-        <script src="js/vendor/jquery-3.2.0.min.js"></script>
-        <!-- bootstrap js -->
-        <script src="js/bootstrap.min.js"></script>
-        <!-- owl.carousel js -->
-        <script src="js/owl.carousel.min.js"></script>
-        <!-- slick js -->
-        <script src="js/slick.min.js"></script>
-        <!-- meanmenu js -->
-        <script src="js/jquery.meanmenu.min.js"></script>
-        <!-- jquery-ui js -->
-        <script src="js/jquery-ui.min.js"></script>
-        <!-- wow js -->
-        <script src="js/wow.min.js"></script>
-        <!-- counter js -->
-        <script src="js/jquery.counterup.min.js"></script>
-        <!-- Countdown js -->
-        <script src="js/jquery.countdown.min.js"></script>
-        <!-- waypoints js -->
-        <script src="js/jquery.waypoints.min.js"></script>
-        <!-- Isotope js -->
-        <script src="js/isotope.pkgd.min.js"></script>
-        <!-- magnific js -->
-        <script src="js/jquery.magnific-popup.min.js"></script>
-        <!-- Image loaded js -->
-        <script src="js/imagesloaded.pkgd.min.js"></script>
-        <!-- chossen js -->
-        <script src="js/chosen.jquery.min.js"></script>
-        <script src="js/assets/revolution/jquery.themepunch.revolution.min.js"></script>
-        <script src="js/assets/revolution/jquery.themepunch.tools.min.js"></script>
-        <!-- Revolution Extensions -->
-        <script src="js/assets/revolution/extensions/revolution.extension.actions.min.js"></script>
-        <script src="js/assets/revolution/extensions/revolution.extension.carousel.min.js"></script>
-        <script src="js/assets/revolution/extensions/revolution.extension.kenburn.min.js"></script>
-        <script src="js/assets/revolution/extensions/revolution.extension.layeranimation.min.js"></script>
-        <script src="js/assets/revolution/extensions/revolution.extension.migration.min.js"></script>
-        <script src="js/assets/revolution/extensions/revolution.extension.navigation.min.js"></script>
-        <script src="js/assets/revolution/extensions/revolution.extension.parallax.min.js"></script>
-        <script src="js/assets/revolution/extensions/revolution.extension.slideanims.min.js"></script>
-        <script src="js/assets/revolution/extensions/revolution.extension.video.min.js"></script>
-        <script src="js/assets/revolution/revolution.js"></script>
-        <!-- Jquery plugin -->
-        <script src="js/plugins.js"></script>
-        <!-- select2 js plugin -->
-        <script src="js/select2.min.js"></script>    
-        <script src="js/colors.js"></script>
-        <!-- Jquery plugin -->
-        <script src="js/jquery-customselect.js"></script>
-        <!-- main js -->
-        <script src="js/custom.js"></script>
-    </body>
+    <!-- ============================
+            JavaScript Files
+    ============================= -->
+    <!-- jquery latest version -->
+    <script src="js/vendor/jquery-3.2.0.min.js"></script>
+    <!-- bootstrap js -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- owl.carousel js -->
+    <script src="js/owl.carousel.min.js"></script>
+    <!-- slick js -->
+    <script src="js/slick.min.js"></script>
+    <!-- meanmenu js -->
+    <script src="js/jquery.meanmenu.min.js"></script>
+    <!-- jquery-ui js -->
+    <script src="js/jquery-ui.min.js"></script>
+    <!-- wow js -->
+    <script src="js/wow.min.js"></script>
+    <!-- counter js -->
+    <script src="js/jquery.counterup.min.js"></script>
+    <!-- Countdown js -->
+    <script src="js/jquery.countdown.min.js"></script>
+    <!-- waypoints js -->
+    <script src="js/jquery.waypoints.min.js"></script>
+    <!-- Isotope js -->
+    <script src="js/isotope.pkgd.min.js"></script>
+    <!-- magnific js -->
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <!-- Image loaded js -->
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <!-- chossen js -->
+    <script src="js/chosen.jquery.min.js"></script>
+    <script src="js/assets/revolution/jquery.themepunch.revolution.min.js"></script>
+    <script src="js/assets/revolution/jquery.themepunch.tools.min.js"></script>
+    <!-- Revolution Extensions -->
+    <script src="js/assets/revolution/extensions/revolution.extension.actions.min.js"></script>
+    <script src="js/assets/revolution/extensions/revolution.extension.carousel.min.js"></script>
+    <script src="js/assets/revolution/extensions/revolution.extension.kenburn.min.js"></script>
+    <script src="js/assets/revolution/extensions/revolution.extension.layeranimation.min.js"></script>
+    <script src="js/assets/revolution/extensions/revolution.extension.migration.min.js"></script>
+    <script src="js/assets/revolution/extensions/revolution.extension.navigation.min.js"></script>
+    <script src="js/assets/revolution/extensions/revolution.extension.parallax.min.js"></script>
+    <script src="js/assets/revolution/extensions/revolution.extension.slideanims.min.js"></script>
+    <script src="js/assets/revolution/extensions/revolution.extension.video.min.js"></script>
+    <script src="js/assets/revolution/revolution.js"></script>
+    <!-- Jquery plugin -->
+    <script src="js/plugins.js"></script>
+    <!-- select2 js plugin -->
+    <script src="js/select2.min.js"></script>    
+    <script src="js/colors.js"></script>
+    <!-- Jquery plugin -->
+    <script src="js/jquery-customselect.js"></script>
+    <!-- main js -->
+    <script src="js/custom.js"></script>
+</body>
 
 </html>
