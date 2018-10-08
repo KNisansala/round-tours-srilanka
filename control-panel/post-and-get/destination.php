@@ -39,8 +39,10 @@ if (isset($_POST['create'])) {
         $handle->file_new_name_ext = 'jpg';
         $handle->image_ratio_crop = 'C';
         $handle->file_new_name_body = $img;
-        $handle->image_x = 135;
-        $handle->image_y = 189;
+//        $handle->image_x = 135;
+//        $handle->image_y = 189;
+        $handle->image_x = 65;
+        $handle->image_y = 65;
         $handle->Process($dir_dest_thumb);
 
         if ($handle->processed) {
@@ -123,8 +125,8 @@ if (isset($_POST['update'])) {
         $handle->file_new_name_ext = FALSE;
         $handle->image_ratio_crop = 'C';
         $handle->file_new_name_body = $_POST ["oldImageName"];
-        $handle->image_x = 135;
-        $handle->image_y = 189;
+        $handle->image_x = 65;
+        $handle->image_y = 65;
 
         $handle->Process($dir_dest_thumb);
 

@@ -11,7 +11,7 @@ if (isset($_POST['create'])) {
     $PHOTO_ALBUM->description = mysql_real_escape_string($_POST['description']);
 
     $dir_dest = '../../upload/photo-album/';
-
+    $dir_dest_thumb = '../../upload/photo-album/thumb/';
     $handle = new Upload($_FILES['image']);
 
     $imgName = null;
@@ -29,6 +29,22 @@ if (isset($_POST['create'])) {
         if ($handle->processed) {
             $info = getimagesize($handle->file_dst_pathname);
             $imgName = $handle->file_dst_name;
+        }
+
+        if ($handle->uploaded) {
+            $handle->image_resize = true;
+            $handle->file_new_name_ext = 'jpg';
+            $handle->image_ratio_crop = 'C';
+            $handle->file_new_name_body = Helper::randamId();
+            $handle->image_x = 263;
+            $handle->image_y = 228;
+
+            $handle->Process($dir_dest_thumb);
+
+            if ($handle->processed) {
+                $info = getimagesize($handle->file_dst_pathname);
+                $imgName = $handle->file_dst_name;
+            }
         }
     }
 
@@ -65,7 +81,7 @@ if (isset($_POST['create'])) {
 
 if (isset($_POST['update'])) {
     $dir_dest = '../../upload/photo-album/';
-
+    $dir_dest_thumb = '../../upload/photo-album/thumb/';
     $handle = new Upload($_FILES['image']);
 
     $imgName = null;
@@ -87,6 +103,25 @@ if (isset($_POST['update'])) {
             $imgName = $handle->file_dst_name;
         }
     }
+
+    if ($handle->uploaded) {
+        $handle->image_resize = true;
+        $handle->file_new_name_body = TRUE;
+        $handle->file_overwrite = TRUE;
+        $handle->file_new_name_ext = FALSE;
+        $handle->image_ratio_crop = 'C';
+        $handle->file_new_name_body = $_POST ["oldImageName"];
+        $handle->image_x = 263;
+        $handle->image_y = 228;
+
+        $handle->Process($dir_dest_thumb);
+
+        if ($handle->processed) {
+            $info = getimagesize($handle->file_dst_pathname);
+            $imgName = $handle->file_dst_name;
+        }
+    }
+
 
     $PHOTO_ALBUM = new PhotoAlbum($_POST['id']);
 

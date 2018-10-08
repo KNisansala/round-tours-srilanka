@@ -88,14 +88,19 @@ include_once(dirname(__FILE__) . '/class/include.php');
                                     <form action="booking.php" method="post">
 
                                         <div class="hotel-input-4 input-b-2">
+
                                             <select id='standard1' name='standard' class='custom-select'>
                                                 <option value=''>Select the Package</option>
-                                                <option value='Us'>2 days</option>
-                                                <option value='Canda'>3 days</option>
-                                                <option value='london'>4 days </option>
-                                                <option value='france'> 5 days</option>
-                                                <option value='bd'> 6 days</option>
+                                                <?php
+                                                foreach (Destination::all() as $desti) {
+                                                    ?>
+
+                                                    <option value='<?php echo $desti['id']; ?>'><?php echo $desti['id']; ?></option>
+                                                <?php }
+                                                ?>
                                             </select>
+
+
                                         </div>
                                         <div class="hotel-input-2 input-s-3">
                                             <input type="text" name="s" id="datepicker" class="hotel-input-first" placeholder="Check-In">
@@ -104,10 +109,10 @@ include_once(dirname(__FILE__) . '/class/include.php');
                                             <input type="text" name="s" id="datepicker1" class="hotel-input-first" placeholder="Check-out">
                                         </div>
                                         <div class="hotel-input-1 input-s-2">
-                                            <input type="number" name="s" id="guest" class="hotel-input-first" placeholder="Childrens">
+                                            <input type="number" name="s" id="guest" class="hotel-input-first" placeholder="Childrens" min="0">
                                         </div>
                                         <div class="hotel-input-1 input-s-2">
-                                            <input type="number" name="s" id="guest" class="hotel-input-first" placeholder="Adults">
+                                            <input type="number" name="s" id="guest" class="hotel-input-first" placeholder="Adults" min="0">
                                         </div>
                                         <div class="search-btn-2">
                                             <button type="submit">Book Now</button>
@@ -158,7 +163,9 @@ include_once(dirname(__FILE__) . '/class/include.php');
                     <div class="col-sm-12">
                         <div class="section-title-version-2-white text-center">
                             <h2>Let’s Enjoy Excellent Tour Packages</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit Etiam at ipsum at ligula vestibulum </p>
+                            <spam class ="tourpack">
+                                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit Etiam at ipsum at ligula vestibulum </p>
+                            </spam>
                         </div>
                     </div>
                     <!-- tour packages carosual -->
@@ -244,17 +251,14 @@ include_once(dirname(__FILE__) . '/class/include.php');
                                 </figcaption>
                             </figure>
                             <div class="des-city">
-                                <a href="View-Destination.php"><i class="fa fa-map-marker"></i> <h4> <?php echo $destination['title']; ?> </a>
+                                <a href="View-Destination.php"> <h4> <?php echo $destination['title']; ?> </h4></a>
                                 <p><?php
-                                                if (strlen($destination['short_description']) > 40) {
-                                                    echo substr($destination['short_description'], 0, 40) . '...';
-                                                } else {
-                                                    echo $destination['short_description'];
-                                                }
-                                                ?></p>
-                                
-                                
-                                
+                                    if (strlen($destination['short_description']) > 20) {
+                                        echo substr($destination['short_description'], 0, 48) . '...';
+                                    } else {
+                                        echo $destination['short_description'];
+                                    }
+                                    ?></p>
                             </div>
                         </div> <!-- single popular destination  end-->
 
