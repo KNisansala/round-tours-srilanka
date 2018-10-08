@@ -1,3 +1,6 @@
+<?php
+include_once(dirname(__FILE__) . '/class/include.php');
+?>
 <!DOCTYPE html>
 <html class="no-js" lang="zxx">
 
