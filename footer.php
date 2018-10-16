@@ -2,18 +2,15 @@
     <div class="container">
         <div class="row tab-layout">
             <!-- footer left -->
-            <div class="col-md-3 col-sm-8 f-phone-responsive">
-                <div class="single-footer">
+            <div class="col-md-3 col-sm-4 f-phone-responsive">
+                <div class="col-sm-12 single-footer">
                     <div class="footer-title">
-                        <div class="col-md-12 col-sm-6 f-phone-responsive">
+                        <div class="col-md-12  f-phone-responsive">
                             <a href="index.php"><img src="images/logo/logo1.png" alt="" class="logofooter"></a>
                         </div>
-
-                      
                     </div>
                     <div class="footer-contact-form">
                         <form action="#">
-
                             <div class="footer-left">
                                 <div class="footer-logo">
                                     <p>Lorem ipsum dolor sit amet conset ctetur adipiscin elit Etiam at ipsum at ligula vestibulum sodales Sed is luctus orci vel nibh.</p>
@@ -36,7 +33,7 @@
                     </div>
                 </div>
             </div>  
-            <div class="col-md-3 col-sm-6 f-phone-responsive">
+            <div class="col-md-3 col-sm-4 f-phone-responsive">
                 <div class="single-footer">
                     <div class="footer-title">
                         <h3> Contact Us </h3>
@@ -60,7 +57,7 @@
             <!--hj-->
             <!-- footer left -->
             <!-- footer contact -->
-            <div class="col-md-3 col-sm-6 f-phone-responsive">
+            <div class="col-md-3 col-sm-4 f-phone-responsive">
                 <div class="single-footer">
                     <div class="footer-title">
                         <h3> Quick Links </h3>
@@ -90,7 +87,7 @@
             <!-- footer contact -->
 
             <!-- footer destination -->
-            <div class="col-md-3 col-sm-6 f-phone-responsive">
+            <div class="col-md-3 col-sm-4 hidden-sm f-phone-responsive">
                 <div class="single-footer">
                     <div class="footer-title">
                         <h3>Photo Albam</h3>
@@ -154,7 +151,7 @@
                     -->
 
                 </div>
-                <div class="col-md-7">
+                <div class="col-md-7 col-xs-12">
                     <ul class="payicon pull-right">
                         <li>We Accept</li>
                         <li><img src="images/payicon01.png" alt=""></li>

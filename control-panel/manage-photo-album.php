@@ -54,7 +54,7 @@ include_once(dirname(__FILE__) . '/auth.php');
                                                 ?>
                                                 <div class="col-md-3"  id="div<?php echo $photo_album['id']; ?>">
                                                     <div class="photo-img-container">
-                                                        <img src="../upload/photo-album/<?php echo $photo_album['image_name']; ?>" class="img-responsive ">
+                                                        <img src="../upload/photo-album/thumb/<?php echo $photo_album['image_name']; ?>" class="img-responsive ">
                                                     </div>
                                                     <div class="img-caption">
                                                         <p class="maxlinetitle"><?php echo $photo_album['title']; ?></p>

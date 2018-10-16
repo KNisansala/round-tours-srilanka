@@ -64,8 +64,8 @@ include_once(dirname(__FILE__) . '/class/include.php');
                             <div class="bredcrums-content">
                                 <h2>Package</h2>
                                 <ul>
-                                    <li><a href="index-2.html">Home</a></li>
-                                    <li class="active"><a href="tour-packages.php">Tour Packages</a></li>
+                                    <li><a href="./">Home</a></li>
+                                    <li class="active">Tour Packages</li>
                                 </ul>
                             </div>
                         </div>
@@ -121,8 +121,10 @@ include_once(dirname(__FILE__) . '/class/include.php');
                                     </ul>
                                 </div>
                             </div>
-                            <div class="package-long-btn hvr-shutter-out-horizontal">
+                            <div class="package-long-btn hvr-shutter-out-horizontal btntourpack">
+                               
                                 <a href="view-tour-packages.php?id=<?php echo $AllTour['id']; ?>">View</a>
+                               
                             </div>
                         </div>
                     </div>

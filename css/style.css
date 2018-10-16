@@ -74,7 +74,7 @@ Tags: 	hotel, resort, tour, tourism, tourist, tours website, travel, traveler, t
     z-index: 28 !important;
 }
 .pt-100 {
-    padding-top: 100px;
+    padding-top: 73px;
 }
 .pb-75 {
     padding-bottom: 75px;
@@ -251,7 +251,7 @@ body {
 }
 .view-all {
     padding: 12px 40px !important;
-    margin-left: 490px;
+
 }
 .quick-shop {
     padding: 8px 22px !important;
@@ -750,7 +750,9 @@ header {
     z-index: 33;
     position: relative;
     padding-left: 30px;
-    text-align: center
+    text-align: center;
+    margin-top: 44px;
+
 }
 
 
@@ -1713,6 +1715,7 @@ header {
     text-transform: uppercase;
     transition: all 0.3s ease-in-out 0s;
     margin-top: 50px;
+    margin-right: 282px;
 }
 .tabbased-search-area-2 .tab-content-2 .search-btn-2 button:hover {
     background: #f17b37;
@@ -1869,6 +1872,7 @@ header {
     color: #454545;
     font-size: 19px;
     font-weight: 600;
+    margin-left:0px;
 }
 .single-package-carasoul .package-details .package-places > span {
     color: #727272;
@@ -1916,7 +1920,7 @@ header {
     font-size: 15px;
     color: #727272;
 }
-.single-package-carasoul .package-long-btn {
+/*.single-package-carasoul .package-long-btn {
     background: #214db7 none repeat scroll 0 0;
     display: block;
     width: 100%;
@@ -1930,6 +1934,25 @@ header {
     right: 0;
     font-size: 17px;
     font-weight: 500;
+    margin-bottom: 0px;
+    padding-top: 8px;
+}*/
+.single-package-carasoul .package-long-btn {
+
+    background: #214db7 none repeat scroll 0 0;
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+    position: absolute;
+    bottom: -63px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all ease-in-out 0.3s;
+    right: 0;
+    font-size: 17px;
+    font-weight: 500;
+
 }
 .single-package-carasoul .package-long-btn a {
     color: #ffffff;
@@ -1938,7 +1961,7 @@ header {
 .single-package-carasoul:hover .package-long-btn {
     opacity: 1;
     visibility: visible;
-    bottom: 13px;
+    bottom: 0px;
 }
 .single-package-carasoul:hover .package-location span {
     background: #214db7;
@@ -1974,6 +1997,9 @@ header {
 .popular-country .destination-tab-menu .destination-menu li {
     display: inline-block;
     margin-right: 20px;
+}
+.btnviewall{
+    text-align: center;
 }
 .popular-country .destination-tab-menu .destination-menu li a {
     display: block;
@@ -2211,6 +2237,7 @@ header {
 }
 .blog-2 .single-travel-blog .blog-content .read-more-btn {
     float: left;
+    margin-left: 13px;
 }
 .blog-2 .single-travel-blog .blog-content .read-more-btn a:hover {
     background: transparent;
@@ -2397,7 +2424,7 @@ header {
     text-align: center;
 }
 .herounit-bg {
-    background: transparent url("../images/bgimage/package.jpg") repeat scroll center center/cover;
+    background: transparent url("../images/bgimage/Stilt_Fishing_In_Sri_Lanka.jpg") repeat scroll center center/cover;
     padding: 100px 0;
     position: relative;
     background-attachment: fixed;
@@ -3098,7 +3125,7 @@ header {
     position: relative;
     overflow: hidden;
     margin-bottom: 30px;
-    margin-left:-16px;
+    margin-left:-1px;
 }
 .top-destination-area figure img {
     transition: all ease-in-out 0.5s;
@@ -3126,6 +3153,7 @@ header {
     visibility: hidden;
     transition: all ease-in-out 0.5s;
     z-index: 33;
+    margin-top: -6px;
 }
 .top-destination-area figure figcaption h4 {
     color: #ffffff;
@@ -3444,7 +3472,7 @@ header {
 }
 /*===================================================== 49.Home version 5 testimonial 5 section start here =======================================================*/
 .testimonial-area-5 {
-   background: transparent url("../images/bgimage/bgTraveller say about us.jpg") repeat scroll center center/cover;
+    background: transparent url("../images/bgimage/bgTraveller say about us.jpg") repeat scroll center center/cover;
     position: relative;
     overflow: hidden;
     padding: 100px 0;
@@ -3476,6 +3504,7 @@ header {
     max-width: 764px;
     font-size: 20px;
     color: #ffffff;
+    text-align: center;
 }
 .testimonial-area-5 .single-testimonial .author-bio h3 {
     font-size: 20px;
@@ -3630,6 +3659,7 @@ header {
     font-size: 42px;
     font-weight: 600;
     text-transform: uppercase;
+    margin:0px;
 }
 .single-bredcurms .bredcrums-content ul li {
     display: inline-block;
@@ -4050,6 +4080,20 @@ aside .booking-form .form-group .booking-confirm {
     color: #555555;
     background: #eeeeee none repeat scroll 0 0;
 }
+
+.contact-formprofile  {
+    width: 100%;
+    height: 44px;
+    border: 1px solid #e9edf0;
+    padding: 5px 14px 47px 36px;
+    transition: all 0.4s ease;
+    border-radius: 3px;
+    color: #555555;
+    background: #eeeeee none repeat scroll 0 0;
+}
+
+
+
 .contact-form .form-group input:focus, .contact-form .form-group textarea:focus {
     outline: none;
 }
@@ -4111,6 +4155,7 @@ aside .booking-form .form-group .booking-confirm {
     width: 100%;
     transition: all 0.4s ease;
     z-index: 3;
+    margin: 0px;
 }
 .single .single-blog .blog-content {
     padding: 20px 0 0;
@@ -4138,7 +4183,7 @@ aside .booking-form .form-group .booking-confirm {
     line-height: 27px;
 }
 .single .single-blog .blog-content p:last-child {
-    margin: 0;
+    margin: 16px;
 }
 .single .single-blog:hover .blog-head:before {
     opacity: 1;
@@ -4330,7 +4375,8 @@ aside .booking-form .form-group .booking-confirm {
     padding: 15px;
     margin-bottom: 30px;
     height:129px;
-    margin-bottom: 4px;    
+    margin-bottom: 4px; 
+    padding-top: 16px;
 }
 .single .blog-sidebar .single-sidebar h2 {
     text-transform: capitalize;
@@ -4668,6 +4714,7 @@ viewdisidis{
 }
 .post .post-description p {
     font-size: 14px;
+    text-align: justify;
 }
 .post .post-description .stats {
     margin-top: 20px;
@@ -4793,7 +4840,7 @@ viewdisidis{
 }
 
 .sideimg{
-    padding-left: 17px;
+    padding-left: 0px;
     padding-bottom:30px;
 }
 .qua{
@@ -4839,3 +4886,111 @@ viewdisidis{
 .booknow{
     margin-top: 49px;
 }
+
+.panel-white .img{
+    max-width: 58%;
+}
+
+.form-control1{
+    display: block;
+
+    width: 100%;
+
+    height: 54px;
+
+    padding: 6px 12px;
+
+    font-size: 14px;
+
+    line-height: 1.42857143;
+
+    color: #555;
+
+    background-color: #fff;
+
+    background-image: none;
+
+    border: 1px solid #ccc;
+
+    border-radius: 4px;
+
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+.form-group .securitybox{
+    width: 70%;
+    float: left;
+   
+}
+.buttoncomment {
+    width: 27%;
+    float: right;
+    margin-top: -17px;
+}
+#guestcomment #btnSubmit {
+    margin-top: 10px;
+}
+
+.form-group .commimg
+{
+    padding-left:40px;
+}
+
+.profileUpload{
+    width: 100%;
+    height: 44px;
+    padding: 10px 17px;
+    background: #eee;
+    border: 1px solid #eee;
+    margin-bottom: 15px;
+    color: #000;
+     
+    
+}
+
+.capchacode{
+    margin-top: 8px;  
+
+}
+.single-bredcurms .bredcrums-content ul li a{
+    font-weight: 600;
+}
+.single-bredcurms .bredcrums-content ul li.active {
+    font-weight: 200;
+    color: #eee;
+}
+.package-ratings-review p {
+    margin:0px;
+}
+#guestcomment .button {
+    width: 135px;
+    height: 45px;
+    border-radius: 3px;
+    border: 0px solid;
+    font-size: 14px;
+    text-transform: uppercase;
+    display: inline-block;
+    transition: all 0.4s ease;
+    color: #ffffff;
+    background: #214db7;
+    font-weight: 500;
+}
+guestcomment .button:hover {
+    background: #f17b37;
+}
+guestcomment .button i {
+    position: relative;
+    display: inline-block;
+    color: #fff;
+    margin-right: 10px;
+    padding: 0px;
+}
+
+

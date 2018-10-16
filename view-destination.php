@@ -76,8 +76,8 @@ $DESTINATION = new Destination($id);
                             <div class="bredcrums-content">
                                 <h2><?php echo $DESTINATION->title; ?></h2>
                                 <ul>
-                                    <li><a href="index.php">Home</a></li>
-                                    <li><a href="destination.php">Destination</a></li>
+                                    <li><a href="./">Home</a></li>
+                                   <li> <a href="destination.php">Destination</a></li>   
                                     <li class="active"><?php echo $DESTINATION->title; ?></li>
                                 </ul>
                             </div>
@@ -102,7 +102,7 @@ $DESTINATION = new Destination($id);
                                     <?php
                                     foreach ($PHOTOS as $photo) {
                                         ?>
-                                        <div class="slid"><img src="upload/destination/gallery/<?php echo $photo['image_name']; ?>" alt=""/></div>
+                                        <div class="slid img-responsive"><img src="upload/destination/gallery/<?php echo $photo['image_name']; ?>" alt=""/></div>
                                         <?php
                                     }
                                     ?>
@@ -126,7 +126,7 @@ $DESTINATION = new Destination($id);
 
         <!-- Blog Sidebar -->
                         <div class="blog-sidebar">
-                            <h3 sideimg>Other Tour Package</h3>
+                            <h3 sideimg>Other Destination</h3>
                             <!-- Single Sidebar 2 -->
                             <?php
                             foreach (Destination::all() as $destinationPlace) {
@@ -135,12 +135,12 @@ $DESTINATION = new Destination($id);
                                     <a href="view-destination.php?id=<?php echo $destinationPlace['id']; ?>">
                                         <h3><?php echo $destinationPlace['title']; ?></h3>
                                     </a>      
-                                    <div class="col-md-6 col-sm-12 col-xs-12" viewdisimg>
+                                    <div class="col-md-6 col-sm-12 col-xs-4">
                                         <a href="">
                                             <img src="upload/destination/thumb/<?php echo $destinationPlace['image_name']; ?>" alt="">
                                         </a>
                                     </div>
-                                    <div class="col-md-6 col-sm-12 col-xs-12 qua">
+                                    <div class="col-md-6 col-sm-12 col-xs-8 qua">
                                         <div class="qua">
                                             <p><?php
                                                 if (strlen($destinationPlace['short_description']) > 40) {

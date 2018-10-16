@@ -13,14 +13,14 @@ if (isset($_POST['create'])) {
     $dir_dest = '../../upload/photo-album/';
     $dir_dest_thumb = '../../upload/photo-album/thumb/';
     $handle = new Upload($_FILES['image']);
-
+    $img = Helper::randamId();
     $imgName = null;
 
     if ($handle->uploaded) {
         $handle->image_resize = true;
         $handle->file_new_name_ext = 'jpg';
         $handle->image_ratio_crop = 'C';
-        $handle->file_new_name_body = Helper::randamId();
+        $handle->file_new_name_body = $img;
         $handle->image_x = 900;
         $handle->image_y = 500;
 
@@ -35,7 +35,7 @@ if (isset($_POST['create'])) {
             $handle->image_resize = true;
             $handle->file_new_name_ext = 'jpg';
             $handle->image_ratio_crop = 'C';
-            $handle->file_new_name_body = Helper::randamId();
+            $handle->file_new_name_body =$img;
             $handle->image_x = 263;
             $handle->image_y = 228;
 

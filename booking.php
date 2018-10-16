@@ -1,3 +1,29 @@
+<?php
+include_once(dirname(__FILE__) . '/class/include.php');
+
+$tour = '';
+$arrivaldate = '';
+$departuredate = '';
+$noofadults = '';
+$noofchildren = '';
+
+if (isset($_GET['tour'])) {
+    $tour = $_GET['tour'];
+}
+if (isset($_GET['arrivaldate'])) {
+    $arrivaldate = $_GET['arrivaldate'];
+}
+if (isset($_GET['departuredate'])) {
+    $departuredate = $_GET['departuredate'];
+}
+if (isset($_GET['noofadults'])) {
+    $noofadults = $_GET['noofadults'];
+}
+if (isset($_GET['noofchildren'])) {
+    $noofchildren = $_GET['noofchildren'];
+}
+$TOUR = new TourPackage($tour);
+?>
 <!DOCTYPE html>
 <html class="no-js" lang="zxx">
 
@@ -11,9 +37,9 @@
         <!-- Google Fonts Includes -->
         <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
         <!-- Favi icon -->
-        <link rel="shortcut icon" type="image/x-icon" href="images/logo/logo2.png"
-              <!-- bootstrap v3.3.6 css -->
-              <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="shortcut icon" type="image/x-icon" href="images/logo/logo2.png" />
+        <!-- bootstrap v3.3.6 css -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
         <!-- animate css -->
         <link rel="stylesheet" href="css/animate.css">
         <!-- Button Hover animate css -->
@@ -56,14 +82,14 @@
 
         <!-- blog breadcrumb version one strat here -->
         <section class="breadcrumb-blog-version-one">
-            <div class="single-bredcurms" style="background-image:url('images/bercums/contact-page.jpg');">
+            <div class="single-bredcurms" style="background-image:url('images/bercums/package1.jpg');">
                 <div class="container">
                     <div class="row">
                         <div class="col-sm-12">
                             <div class="bredcrums-content">
                                 <h2>Booking</h2>
                                 <ul>
-                                    <li><a href="index-2.html">Home</a></li>
+                                    <li><a href="./">Home</a></li>
                                     <li class="active"><a href="contact.html">Booking</a></li>
                                 </ul>
                             </div>
@@ -72,9 +98,6 @@
                 </div>
             </div>
         </section><!-- blog breadcrumb version one end here -->
-
-
-
 
         <section class="section-paddings">
             <div class="container">
@@ -93,7 +116,7 @@
                                     <div id="message"></div> 
                                     <div class="col-md-6 col-sm-12 col-xs-12">  
                                         <div class="form-group">
-                                            <input type="text" placeholder="Full Name" class="form-control input-validatar" name="txtFullName" id="txtFullName">
+                                            <input type="text" placeholder="Full Name" class="form-control input-validatar" name="txtFullName" id="txtFullName" >
                                             <span id="spanFullName"></span>
                                         </div>
                                     </div>
@@ -107,7 +130,7 @@
                                     <div class="col-md-6 col-sm-12 col-xs-12">
 
                                         <div class="form-group">
-                                            <input type="text" placeholder=" Arrival Time " class="form-control input-validatar" name="txtArrival" id="txtArrival">
+                                            <input type="text" placeholder=" Arrival Date " class="form-control input-validatar" name="txtArrival" id="txtArrival" value="<?php echo $arrivaldate ?>">
                                             <span id="spanArrival"></span>
                                         </div>
 
@@ -115,7 +138,7 @@
                                     <div class="col-md-6 col-sm-12 col-xs-12">
 
                                         <div class="form-group">
-                                            <input type="text" placeholder=" Departure Time " class="form-control input-validatar" name="txtDepart" id="txtDepart">
+                                            <input type="text" placeholder=" Departure Date " class="form-control input-validatar" name="txtDepart" id="txtDepart" value="<?php echo $departuredate; ?>" >
                                             <span id="spanDepart"></span>
                                         </div>
 
@@ -126,37 +149,30 @@
                                             <!--<input type="" placeholder="Tour Packages " class="form-control input-validatar" name="txtDepart" id="txtDepart">-->
                                             <span id="spanDepart"></span>
                                             <select class="form-control" name="txtPackage" id="txtPackage" style="background-color: #eee;">
-                                                <option selected="true">-- Please Select Your Package --</option> 
-                                                <option value="10 Days Adventure " selected="true">10 Days Adventure   </option>
-                                                <option value="Adventure 8 Days  ">Adventure 8 Days           </option>
-                                                <option value="Adventure 6 Days">Adventure 6 Days </option>
-                                                <option value="Culture  6 Days ">Culture  6 Days</option>
-                                                <option value="Culture 8 Days">Culture 8 Days</option>
-                                                <option value="Cultural 12 Days">Cultural 12 Days</option>
-                                                <option value="5 Days Romantic">5 Days Romantic</option>
-                                                <option value="7 Days Romantic">7 Days Romantic</option>
-                                                <option value="12 Days Romantic">12 Days Romantic</option>
-                                                <option value="Sinharaja Rain Forest">Sinharaja Rain Forest</option>
-                                                <option value="Kanneliya Rain Forest">Kanneliya Rain Forest</option>
-                                                <option value="Yala national park">Yala national park</option>
-                                                <option value="Whales & Dolphin Watching">Whales & Dolphin Watching</option>
-                                                <option value="Madu Ganga River">Madu Ganga River</option>
+                                                <option value='0'>Select the Package</option>
+                                                <?php
+                                                foreach (TourPackage::all() as $tour_package) {
+                                                    ?>
+                                                    <option  value='<?php echo $tour_package['id']; ?>' <?php if ($tour_package['id'] === $tour) {
+                                                    echo 'selected="TRUE"';
+                                                }; ?>><?php echo $tour_package['title']; ?></option>
+                                                <?php }
+                                                ?>
+
                                             </select>
-
-
                                         </div>
                                     </div>
 
                                     <div class="col-md-6 col-sm-12 col-xs-12">
                                         <div class="form-group">
-                                            <input type="number" placeholder="No Of adults" class="form-control input-validatar" name="txtNoOfAdults" id="txtNoOfAdults">
+                                            <input type="number" placeholder="Number Of Adults" class="form-control input-validatar" name="txtNoOfAdults" id="txtNoOfAdults" value="<?php echo $noofadults; ?>" min="0" >
                                             <span id="spanNoOfAdults"></span>
                                         </div>
                                     </div>
 
                                     <div class="col-md-6 col-sm-12 col-xs-12">
                                         <div class="form-group">
-                                            <input type="number" placeholder=" Number of Children" class="form-control input-validatar" name="txtNoOfChildren" id="txtNoOfChildren">
+                                            <input type="number" placeholder=" Number of Children" class="form-control input-validatar" name="txtNoOfChildren" id="txtNoOfChildren" value="<?php echo $noofchildren; ?>" min="0" >
                                             <span id="spanNoOfChildren"></span>
                                         </div>
                                     </div>
@@ -174,8 +190,8 @@
                                     </div>
 
                                     <div class="col-md-6 col-sm-12 col-xs-12">
-                                        <div class="form-group">
-                                            <span><?php include("./booking-form/captchacode-widget.php"); ?></span>
+                                        <div class="form-group ">
+                                            <span class="capchacode"><?php include("./booking-form/captchacode-widget.php"); ?></span>
                                             <img src="booking-form/img/checking.gif" id="checking"/>
                                         </div>
                                     </div>
@@ -196,8 +212,6 @@
                 </div>
             </div>
         </section>
-
-
 
         <!-- google map end  -->
         <!-- footer start here -->

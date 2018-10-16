@@ -50,9 +50,9 @@ include_once(dirname(__FILE__) . '/class/include.php');
     </head>
     <body> 
         <!-- Preloader -->
-        <div id="preloader">
-            <div id="status">&nbsp;</div>
-        </div>	
+        <!--        <div id="preloader">
+                    <div id="status">&nbsp;</div>
+                </div>	-->
 
         <!-- header area start here -->
         <?php
@@ -85,35 +85,35 @@ include_once(dirname(__FILE__) . '/class/include.php');
                             <!-- hotels form -->
                             <div class="tab-pane active" id="hotels">
                                 <div class="hotels-form">
-                                    <form action="booking.php" method="post">
+                                    <form action="booking.php" method="get">
 
                                         <div class="hotel-input-4 input-b-2">
-
-                                            <select id='standard1' name='standard' class='custom-select'>
+                                            <!--<div class="selectop">-->
+                                            <select class="form-control1" name="tour"  style="background-color: #eee;">
                                                 <option value=''>Select the Package</option>
                                                 <?php
-                                                foreach (Destination::all() as $desti) {
+                                                foreach (TourPackage::all() as $tour_package) {
                                                     ?>
-
-                                                    <option value='<?php echo $desti['id']; ?>'><?php echo $desti['id']; ?></option>
+                                                    <option value='<?php echo $tour_package['id']; ?>'><?php echo $tour_package['title']; ?></option>
                                                 <?php }
                                                 ?>
                                             </select>
-
+                                            <!--</div>-->
 
                                         </div>
                                         <div class="hotel-input-2 input-s-3">
-                                            <input type="text" name="s" id="datepicker" class="hotel-input-first" placeholder="Check-In">
+                                            <input type="text" name="arrivaldate" id="datepicker" class="hotel-input-first" placeholder="Check-In">
                                         </div>
                                         <div class="hotel-input-2 input-s-3">
-                                            <input type="text" name="s" id="datepicker1" class="hotel-input-first" placeholder="Check-out">
+                                            <input type="text" name="departuredate" id="datepicker1" class="hotel-input-first" placeholder="Check-out">
                                         </div>
                                         <div class="hotel-input-1 input-s-2">
-                                            <input type="number" name="s" id="guest" class="hotel-input-first" placeholder="Childrens" min="0">
+                                            <input type="number" name="noofadults" id="noofadults" class="hotel-input-first" placeholder="Adults" min="0">
                                         </div>
                                         <div class="hotel-input-1 input-s-2">
-                                            <input type="number" name="s" id="guest" class="hotel-input-first" placeholder="Adults" min="0">
+                                            <input type="number" name="noofchildren" id="noofchildren" class="hotel-input-first" placeholder="Childrens" min="0">
                                         </div>
+
                                         <div class="search-btn-2">
                                             <button type="submit">Book Now</button>
                                         </div>
@@ -157,11 +157,11 @@ include_once(dirname(__FILE__) . '/class/include.php');
             </div>
         </section> <!-- welcome area start end here -->
 
-        <section class="tour-package-bg image-bg-padding-100 herounit-bg">
+        <section class="tour-package-bg image-bg-padding-100 herounit-bg ">
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12">
-                        <div class="section-title-version-2-white text-center">
+                        <div class="section-title-version-2-white text-center welcomearea">
                             <h2>Let’s Enjoy Excellent Tour Packages</h2>
                             <spam class ="tourpack">
                                 <p>Lorem ipsum dolor sit amet consectetur adipiscing elit Etiam at ipsum at ligula vestibulum </p>
@@ -210,7 +210,7 @@ include_once(dirname(__FILE__) . '/class/include.php');
                                     </div>
                                 </div>
                                 <div class="package-long-btn hvr-shutter-out-horizontal">
-                                    <a href="view-tour-packages.php?id=<?php echo $tour['id']; ?>"> <h4> Read More </h4></a> 
+                                    <a href="view-tour-packages.php?id=<?php echo $tour['id']; ?>">  Read More </a> 
                                 </div>
                             </div>
                             <?php
@@ -272,223 +272,216 @@ include_once(dirname(__FILE__) . '/class/include.php');
 
                 </div>
 
-
-                <div class="row">
-                    <a href="Destination.php" class="view-all hvr-fade">View All</a>
-                </div>
+                <span class="btnviewall">
+                    <div class="row">
+                        <a href="Destination.php" class="view-all hvr-fade">View All</a>
+                    </div>
+                </span>
             </div>
         </section> 
         <!-- Last minute offer end here -->
-    <!-- testimonial area start here (single)-->
-    <section class="testimonial-area-5">
-        <div class="row">
-            <div class="col-md-12 col-sm-12 col-xs-12">
-                <div class="section-title-white text-center mbt-100">
-                    <h2>What travellers Say About Us</h2>
-                </div>
-            </div>
-        </div>
-        <div class="testimonial-5-active owl-carousel">
-            <?php
-            foreach (Comments::all() as $gustComment) {
-                ?>
-                <!-- single testimonial start -->
-                <div class="single-testimonial">
-                    <img src="upload/comments/<?php echo $gustComment['image_name']; ?>" alt="1" class="img-circle">
-                    <div class="testimonial-messages">
-                        <p><?php
-                            echo $gustComment['comment'];
-                            ?></p>
-                    </div>
-                    <div class="author-bio">
-                        <h3><?php echo $gustComment['name']; ?></h3>
-                        <span><?php echo $gustComment['title']; ?></span>
-                    </div>
-                </div>
-
-                <?php
-            }
-            ?>
-            <!-- single testimonial end -->
-        </div>
-    </section><!-- testimonial area end here -->
-
-
-
-
-
-
-
-
-
-
-    <section class="section-paddings">
-        <div class="container">
+        <!-- testimonial area start here (single)-->
+        <section class="testimonial-area-5">
             <div class="row">
-                <div class="col-sm-12">
-                    <div class="section-title-version-2-black text-center">
-                        <h2>Gallery from Travelars</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit Etiam at ipsum at ligula vestibulum </p>
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <div class="section-title-white text-center mbt-100">
+                        <h2>What travellers Say About Us</h2>
                     </div>
                 </div>
             </div>
-            <!-- gallery iteam start here -->
-            <div class="grid-3">
-                <div class="col-sm-12 col-md-6 grid-item">
-                    <figure>
-                        <img src="images/gallery/gal1.jpg" alt="">
-                        <figcaption>
-                            <a href="images/gallery/gal1.jpg"><i class="fa fa-pencil"></i></a>
-                            <h4>Place <span>Eiffel Tower</span></h4>
+            <div class="testimonial-5-active owl-carousel">
+                <?php
+                foreach (Comments::all() as $key => $gustComment) {
+                    if ($key > 6) {
+                        ?>
+                        <!-- single testimonial start -->
+                        <div class="single-testimonial">
+                            <img src="upload/comments/<?php echo $gustComment['image_name']; ?>" alt="1" class="img-circle">
+                            <div class="testimonial-messages">
+                                <p><?php
+                                    echo $gustComment['comment'];
+                                    ?></p>
+                            </div>
+                            <div class="author-bio">
+                                <h3><?php echo $gustComment['name']; ?></h3>
+                                <span><?php echo $gustComment['title']; ?></span>
+                            </div>
+                        </div>
 
-                        </figcaption>
-                    </figure>
-                </div> <!-- end single gallery -->
-
-                <div class="col-sm-6 col-md-3 grid-item">
-                    <figure>
-                        <img src="images/gallery/gal2.jpg" alt="">
-                        <figcaption>
-                            <a href="images/gallery/gal2L.jpg"><i class="fa fa-pencil"></i></a>
-                            <h4>Place <span>Eiffel Tower</span></h4>
-
-                        </figcaption>
-                    </figure>
-                </div> <!-- end single gallery -->
-
-                <div class="col-sm-6 col-md-3 grid-item">
-                    <figure>
-                        <img src="images/gallery/gal3.jpg" alt="">
-                        <figcaption>
-                            <a href="images/gallery/gal3L.jpg"><i class="fa fa-pencil"></i></a>
-                            <h4>Place <span>Eiffel Tower</span></h4>
-
-                        </figcaption>
-                    </figure>
-                </div> <!-- end single gallery -->
-
-                <div class="col-sm-6 col-md-3 grid-item">
-                    <figure>
-                        <img src="images/gallery/gal4.jpg" alt="">
-                        <figcaption>
-                            <a href="images/gallery/1.jpg"><i class="fa fa-pencil"></i></a>
-                            <h4>Place <span>Eiffel Tower</span></h4>
-
-                        </figcaption>
-                    </figure>
-                </div> <!-- end single gallery -->
-
-                <div class="col-sm-6 col-md-3 grid-item">
-                    <figure>
-                        <img src="images/gallery/gal5.jpg" alt="">
-                        <figcaption>
-                            <a href="images/gallery/1.jpg"><i class="fa fa-pencil"></i></a>
-                            <h4>Place <span>Eiffel Tower</span></h4>
-
-                        </figcaption>
-                    </figure>
-                </div> <!--single gallery end -->
-
-                <div class=" col-sm-6 col-md-3 grid-item">
-                    <figure>
-                        <img src="images/gallery/gal6.jpg" alt="">
-                        <figcaption>
-                            <a href="images/gallery/1.jpg"><i class="fa fa-pencil"></i></a>
-                            <h4>Place <span>Eiffel Tower</span></h4>
-
-                        </figcaption>
-                    </figure>
+                        <?php
+                    }
+                }
+                ?>
+                <!-- single testimonial end -->
+            </div>
+        </section><!-- testimonial area end here -->
+        <section class="section-paddings">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="section-title-version-2-black text-center galleryheading">
+                            <h2>Gallery from Travelars</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit Etiam at ipsum at ligula vestibulum </p>
+                        </div>
+                    </div>
                 </div>
-                <!--single gallery end -->
-                <!--single gallery -->
-                <div class="col-sm-6 col-md-3 grid-item">
-                    <figure>
-                        <img src="images/gallery/gal7.jpg" alt="">
-                        <figcaption>
-                            <a href="images/gallery/1.jpg"><i class="fa fa-pencil"></i></a>
-                            <h4>Place <span>Eiffel Tower</span></h4>
+                <!-- gallery iteam start here -->
+                <div class="grid-3">
+                    <div class="col-sm-12 col-md-6 grid-item">
+                        <figure>
+                            <img src="images/gallery/gal1.jpg" alt="">
+                            <figcaption>
+                                <a href="images/gallery/gal1.jpg"><i class="fa fa-pencil"></i></a>
+                                <!--<h4>Place <span>Eiffel Tower</span></h4>-->
 
-                        </figcaption>
-                    </figure>
-                </div> <!--single gallery end -->
+                            </figcaption>
+                        </figure>
+                    </div> <!-- end single gallery -->
 
-                <div class="col-sm-6 col-md-3 grid-item">
-                    <figure>
-                        <img src="images/gallery/gal8.jpg" alt="">
-                        <figcaption>
-                            <a href="images/gallery/1.jpg"><i class="fa fa-pencil"></i></a>
-                            <h4>Place <span>Eiffel Tower</span></h4>
+                    <div class="col-sm-6 col-md-3 grid-item">
+                        <figure>
+                            <img src="images/gallery/galltumb1.jpg" alt="">
+                            <figcaption>
+                                <a href="images/gallery/gall1.jpg"><i class="fa fa-pencil"></i></a>
+                                <!--<h4>Place <span>Eiffel Tower</span></h4>-->
 
-                        </figcaption>
-                    </figure>
-                </div> <!--single gallery end -->
-            </div> <!-- gallery item end here -->
-        </div>
-    </section> <!-- gallery section end here -->
+                            </figcaption>
+                        </figure>
+                    </div> <!-- end single gallery -->
 
-    <!-- footer start here -->
-    <?php
-    include './footer.php';
-    ?>
-    <!-- end footer -->
+                    <div class="col-sm-6 col-md-3 grid-item">
+                        <figure>
+                            <img src="images/gallery/galltumb2.jpg" alt="">
+                            <figcaption>
+                                <a href="images/gallery/gall2.jpg"><i class="fa fa-pencil"></i></a>
+                                <!--<h4>Place <span>Eiffel Tower</span></h4>-->
 
-    <div class="to-top pos-rtive">
-        <a href="#"><i class = "fa fa-angle-up"></i></a>
-    </div> <!-- Scroll to top jump button end-->
+                            </figcaption>
+                        </figure>
+                    </div> <!-- end single gallery -->
 
-    <!-- ============================
-            JavaScript Files
-    ============================= -->
-    <!-- jquery latest version -->
-    <script src="js/vendor/jquery-3.2.0.min.js"></script>
-    <!-- bootstrap js -->
-    <script src="js/bootstrap.min.js"></script>
-    <!-- owl.carousel js -->
-    <script src="js/owl.carousel.min.js"></script>
-    <!-- slick js -->
-    <script src="js/slick.min.js"></script>
-    <!-- meanmenu js -->
-    <script src="js/jquery.meanmenu.min.js"></script>
-    <!-- jquery-ui js -->
-    <script src="js/jquery-ui.min.js"></script>
-    <!-- wow js -->
-    <script src="js/wow.min.js"></script>
-    <!-- counter js -->
-    <script src="js/jquery.counterup.min.js"></script>
-    <!-- Countdown js -->
-    <script src="js/jquery.countdown.min.js"></script>
-    <!-- waypoints js -->
-    <script src="js/jquery.waypoints.min.js"></script>
-    <!-- Isotope js -->
-    <script src="js/isotope.pkgd.min.js"></script>
-    <!-- magnific js -->
-    <script src="js/jquery.magnific-popup.min.js"></script>
-    <!-- Image loaded js -->
-    <script src="js/imagesloaded.pkgd.min.js"></script>
-    <!-- chossen js -->
-    <script src="js/chosen.jquery.min.js"></script>
-    <script src="js/assets/revolution/jquery.themepunch.revolution.min.js"></script>
-    <script src="js/assets/revolution/jquery.themepunch.tools.min.js"></script>
-    <!-- Revolution Extensions -->
-    <script src="js/assets/revolution/extensions/revolution.extension.actions.min.js"></script>
-    <script src="js/assets/revolution/extensions/revolution.extension.carousel.min.js"></script>
-    <script src="js/assets/revolution/extensions/revolution.extension.kenburn.min.js"></script>
-    <script src="js/assets/revolution/extensions/revolution.extension.layeranimation.min.js"></script>
-    <script src="js/assets/revolution/extensions/revolution.extension.migration.min.js"></script>
-    <script src="js/assets/revolution/extensions/revolution.extension.navigation.min.js"></script>
-    <script src="js/assets/revolution/extensions/revolution.extension.parallax.min.js"></script>
-    <script src="js/assets/revolution/extensions/revolution.extension.slideanims.min.js"></script>
-    <script src="js/assets/revolution/extensions/revolution.extension.video.min.js"></script>
-    <script src="js/assets/revolution/revolution.js"></script>
-    <!-- Jquery plugin -->
-    <script src="js/plugins.js"></script>
-    <!-- select2 js plugin -->
-    <script src="js/select2.min.js"></script>    
-    <script src="js/colors.js"></script>
-    <!-- Jquery plugin -->
-    <script src="js/jquery-customselect.js"></script>
-    <!-- main js -->
-    <script src="js/custom.js"></script>
-</body>
+                    <div class="col-sm-6 col-md-3 grid-item">
+                        <figure>
+                            <img src="images/gallery/galltumb3.jpg" alt="">
+                            <figcaption>
+                                <a href="images/gallery/gall3.jpg"><i class="fa fa-pencil"></i></a>
+                                <!--<h4>Place <span>Eiffel Tower</span></h4>-->
+
+                            </figcaption>
+                        </figure>
+                    </div> <!-- end single gallery -->
+
+                    <div class="col-sm-6 col-md-3 grid-item">
+                        <figure>
+                            <img src="images/gallery/gal5.jpg" alt="">
+                            <figcaption>
+                                <a href="images/gallery/5b55ffa49a52204f77142a4b25bf96c5.jpg"><i class="fa fa-pencil"></i></a>
+                                <!--<h4>Place <span>Eiffel Tower</span></h4>-->
+
+                            </figcaption>
+                        </figure>
+                    </div> <!--single gallery end -->
+
+                    <div class=" col-sm-6 col-md-3 grid-item">
+                        <figure>
+                            <img src="images/gallery/gal6.jpg" alt="">
+                            <figcaption>
+                                <a href="images/gallery/20180714_112059.jpg"><i class="fa fa-pencil"></i></a>
+                                <!--<h4>Place <span>Eiffel Tower</span></h4>-->
+
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <!--single gallery end -->
+                    <!--single gallery -->
+                    <div class="col-sm-6 col-md-3 grid-item">
+                        <figure>
+                            <img src="images/gallery/gal7.jpg" alt="">
+                            <figcaption>
+                                <a href="images/gallery/124-fresco-sigiriya.jpg"><i class="fa fa-pencil"></i></a>
+                                <!--<h4>Place <span>Eiffel Tower</span></h4>-->
+
+                            </figcaption>
+                        </figure>
+                    </div> <!--single gallery end -->
+
+                    <div class="col-sm-6 col-md-3 grid-item">
+                        <figure>
+                            <img src="images/gallery/gal8.jpg" alt="">
+                            <figcaption>
+                                <a href="images/gallery/beach4.jpg"><i class="fa fa-pencil"></i></a>
+                                <!--<h4>Place <span>Eiffel Tower</span></h4>-->
+
+                            </figcaption>
+                        </figure>
+                    </div> <!--single gallery end -->
+                </div> <!-- gallery item end here -->
+            </div>
+        </section> <!-- gallery section end here -->
+
+        <!-- footer start here -->
+        <?php
+        include './footer.php';
+        ?>
+        <!-- end footer -->
+
+        <div class="to-top pos-rtive">
+            <a href="#"><i class = "fa fa-angle-up"></i></a>
+        </div> <!-- Scroll to top jump button end-->
+
+        <!-- ============================
+                JavaScript Files
+        ============================= -->
+        <!-- jquery latest version -->
+        <script src="js/vendor/jquery-3.2.0.min.js"></script>
+        <!-- bootstrap js -->
+        <script src="js/bootstrap.min.js"></script>
+        <!-- owl.carousel js -->
+        <script src="js/owl.carousel.min.js"></script>
+        <!-- slick js -->
+        <script src="js/slick.min.js"></script>
+        <!-- meanmenu js -->
+        <script src="js/jquery.meanmenu.min.js"></script>
+        <!-- jquery-ui js -->
+        <script src="js/jquery-ui.min.js"></script>
+        <!-- wow js -->
+        <script src="js/wow.min.js"></script>
+        <!-- counter js -->
+        <script src="js/jquery.counterup.min.js"></script>
+        <!-- Countdown js -->
+        <script src="js/jquery.countdown.min.js"></script>
+        <!-- waypoints js -->
+        <script src="js/jquery.waypoints.min.js"></script>
+        <!-- Isotope js -->
+        <script src="js/isotope.pkgd.min.js"></script>
+        <!-- magnific js -->
+        <script src="js/jquery.magnific-popup.min.js"></script>
+        <!-- Image loaded js -->
+        <script src="js/imagesloaded.pkgd.min.js"></script>
+        <!-- chossen js -->
+        <script src="js/chosen.jquery.min.js"></script>
+        <script src="js/assets/revolution/jquery.themepunch.revolution.min.js"></script>
+        <script src="js/assets/revolution/jquery.themepunch.tools.min.js"></script>
+        <!-- Revolution Extensions -->
+        <script src="js/assets/revolution/extensions/revolution.extension.actions.min.js"></script>
+        <script src="js/assets/revolution/extensions/revolution.extension.carousel.min.js"></script>
+        <script src="js/assets/revolution/extensions/revolution.extension.kenburn.min.js"></script>
+        <script src="js/assets/revolution/extensions/revolution.extension.layeranimation.min.js"></script>
+        <script src="js/assets/revolution/extensions/revolution.extension.migration.min.js"></script>
+        <script src="js/assets/revolution/extensions/revolution.extension.navigation.min.js"></script>
+        <script src="js/assets/revolution/extensions/revolution.extension.parallax.min.js"></script>
+        <script src="js/assets/revolution/extensions/revolution.extension.slideanims.min.js"></script>
+        <script src="js/assets/revolution/extensions/revolution.extension.video.min.js"></script>
+        <script src="js/assets/revolution/revolution.js"></script>
+        <!-- Jquery plugin -->
+        <script src="js/plugins.js"></script>
+        <!-- select2 js plugin -->
+        <script src="js/select2.min.js"></script>    
+        <script src="js/colors.js"></script>
+        <!-- Jquery plugin -->
+        <script src="js/jquery-customselect.js"></script>
+        <!-- main js -->
+        <script src="js/custom.js"></script>
+    </body>
 
 </html>

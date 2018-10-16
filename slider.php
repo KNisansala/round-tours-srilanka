@@ -11,7 +11,7 @@
                     <!-- BEGIN BASIC TEXT LAYER -->
                     <!-- LAYER NR. 2 -->
                     <div class="tp-caption sfr font-extra-bold tp-resizeme letter-space-4 title-line-12" data-x="['center', 'center', 'center', 'center']" data-hoffset="0" data-y="center" data-voffset="-50" data-frames='[{"delay":0,"speed":3000,"frame":"0","from":"x:[175%];y:0px;z:0;rX:0;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:1;","mask":"x:[-100%];y:0;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]' style="z-index: 6; color:#fff; text-transform:uppercase; font-family:'Poppins', sans-serif; white-space: nowrap; font-weight:400;">
-                        <h2 style="font-size:60px;">Round Tours Sri Lanka</h2>
+                        <h2 style="font-size:50px;">Round Tours Sri Lanka</h2>
                     </div>
 
                     <!-- LAYER NR. 2 -->
@@ -32,7 +32,7 @@
                     <!-- BEGIN BASIC TEXT LAYER -->
                     <!-- LAYER NR. 2 -->
                     <div class="tp-caption sfr font-extra-bold tp-resizeme letter-space-4 title-line-12" data-x="['center', 'center', 'center', 'center']" data-hoffset="0" data-y="center" data-voffset="-50" data-frames='[{"delay":0,"speed":3000,"frame":"0","from":"x:[175%];y:0px;z:0;rX:0;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:1;","mask":"x:[-100%];y:0;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]' style="z-index: 6; color:#fff; text-transform:uppercase; font-family:'Poppins', sans-serif; white-space: nowrap; font-weight:400;">
-                        <h2 style="font-size:60px;">Round Tour Sri Lanka</h2>
+                        <h2 style="font-size:50px;">Round Tour Sri Lanka</h2>
                     </div>
 
                     <!-- LAYER NR. 2 -->
