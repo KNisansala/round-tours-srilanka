@@ -14,7 +14,7 @@
                     </div>
                 </div>
                 <div class="header-top-right text-right">
-                    <div class="col-md-3 col-xs-12 book-tab">
+                    <div class="col-md-3 col-xs-8 book-tab">
                         <div class="book-btn">
                             <a href="booking.php">Book Now</a>
                         </div>
@@ -37,7 +37,7 @@
                 <div class="col-md-10">
                     <nav>
                         <ul class="main-menu text-right">
-                            <li><a href="index.php">Home</a></li>
+                            <li><a href="./">Home</a></li>
                             <li><a href="about-us.php">About Us</a></li>
                             <li><a href="tour-packages.php">Tour Packages</a></li>
                             <li><a href="destination.php">Destination</a></li>

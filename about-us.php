@@ -62,6 +62,10 @@
                         <div class="col-sm-12">
                             <div class="bredcrums-content">
                                 <h2>About us</h2>
+                                <ul>
+                                    <li><a href="./">Home</a></li>
+                                    <li class="active">About Us</li>
+                                </ul>
                             </div>
                         </div>
                     </div>

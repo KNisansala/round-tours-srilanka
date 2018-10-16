@@ -11,10 +11,10 @@
 class Database {
 
     
-//    private $host = 'kelum818.ipagemysql.com';
-//    private $name = 'masalagewatta';
-//    private $user = 'masalagewatta';
-//    private $password = 'Masal@903430';
+//    private $host = 'localhost';
+//    private $name = 'gallnwxt_roundtourssrilanka';
+//    private $user = 'gallnwxt_roundtourssrilanka';
+//    private $password = 'Wrfe#cbW13?4';
      
     private $host = 'localhost';
     private $name = 'round_tour_srilanka';

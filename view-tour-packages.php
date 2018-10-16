@@ -81,9 +81,9 @@ $tour_dates = TourDate::getTourDatesById($id);
                     <div class="row">
                         <div class="col-sm-12">
                             <div class="bredcrums-content">
-                                <h2>View Tour Packages</h2>
+                                <h2><?php echo $TOUR->title; ?></h2>
                                 <ul>
-                                    <li><a href="index.php">Home</a></li>
+                                    <li><a href="./">Home</a></li>
                                     <li><a href="tour-packages.php">Tour Packages</a></li>
                                     <li class="active">
                                         <?php echo $TOUR->title; ?>
@@ -151,7 +151,15 @@ $tour_dates = TourDate::getTourDatesById($id);
                             <?php
                         }
                         ?>
+                        <div class="header-top-right text-right booknow">
+                            <div class="col-md-6 col-xs-9 book-tab">
+                                <div class="book-btn booknow">
+                                    <a href="booking.php?tour=<?php echo $TOUR->id; ?>">Book Now</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+
 
                     <div class="col-md-4 col-sm-12 col-xs-12">
                         <!-- Blog Sidebar -->
@@ -165,12 +173,12 @@ $tour_dates = TourDate::getTourDatesById($id);
                                     <a href="view-tour-packages.php?id=<?php echo $ViewOther['id']; ?>">
                                         <h3><?php echo $ViewOther['title']; ?></h3>
                                     </a>      
-                                    <div class="col-md-6 col-sm-12 col-xs-12" viewdisimg>
+                                    <div class="col-md-6 col-sm-12 col-xs-4" viewdisimg>
                                         <a href="">
                                             <img src="upload/tour-package/thumb/<?php echo $ViewOther['image_name']; ?>" alt="">
                                         </a>
                                     </div>
-                                    <div class="col-md-6 col-sm-12 col-xs-12 qua">
+                                    <div class="col-md-6 col-sm-12 col-xs-8 qua ">
                                         <div class="qua">
                                             <p><?php
                                                 if (strlen($ViewOther['short_description']) > 40) {
@@ -193,13 +201,7 @@ $tour_dates = TourDate::getTourDatesById($id);
 
                     </div>
 
-                    <div class="header-top-right text-right booknow">
-                        <div class="col-md-6 col-xs-12 book-tab">
-                            <div class="book-btn booknow">
-                                <a href="#">Book Now</a>
-                            </div>
-                        </div>
-                    </div>
+
                 </div>
             </div>
         </section>

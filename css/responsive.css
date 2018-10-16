@@ -82,7 +82,13 @@
     /*========= package Styel ==========*/
     .single-bredcurms { overflow: visible;}
     .header-top-contact { width: 540px;}
-    .header-top-right .book-btn { float: none; width: 115px;}
+    .header-top-right .book-btn 
+    { float: none;
+      width: 164px; 
+      margin-left: 519px;
+      margin-bottom: 18px;
+      text-align: center;
+    }
     .package-tab-menu .package-tab-menu li a { padding: 15px 33px;}
     .single .blog-comments .single-comments .head { width: 20%;}
     .single .blog-comments .single-comments .body {width: 80%;}
@@ -91,7 +97,7 @@
 
 /*======================  Mobile Layout: 320px. =======================  */
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
     .single-item{margin-bottom: 30px;}
     .single-item:last-child{margin-bottom: 0px;}
 
@@ -99,7 +105,12 @@
     .bredcrums-content {text-align: center;}
     .slider-area {min-height: 0;}
     .mean-bar { position: fixed !important;}
-    .tap-v-responsive{ width:100%;}
+    .tap-v-responsive{ 
+        width:100%;
+        margin-left: 24px;
+        margin-top: -24px;
+
+    }
     .logo-area {  width: 25%; margin: 0px auto;} 
     .header-top-left { display: none;}  
     .logo-area { position: absolute;top: -70px;}
@@ -171,7 +182,9 @@
     .welcome-area .single-welcome-area .overlay-image {display: none;}
     .single-welcome-text { padding-top: 30px;}
     .section-title-version-2 h2, .section-title-version-2-white h2, .section-title-version-2-black h2 {background-position: bottom center;}
-    .tour-package-bg { padding: 100px 15px;}
+    .tour-package-bg { 
+        padding: 13px 15px;
+    }
     .img-responsive.img-rounded {width: 100%;}
     .popular-country .padding-bottom {margin-bottom: 30px;}
     .popular-country .padding-bottom:last-child { margin-bottom: 0;}
@@ -229,6 +242,30 @@
     .single .blog-sidebar .single-sidebar { margin-top: 100px;}
     .single .blog-sidebar .single-sidebar ul{text-align: left;}
     .post-info {text-align: left;}
+
+
+    .tabbased-search-area-2 .tab-content-2 .search-btn-2 button {
+        margin-right: -5px;
+    }
+
+    .testimonial-area-5 {
+        padding: 56px 0;
+    }
+
+
+    .footer-logo p {
+        margin-bottom: -16px;
+        margin-top: -16px;
+    }
+    .copyright p {
+        text-align: center;
+    }
+
+
+
+
+
+
 }
 
 
@@ -257,159 +294,6 @@
 
 }
 /*resposive setting start here*/
-@media(max-width :320px )  
-{
-    .title-line-12 h2{
-        font-size: 21px !important;
-    }
-    .view-all {
-        margin-left: 90px;
-    }
-
-    .slid {
-        width: 710px;
-        background: #cccccc;
-        color: #fff;
-        margin: -1px;
-        height: 412px;
-    }
-
-    ul {
-        padding-bottom: 16px;
-    }
-
-    .section-title-3 {
-
-        padding-left: 60px;
-    }
-
-
-    .panel-white2 {
-
-        margin-right: 6px;
-        padding-bottom: 53px;
-
-    }
-    .section-title-3i {
-        z-index: 33;
-        position: relative;
-        padding-left: 0px;
-        text-align: center
-    }
-
-    .panel-white {
-
-        margin-right: -1px;
-    }
-    .panel-white3 {
-        border: 1px solid #dddddd;
-        margin-right: 6px;
-        padding:38px;
-        padding-bottom: 912px;
-    }
-
-}
-@media(max-width :360px )  
-{
-    .title-line-12 h2{
-        margin-left: 108px;
-    }
-
-    .slid {
-        margin: -1px;
-    }
-    ul {
-        padding-bottom: 16px;
-    }
-    .section-title-3 {
-
-        padding-left: 82px;
-    }
-    panel-white2 {
-
-        margin-right: 4px;
-    }
-    .section-title-3 {
-
-        padding-left: 60px;
-    }
-    .section-title-3i {
-        z-index: 33;
-        position: relative;
-        padding-left: 0px;
-        text-align: center
-    }
-    .panel-white {
-
-        margin-right: -1px;
-    }
-    .panel-white3 {
-        border: 1px solid #dddddd;
-        margin-right: 6px;
-        padding:38px;
-        padding-bottom: 912px;
-    }
-
-}
-
-@media(max-width :412px )  
-{
-    .view-all {
-        margin-left: 136px;
-        margin-top: 35px;
-    }
-    .slid {
-        margin: -1px;
-    }
-    ul {
-        padding-bottom: 16px;
-    }
-    .section-title-3 {
-        padding-left: 93px;
-    }
-    .panel-white {
-
-        margin-right: -9px;
-    }
-    .panel-white1 {
-        border: 1px solid #dddddd;
-        margin-right: -6px;
-        padding:38px;
-        padding-bottom: 13px;
-    }
-    .panel-white1  .panel-heading {
-        color: #333;
-        background-color: #fff;
-        border-color: #ddd;
-    }
-    .panel-white1  .panel-footer {
-        background-color: #fff;
-        border-color: #ddd;
-    }
-
-    .panel-white2 {
-        border: 1px solid #dddddd;
-        margin-right: 7px;
-        padding:38px;
-        padding-bottom: 65px;
-    }
-    .panel-white2  .panel-heading {
-        color: #333;
-        background-color: #fff;
-        border-color: #ddd;
-    }
-    .panel-white2  .panel-footer {
-        background-color: #fff;
-        border-color: #ddd;
-    }
-    .panel-white3 {
-        border: 1px solid #dddddd;
-        margin-right: 6px;
-        padding:38px;
-        padding-bottom: 912px;
-    }
-}
-
 @media(max-width :960px )  
 {
 
@@ -420,9 +304,6 @@
 
     .section-title-version-2 h2, .section-title-version-2-white h2, .section-title-version-2-black h2 {
         margin-top: 86px;
-    }
-    .view-all {
-        margin-left: 304px;
     }
     .slid {
         margin: -1px;
@@ -483,10 +364,308 @@
         border: 1px solid #dddddd;
         margin-right: 6px;
         padding:38px;
+        padding-bottom: 960px;
+    }
+    .btnviewall{
+        text-align: center;
+    }
+
+
+}
+@media(max-width :320px )  
+{
+    .title-line-12 h2{
+        font-size: 21px !important;
+    }
+    .view-all {
+        margin-left: 90px;
+    }
+
+    .slid {
+        width: 710px;
+        background: #cccccc;
+        color: #fff;
+        margin: -1px;
+        height: 412px;
+    }
+
+    ul {
+        padding-bottom: 16px;
+    }
+
+    .section-title-3 {
+
+        padding-left: 60px;
+    }
+
+
+    .panel-white2 {
+
+        margin-right: 6px;
+        padding-bottom: 53px;
+
+    }
+    .section-title-3i {
+        z-index: 33;
+        position: relative;
+        padding-left: 0px;
+        text-align: center
+    }
+
+    .panel-white {
+
+        margin-right: -1px;
+    }
+    .panel-white3 {
+        border: 1px solid #dddddd;
+        margin-right: 6px;
+        padding:38px;
         padding-bottom: 912px;
     }
 
+
+
 }
+
+@media(max-width :412px )  
+{
+
+    .slid {
+        margin: -1px;
+    }
+    ul {
+        padding-bottom: 16px;
+    }
+    .section-title-3 {
+        padding-left: 93px;
+    }
+    .panel-white {
+
+        margin-right: -9px;
+    }
+    .panel-white1 {
+        border: 1px solid #dddddd;
+        margin-right: -6px;
+        padding:38px;
+        padding-bottom: 13px;
+    }
+    .panel-white1  .panel-heading {
+        color: #333;
+        background-color: #fff;
+        border-color: #ddd;
+    }
+    .panel-white1  .panel-footer {
+        background-color: #fff;
+        border-color: #ddd;
+    }
+
+    .panel-white2 {
+        border: 1px solid #dddddd;
+        margin-right: 7px;
+        padding:38px;
+        padding-bottom: 65px;
+    }
+    .panel-white2  .panel-heading {
+        color: #333;
+        background-color: #fff;
+        border-color: #ddd;
+    }
+    .panel-white2  .panel-footer {
+        background-color: #fff;
+        border-color: #ddd;
+    }
+    .panel-white3 {
+        border: 1px solid #dddddd;
+        margin-right: 6px;
+        padding:38px;
+        padding-bottom: 912px;
+    }
+}  
+
+
+@media(max-width :576px )  
+{
+
+
+    .title-line-12 h2{
+        margin-left: 108px;
+    }
+
+    .slid {
+        margin: -1px;
+    }
+    ul {
+        padding-bottom: 16px;
+    }
+    .section-title-3 {
+
+        padding-left: 82px;
+    }
+    panel-white2 {
+
+        margin-right: 4px;
+    }
+    .section-title-3 {
+
+        padding-left: 60px;
+    }
+    .section-title-3i {
+        z-index: 33;
+        position: relative;
+        padding-left: 0px;
+        text-align: center
+    }
+    .panel-white {
+
+        margin-right: -1px;
+    }
+    .panel-white3 {
+        border: 1px solid #dddddd;
+        margin-right: 6px;
+        padding:38px;
+        padding-bottom: 912px;
+    }
+
+    .tabbased-search-area .tab-content .hotels-form .hotel-input-2, .tabbased-search-area .tab-content .flights-form .hotel-input-2 {
+
+        padding-bottom: 10px;
+        padding-top: 7px;
+
+    }
+
+    .tabbased-search-area .tab-content .hotels-form .hotel-input-1, .tabbased-search-area .tab-content .flights-form .hotel-input-1 {
+        width: 100% !important;
+    }
+
+
+    .header-top-right .book-btn {
+        margin-bottom: 12px;
+    }
+
+    .tabbased-search-area {
+        padding: 0px 0;
+    }
+
+    .section-title-version-2 h2, .section-title-version-2-white h2, .section-title-version-2-black h2 {
+        margin-top: 35px;
+    }
+    .single-welcome-text {
+        margin-top: -54px;
+    }
+    .tour-package-bg {
+        padding: 9px 15px;
+    }
+    .welcomearea {
+        margin-top: -6px;
+    }
+    .tabbased-search-area-2 .tab-content-2 .search-btn-2 button {
+
+        margin-top: 12px;
+        margin-right: 0;
+        margin-bottom: 27px;
+    }
+    h4{
+        padding-top: 24px;
+        margin-bottom: 16px;
+    }
+
+    .header-bottom-area .logo-area {
+        top: -85px;
+    }  
+    header-top-right text-right{
+
+
+    }
+    .index-2 .header-top-area {
+
+        margin-top: 30px;
+    }
+    .category h3 {
+        text-align: left;
+    }
+
+    .qua{
+        padding-top: 0;
+        margin-right: 0;
+        margin-left: -0;
+    }
+    .single .blog-sidebar .single-sidebar {
+
+        height: 323px;
+        margin-bottom: -53px;
+        margin-top: 58px;
+
+    }
+    .section-paddings {
+        margin-top: -102px;
+
+    }
+    .booknow {
+
+        margin-top: 0px;
+
+    }
+    .single-bredcurms {
+        margin-bottom: 41px;
+    }
+    .slid {
+        margin-bottom: -245px;
+    }
+    .buttoncomment {
+
+        float: none;
+    }
+    .form-group .securitybox {
+        width: 100%;
+
+    }
+    #guestcomment #btnSubmit {
+        margin-top: 33px;
+    }
+    .contact-title h2 {
+        margin-top: 48px;
+    }
+    .footer-area .footer-bottom .copyright p {
+        text-align: center;
+    }
+    .welcome-area .single-welcome-area .single-imag .img-thumbnail {
+        margin-top: 111px;
+    }
+
+    .footer-area .footer-bottom .payicon li {
+
+        margin-right: 0px;
+        margin-top: 0px;
+        display: block;
+        text-align: center;
+
+    }
+
+    .footer-area .footer-bottom .payicon li {
+
+        float: none;
+        margin-right: 0px;
+        margin-top: 0px;
+        color: #fff;
+
+    }
+
+    .galleryheading{
+
+        margin-top: 162px;
+
+    }
+    .post .post-description {
+
+        padding: 15px;
+        margin-top: 73px;
+
+    }
+
+
+}
+
+
 
 
 /*resposive setting end here*/
