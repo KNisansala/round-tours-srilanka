@@ -5,8 +5,8 @@
 $comany_name = "Round Tours Sri Lanka";
 $website_name = "www.roundtoursrilanka.lk";
 $comConNumber = "+94 766367605";
-$comEmail = "sachithgalle@gmail.com";
-$from = 'sachithgalle@gmail.com';
+$comEmail = "info@galle.website";
+$from = 'info@galle.website';
 
 
 //----------------------CAPTCHACODE---------------------

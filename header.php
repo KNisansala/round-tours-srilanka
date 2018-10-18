@@ -14,7 +14,7 @@
                     </div>
                 </div>
                 <div class="header-top-right text-right">
-                    <div class="col-md-3 col-xs-8 book-tab">
+                    <div class="col-md-3 col-xs-12 book-tab">
                         <div class="book-btn">
                             <a href="booking.php">Book Now</a>
                         </div>

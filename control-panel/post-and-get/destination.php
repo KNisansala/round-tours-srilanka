@@ -8,9 +8,9 @@ if (isset($_POST['create'])) {
     $VALID = new Validator();
 
 
-    $DESTINATION->title = mysql_real_escape_string($_POST['title']);
-    $DESTINATION->short_description = mysql_real_escape_string($_POST['short_description']);
-    $DESTINATION->description = mysql_real_escape_string($_POST['description']);
+    $DESTINATION->title = $_POST['title'];
+    $DESTINATION->short_description = $_POST['short_description'];
+    $DESTINATION->description = $_POST['description'];
 
     $dir_dest = '../../upload/destination/';
     $dir_dest_thumb = '../../upload/destination/thumb/';
@@ -155,9 +155,9 @@ if (isset($_POST['update'])) {
 
 
     $DESTINATION->image_name = $_POST['oldImageName'];
-    $DESTINATION->title = mysql_real_escape_string($_POST['title']);
-    $DESTINATION->short_description = mysql_real_escape_string($_POST['short_description']);
-    $DESTINATION->description = mysql_real_escape_string($_POST['description']);
+    $DESTINATION->title = $_POST['title'];
+    $DESTINATION->short_description = $_POST['short_description'];
+    $DESTINATION->description = $_POST['description'];
 
     $VALID = new Validator();
     $VALID->check($DESTINATION, [

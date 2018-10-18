@@ -1,102 +1,4 @@
 /*      Tablet Layout: 768px.    */
-
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-    .single-item{margin-bottom: 30px;}
-    .single-item:last-child{margin-bottom: 0px;}
-
-
-    .header-top-area .header-top-left .header-top-contact li {
-        display: inline-flex;
-        padding: 68px 10px 0 0;
-        color: #fff;
-    }
-    .header-top-right{
-        text-align: right;
-        width: 20%;
-        float: left;
-        padding-top: 52px;
-    }
-    /*---- tab form ----*/
-    .tabbased-search-area {
-        background: #2c3035;
-        position: relative;
-        margin-top:-200px;
-        padding: 100px 0;
-    }
-    .tab-menu li {padding: 14px !important}
-    .custom-select a {width: 100%;}
-    .tabbased-search-area .tab-content .hotels-form .hotel-input-4-23 .custom-select a, .tabbased-search-area .tab-content .flights-form .hotel-input-4-23 .custom-select a { width: 100%;}
-    .input-b{width: 50% !important; margin: 10px 0;}
-    .input-s{width: 50% !important;   margin: 10px 0;} 
-    .searc-btn-7, .searc-btn-7 {
-        width: 100px !important;;
-        float: none  !important;
-        margin: 0px auto  !important;
-    }
-    .searc-btn-7 button,  .searc-btn-7 button { border-radius: 0 !important;}
-    .count-down-bg .count-timer .time-wrapper .timer li { margin: 10px;}
-    .phone-layout-s { padding-bottom: 30px;}
-    .phone-layout-s:last-child { padding-bottom: 0;}
-
-    /*========= index 02 ==========*/
-    .popular-country .destination-countrys .tab-content figure figcaption {padding: 15px; text-align: center;}
-    .popular-country .destination-countrys .tab-content figure figcaption .city-name .tower-bridge li:last-child {
-        margin-left: 0px;
-    }
-
-    .tabbased-search-area-2 .bg-shadoow-image { padding: 100px 15px 50px; margin-top: -30px;}
-    .tabbased-search-area .tab-content .hotels-form .hotel-input-2, .tabbased-search-area .tab-content .flights-form .hotel-input-2 {width: 50% !important;}
-    .tabbased-search-area .tab-content .hotels-form .hotel-input-4, .tabbased-search-area .tab-content .flights-form .hotel-input-4 {width: 50%;}
-    .tabbased-search-area .tab-content .hotels-form .hotel-input-1, .tabbased-search-area .tab-content .flights-form .hotel-input-1 { width: 25% !important;margin-top: 10px;}
-    .img-rounded {width: 100%;}
-    .padding-bottom { margin-bottom: 30px;}
-    .padding-bottom:last-child { margin-bottom: 0px;}
-    .subscribe-area-2 .subscribe-title-box { width: 100%;text-align: center;}
-    .subscribe-area-2 .subscribe-form {width: 400px;}
-    .subscribe-area-2 .subscribe-form-box { margin-left: 21%;}
-
-    /*========= index 03 ==========*/
-
-    .header-area-style-3 .book-online { width: 120px; margin-left: 386px;}
-    .header-area-style-3 .header-bottom-area .logo-area { padding: 27px 0; width: 200px; float: left;}
-    .herounit-bg .tabbased-search-3 .tab-menu-item-3 .tab-menu-3 li { padding: 30px 54px;}
-    .popular-packages .single-package .package-calto-action { padding: 0 15px 25px;}
-    .col-md-6.col-sm-6.fhdsfhgd { width: 100%;}
-    .ImageBlock--switch-tab {width: 100%;}
-    .choose-travelstar-version-2 .ImageBlock--switch .ImageBlock--switch-img {  display: none;}
-    .top-testimonial-image .slider-nav-two .slick-slide::before { height: 69%;width: 71%;}
-    .block-text .single-box::before {left: 0;}
-    .block-text .single-box::after {right: 0; top: 85px;}
-    .subscribe-area .subscribe-form .serach-form input {  width: 95%;}
-    .single-travel-blog .blog-content .blog-meta .post-social li {    margin: 0;}
-
-
-    /*========= index 04 ==========*/
-    .header-bottom-area-4 .logo-area {padding: 65px 0 15px;}
-    .tabbased-search-area-4 { background: #ffffff;}
-
-    /*========= index 05 ==========*/
-    .single-package-carasoul .package-location img{ height: 240px;}
-    .blog-2 .single-travel-blog .blog-content .blog-post-content .post-social-2 li { padding: 0 15px 0 0;}
-
-    /*========= package Styel ==========*/
-    .single-bredcurms { overflow: visible;}
-    .header-top-contact { width: 540px;}
-    .header-top-right .book-btn 
-    { float: none;
-      width: 164px; 
-      margin-left: 519px;
-      margin-bottom: 18px;
-      text-align: center;
-    }
-    .package-tab-menu .package-tab-menu li a { padding: 15px 33px;}
-    .single .blog-comments .single-comments .head { width: 20%;}
-    .single .blog-comments .single-comments .body {width: 80%;}
-    .single .blog-comments .single-comments h4 {text-align: center;}
-}
-
-/*======================  Mobile Layout: 320px. =======================  */
-
 @media only screen and (max-width: 768px) {
     .single-item{margin-bottom: 30px;}
     .single-item:last-child{margin-bottom: 0px;}
@@ -239,7 +141,12 @@
     .single .blog-comments .single-comments h4 { text-align: center;}
     .single .blog-comments .single-comments .body {width: 100%;margin-top: 20px;}
     .single .comment-respond label {float: left;}
-    .single .blog-sidebar .single-sidebar { margin-top: 100px;}
+
+    .single .blog-sidebar .single-sidebar 
+    { 
+        margin-top: 100px;
+
+    }
     .single .blog-sidebar .single-sidebar ul{text-align: left;}
     .post-info {text-align: left;}
 
@@ -261,12 +168,125 @@
         text-align: center;
     }
 
+    .single .blog-sidebar .single-sidebar {
+        margin-bottom: -48px;
+    }
 
+    .single .blog-sidebar .single-sidebar {
+        height: 187px;
+    }
+    .refresh-img {
 
+        margin: -29px 0px 18px 150px;
 
-
+    }
 
 }
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .single-item{margin-bottom: 30px;}
+    .single-item:last-child{margin-bottom: 0px;}
+
+
+    .header-top-area .header-top-left .header-top-contact li {
+        display: inline-flex;
+        padding: 68px 10px 0 0;
+        color: #fff;
+    }
+    .header-top-right{
+        text-align: right;
+        width: 20%;
+        float: left;
+        padding-top: 52px;
+    }
+    /*---- tab form ----*/
+    .tabbased-search-area {
+        background: #2c3035;
+        position: relative;
+        margin-top:-200px;
+        padding: 100px 0;
+    }
+    .tab-menu li {padding: 14px !important}
+    .custom-select a {width: 100%;}
+    .tabbased-search-area .tab-content .hotels-form .hotel-input-4-23 .custom-select a, .tabbased-search-area .tab-content .flights-form .hotel-input-4-23 .custom-select a { width: 100%;}
+    .input-b{width: 50% !important; margin: 10px 0;}
+    .input-s{width: 50% !important;   margin: 10px 0;} 
+    .searc-btn-7, .searc-btn-7 {
+        width: 100px !important;;
+        float: none  !important;
+        margin: 0px auto  !important;
+    }
+    .searc-btn-7 button,  .searc-btn-7 button { border-radius: 0 !important;}
+    .count-down-bg .count-timer .time-wrapper .timer li { margin: 10px;}
+    .phone-layout-s { padding-bottom: 30px;}
+    .phone-layout-s:last-child { padding-bottom: 0;}
+
+    /*========= index 02 ==========*/
+    .popular-country .destination-countrys .tab-content figure figcaption {padding: 15px; text-align: center;}
+    .popular-country .destination-countrys .tab-content figure figcaption .city-name .tower-bridge li:last-child {
+        margin-left: 0px;
+    }
+
+    .tabbased-search-area-2 .bg-shadoow-image { padding: 100px 15px 50px; margin-top: -30px;}
+    .tabbased-search-area .tab-content .hotels-form .hotel-input-2, .tabbased-search-area .tab-content .flights-form .hotel-input-2 {width: 50% !important;}
+    .tabbased-search-area .tab-content .hotels-form .hotel-input-4, .tabbased-search-area .tab-content .flights-form .hotel-input-4 {width: 50%;}
+    .tabbased-search-area .tab-content .hotels-form .hotel-input-1, .tabbased-search-area .tab-content .flights-form .hotel-input-1 { width: 25% !important;margin-top: 10px;}
+    .img-rounded {width: 100%;}
+    .padding-bottom { margin-bottom: 30px;}
+    .padding-bottom:last-child { margin-bottom: 0px;}
+    .subscribe-area-2 .subscribe-title-box { width: 100%;text-align: center;}
+    .subscribe-area-2 .subscribe-form {width: 400px;}
+    .subscribe-area-2 .subscribe-form-box { margin-left: 21%;}
+
+    /*========= index 03 ==========*/
+
+    .header-area-style-3 .book-online { width: 120px; margin-left: 386px;}
+    .header-area-style-3 .header-bottom-area .logo-area { padding: 27px 0; width: 200px; float: left;}
+    .herounit-bg .tabbased-search-3 .tab-menu-item-3 .tab-menu-3 li { padding: 30px 54px;}
+    .popular-packages .single-package .package-calto-action { padding: 0 15px 25px;}
+    .col-md-6.col-sm-6.fhdsfhgd { width: 100%;}
+    .ImageBlock--switch-tab {width: 100%;}
+    .choose-travelstar-version-2 .ImageBlock--switch .ImageBlock--switch-img {  display: none;}
+    .top-testimonial-image .slider-nav-two .slick-slide::before { height: 69%;width: 71%;}
+    .block-text .single-box::before {left: 0;}
+    .block-text .single-box::after {right: 0; top: 85px;}
+    .subscribe-area .subscribe-form .serach-form input {  width: 95%;}
+    .single-travel-blog .blog-content .blog-meta .post-social li {    margin: 0;}
+
+
+    /*========= index 04 ==========*/
+    .header-bottom-area-4 .logo-area {padding: 65px 0 15px;}
+    .tabbased-search-area-4 { background: #ffffff;}
+
+    /*========= index 05 ==========*/
+    .single-package-carasoul .package-location img{ height: 339px;}
+    .blog-2 .single-travel-blog .blog-content .blog-post-content .post-social-2 li { padding: 0 15px 0 0;}
+
+    /*========= package Styel ==========*/
+    .single-bredcurms { overflow: visible;}
+    .header-top-contact { width: 540px;}
+    .header-top-right .book-btn 
+    { float: none;
+      width: 164px; 
+      margin-left: 270px;
+      margin-bottom: 18px;
+      text-align: center;
+    }
+    .package-tab-menu .package-tab-menu li a { padding: 15px 33px;}
+    .single .blog-comments .single-comments .head { width: 20%;}
+    .single .blog-comments .single-comments .body {width: 80%;}
+    .single .blog-comments .single-comments h4 {text-align: center;}
+
+    .single-sidebar 
+    {
+
+    }
+
+}
+
+/*======================  Mobile Layout: 320px. =======================  */
+
+
 
 
 /*  Wide Mobile Layout: 480px    */
@@ -310,7 +330,7 @@
     }
     .single .blog-sidebar .single-sidebar {
 
-        height:452px;    
+        height:225px;    
     }
     h1, h2, h3, h4, h5, h6 {
         padding-top: 30px;
@@ -570,7 +590,7 @@
     }
 
     .header-bottom-area .logo-area {
-        top: -85px;
+        top: -50px;
     }  
     header-top-right text-right{
 
@@ -661,7 +681,21 @@
         margin-top: 73px;
 
     }
+    .sliderwelcome h2{
+        font-size:45px;
+        text-align: center;
+    }
 
+    .title-line-12 h2 {
+
+        font-size: 25px !important;
+        text-align: center !important;
+        margin-top: 30px !important;
+
+    }
+    .testimonial-area-5 .single-testimonial .testimonial-messages p {
+    margin: 9px;
+   }
 
 }
 

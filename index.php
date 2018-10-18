@@ -50,9 +50,9 @@ include_once(dirname(__FILE__) . '/class/include.php');
     </head>
     <body> 
         <!-- Preloader -->
-        <!--        <div id="preloader">
+                <div id="preloader">
                     <div id="status">&nbsp;</div>
-                </div>	-->
+                </div>	
 
         <!-- header area start here -->
         <?php
@@ -67,7 +67,7 @@ include_once(dirname(__FILE__) . '/class/include.php');
 
         <section class="tabbased-search-area tabbased-search-area-2">
             <div class="container">
-                <!-- tab menu 2 start -->
+                 tab menu 2 start 
                 <div class="row">
                     <div class="col-md-12">
                         <div class="tabbable-menu background-opacity">
@@ -76,19 +76,19 @@ include_once(dirname(__FILE__) . '/class/include.php');
                             </ul>
                         </div>
                     </div>
-                </div> <!-- tab menu 2 end -->
+                </div>  tab menu 2 end 
 
-                <!-- tab content 2 start -->
+                 tab content 2 start 
                 <div class="row">
                     <div class="col-md-12 bg-shadoow-image">
                         <div class="tab-content tab-content-2" id="tab-content1">
-                            <!-- hotels form -->
+                             hotels form 
                             <div class="tab-pane active" id="hotels">
                                 <div class="hotels-form">
                                     <form action="booking.php" method="get">
 
                                         <div class="hotel-input-4 input-b-2">
-                                            <!--<div class="selectop">-->
+                                            <div class="selectop">
                                             <select class="form-control1" name="tour"  style="background-color: #eee;">
                                                 <option value=''>Select the Package</option>
                                                 <?php
@@ -98,7 +98,7 @@ include_once(dirname(__FILE__) . '/class/include.php');
                                                 <?php }
                                                 ?>
                                             </select>
-                                            <!--</div>-->
+                                            </div>
 
                                         </div>
                                         <div class="hotel-input-2 input-s-3">
@@ -122,9 +122,10 @@ include_once(dirname(__FILE__) . '/class/include.php');
                             </div>
                         </div>
                     </div>
-                </div> <!-- tab content 2 end -->
+                </div>  tab content 2 end 
             </div>
-        </section> <!--end header tab based search area-->
+        </section> 
+        <!--end header tab based search area-->
 
         <section class="section-paddings welcome-area">
             <div class="container">
@@ -138,7 +139,7 @@ include_once(dirname(__FILE__) . '/class/include.php');
                                 <img src="images/welcome/wel1.jpg" alt="" class="img-thumbnail img-responsive">
                             </div>
                         </div>
-                    </div> <!-- welcome area left side end -->
+                    </div>  welcome area left side end 
 
                     <div class="col-md-6">
                         <div class="single-welcome-text">
@@ -152,10 +153,11 @@ include_once(dirname(__FILE__) . '/class/include.php');
                                 </div>
                             </div>
                         </div>
-                    </div>  <!-- welcome area right side end -->
+                    </div>   welcome area right side end 
                 </div>
             </div>
-        </section> <!-- welcome area start end here -->
+        </section> 
+        <!-- welcome area start end here -->
 
         <section class="tour-package-bg image-bg-padding-100 herounit-bg ">
             <div class="container">
@@ -168,7 +170,7 @@ include_once(dirname(__FILE__) . '/class/include.php');
                             </spam>
                         </div>
                     </div>
-                    <!-- tour packages carosual -->
+                     tour packages carosual 
                     <div class="popular-packages-carasoul owl-carousel">
                         <?php
                         foreach (TourPackage::all() as $tour) {
@@ -217,10 +219,11 @@ include_once(dirname(__FILE__) . '/class/include.php');
                         }
                         ?>
 
-                    </div> <!-- tour packages carosual end -->
+                    </div>  tour packages carosual end 
                 </div>
             </div>
-        </section> <!-- Tour Packages end here -->
+        </section>
+        <!-- Tour Packages end here -->
 
 
 
@@ -243,27 +246,27 @@ include_once(dirname(__FILE__) . '/class/include.php');
 
                         <div class="single-destination">
                             <figure>
-                                <a href="View-Destination.php"><img src="upload/destination/<?php echo $destination['image_name']; ?>" alt="">
+                                <a href="view-destination.php?id=<?php echo $destination['id']; ?>"><img src="upload/destination/<?php echo $destination['image_name']; ?>" alt="">
                                 </a>
                                 <figcaption>
-                                    <a href="View-Destination.php" class="travel-booking-btn hvr-shutter-out-horizontal">Read More</a>
+                                    <a href="view-destination.php?id=<?php echo $destination['id']; ?>" class="travel-booking-btn hvr-shutter-out-horizontal">Read More</a>
 
                                 </figcaption>
                             </figure>
                             <div class="des-city">
-                                <a href="View-Destination.php"> <h4> <?php echo $destination['title']; ?> </h4></a>
+                                <a href="view-destination.php?id=<?php echo $destination['id']; ?>"> <h4> <?php   echo $destination['title']; ?> </h4></a>
                                 <p><?php
-                                    if (strlen($destination['short_description']) > 20) {
+                                    if (strlen($destination['short_description']) > 45) {
                                         echo substr($destination['short_description'], 0, 48) . '...';
                                     } else {
                                         echo $destination['short_description'];
                                     }
-                                    ?></p>
+                                    ?>
+                                </p>
                             </div>
-                        </div> <!-- single popular destination  end-->
-
-
-
+                        </div> 
+                    
+                    <!--single popular destination  end-->
 
 
                         <?php
@@ -292,15 +295,24 @@ include_once(dirname(__FILE__) . '/class/include.php');
             <div class="testimonial-5-active owl-carousel">
                 <?php
                 foreach (Comments::all() as $key => $gustComment) {
-                    if ($key > 6) {
+                    if ($key < 6) {
                         ?>
                         <!-- single testimonial start -->
                         <div class="single-testimonial">
                             <img src="upload/comments/<?php echo $gustComment['image_name']; ?>" alt="1" class="img-circle">
                             <div class="testimonial-messages">
+        <!--                                <p><?php
+                                echo $gustComment['comment'];
+                                ?></p>-->
                                 <p><?php
-                                    echo $gustComment['comment'];
+                                    if (strlen($gustComment['comment']) > 200) {
+                                        echo substr($gustComment['comment'], 0, 200) . '...';
+                                    } else {
+                                        echo $gustComment['comment'];
+                                    }
                                     ?></p>
+
+
                             </div>
                             <div class="author-bio">
                                 <h3><?php echo $gustComment['name']; ?></h3>
@@ -314,7 +326,10 @@ include_once(dirname(__FILE__) . '/class/include.php');
                 ?>
                 <!-- single testimonial end -->
             </div>
+            
         </section><!-- testimonial area end here -->
+        
+        
         <section class="section-paddings">
             <div class="container">
                 <div class="row">
