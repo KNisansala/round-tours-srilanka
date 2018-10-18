@@ -46,8 +46,13 @@ if (!isset($_SESSION)) {
         <link rel="stylesheet" href="css/responsive.css">
         <!-- modernizr css -->
         <link href="contact-us-form/style.css" rel="stylesheet" type="text/css"/>
+        <!--gust-comment-->
+        <link href="guest-comment/style.css" rel="stylesheet" type="text/css"/>
         <!--sweetAlert css-->
         <link href="control-panel/plugins/sweetalert/sweetalert.css" rel="stylesheet" type="text/css"/>
+        <style>
+            @media only screen and (min-width: 576px) and (max-width: 768px) {.refresh-img {margin: -29px 0px 18px 150px;}    }
+        </style>
     </head>
     <body>
         <!-- Preloader -->
@@ -114,7 +119,7 @@ if (!isset($_SESSION)) {
                                             <textarea name="txtMessage" rows="6" class="form-control input-validatar" placeholder="Comment" id="txtMessage"></textarea>
                                             <span id="spanComments"></span>
                                         </div>
-                                        
+
 
                                         <div class="form-group">
                                             <span class="securitybox">
@@ -127,8 +132,8 @@ if (!isset($_SESSION)) {
 
                                         <div class="">
                                             <!--<span class="securitybox1">-->
-                                                <input type ="hidden" name="btn-comment" id="btn-comment">
-                                                <button type="submit" id="btnSubmit" name="btnSubmit" class="button primary"><i class="fa fa-send"></i>Post</button>
+                                            <input type ="hidden" name="btn-comment" id="btn-comment">
+                                            <button type="submit" id="btnSubmit" name="btnSubmit" class="button primary"><i class="fa fa-send"></i>Post</button>
                                             <!--</span>-->
                                         </div>
 
@@ -166,12 +171,12 @@ if (!isset($_SESSION)) {
                                             <div class="col-sm-11">
                                                 <div class="panel panel-white post panel-shadow">
                                                     <div class="post-heading">
-                                                        <span class="col-lg-1 col-xs-7">
+                                                        <span class="col-lg-1 col-sm-2 col-xs-7">
                                                             <div class="pull-left image">
                                                                 <img src="upload/comments/<?php echo $gustCommentSec['image_name']; ?>" alt="1" class="img-circle">
                                                             </div>
                                                         </span>
-                                                        <span class="col-lg-3 col-xs-5">
+                                                        <span class="col-lg-3 col-sm-5 col-xs-5">
                                                             <div class="pull-left meta">
                                                                 <div class="title h5">
                                                                     <a href="#"><b><?php echo $gustCommentSec['name']; ?></b></a>

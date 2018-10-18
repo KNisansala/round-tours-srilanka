@@ -76,7 +76,7 @@ $tour_dates = TourDate::getTourDatesById($id);
 
         <!-- blog breadcrumb version one strat here -->
         <section class="breadcrumb-blog-version-one">
-            <div class="single-bredcurms" style="background-image:url('images/bercums/contact-page.jpg');">
+            <div class="single-bredcurms" style="background-image:url('images/bercums/package1.jpg');">
                 <div class="container">
                     <div class="row">
                         <div class="col-sm-12">
@@ -173,12 +173,12 @@ $tour_dates = TourDate::getTourDatesById($id);
                                     <a href="view-tour-packages.php?id=<?php echo $ViewOther['id']; ?>">
                                         <h3><?php echo $ViewOther['title']; ?></h3>
                                     </a>      
-                                    <div class="col-md-6 col-sm-12 col-xs-4" viewdisimg>
+                                    <div class="col-md-6 col-sm-4 col-xs-4" viewdisimg>
                                         <a href="">
                                             <img src="upload/tour-package/thumb/<?php echo $ViewOther['image_name']; ?>" alt="">
                                         </a>
                                     </div>
-                                    <div class="col-md-6 col-sm-12 col-xs-8 qua ">
+                                    <div class="col-md-6 col-sm-8 col-xs-8 qua ">
                                         <div class="qua">
                                             <p><?php
                                                 if (strlen($ViewOther['short_description']) > 40) {

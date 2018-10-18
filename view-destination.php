@@ -135,12 +135,12 @@ $DESTINATION = new Destination($id);
                                     <a href="view-destination.php?id=<?php echo $destinationPlace['id']; ?>">
                                         <h3><?php echo $destinationPlace['title']; ?></h3>
                                     </a>      
-                                    <div class="col-md-6 col-sm-12 col-xs-4">
+                                    <div class="col-md-6 col-sm-4 col-xs-4">
                                         <a href="">
                                             <img src="upload/destination/thumb/<?php echo $destinationPlace['image_name']; ?>" alt="">
                                         </a>
                                     </div>
-                                    <div class="col-md-6 col-sm-12 col-xs-8 qua">
+                                    <div class="col-md-6 col-sm-8 col-xs-8 qua">
                                         <div class="qua">
                                             <p><?php
                                                 if (strlen($destinationPlace['short_description']) > 40) {
