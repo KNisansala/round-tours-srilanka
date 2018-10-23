@@ -152,7 +152,7 @@ $tour_dates = TourDate::getTourDatesById($id);
                         }
                         ?>
                         <div class="header-top-right text-right booknow">
-                            <div class="col-md-6 col-xs-9 book-tab">
+                            <div class="col-md-7 col-xs-9 book-tab">
                                 <div class="book-btn booknow">
                                     <a href="booking.php?tour=<?php echo $TOUR->id; ?>">Book Now</a>
                                 </div>
@@ -178,7 +178,7 @@ $tour_dates = TourDate::getTourDatesById($id);
                                             <img src="upload/tour-package/thumb/<?php echo $ViewOther['image_name']; ?>" alt="">
                                         </a>
                                     </div>
-                                    <div class="col-md-6 col-sm-8 col-xs-8 qua ">
+                                    <div class="col-md-6 col-sm-8 col-xs-8 qua hidden-xs hidden-sm ">
                                         <div class="qua">
                                             <p><?php
                                                 if (strlen($ViewOther['short_description']) > 40) {
@@ -190,6 +190,23 @@ $tour_dates = TourDate::getTourDatesById($id);
                                             </p>
                                         </div>
                                     </div> 
+                                    
+                                    <div class="col-md-6 col-sm-8 col-xs-8 qua  hidden-lg hidden-sm hidden-md ">
+                                        <div class="qua">
+                                            <p><?php
+                                                if (strlen($ViewOther['short_description']) > 38) {
+                                                    echo substr($ViewOther['short_description'], 0, 38) . '...';
+                                                } else {
+                                                    echo $ViewOther['short_description'];
+                                                }
+                                                ?>
+                                            </p>
+                                        </div>
+                                    </div> 
+                                    
+                                    
+                                    
+                                    
                                 </div>.<!--/ End Single Sidebar -->
                                 <?php
                             }
@@ -198,6 +215,11 @@ $tour_dates = TourDate::getTourDatesById($id);
 
 
 
+                        
+                        
+                        
+                        
+                        
 
                     </div>
 

@@ -1,12 +1,5 @@
 <?php
 include_once(dirname(__FILE__) . '/class/include.php');
-
-
-$id = '';
-if (isset($_GET['id'])) {
-    $id = $_GET['id'];
-}
-$PHOTOALBUM = new PhotoAlbum($id);
 ?>
 
 <!DOCTYPE html>
@@ -77,11 +70,10 @@ $PHOTOALBUM = new PhotoAlbum($id);
                         <div class="col-sm-12">
 
                             <div class="bredcrums-content">
-                                <h2><?php echo $PHOTOALBUM->title; ?></h2>
+                                <h2>Photo Album </h2>
                                 <ul>
                                     <li><a href="./">Home</a></li>
-                                    <li><a href="./photo-album-type.php">Photo Album</a></li>
-                                    <li class="active"><?php echo $PHOTOALBUM->title; ?></li>
+                                    <li class="active">Photo Album </li>
                                 </ul>
                             </div>
                         </div>
@@ -90,53 +82,43 @@ $PHOTOALBUM = new PhotoAlbum($id);
             </div>
         </section><!-- blog breadcrumb version one end here -->
 
-        <!-- top destination start here -->
-        <section class="top-destination-area pt-100 pb-70">
+
+        <!-- incredible place start here -->
+        <div class="section-paddings incredible-places section-paddings1">
             <div class="container">
-                <div class="row">
-                    <!-- single destination -->
-                    <?php
-                            
-                    $PHOTOS = AlbumPhoto::getAlbumPhotosById($PHOTOALBUM->id);
-                    
-                    $count = count($PHOTOS);
-                    if ($count > 0) {
-                        ?>
-                      <?php
-                                foreach ($PHOTOS as $photoAlbum) {
-                                    ?>
-                        <div class="col-md-3 col-sm-3 col-xs-12">
-                            <figure>
-                              
-                                    <a href="upload/photo-album/gallery/<?php echo $photoAlbum['image_name']; ?>" class="" data-fancybox="images" >
-                                        <figcaption>
-                                            <i class="fa fa-search" style="font-size:30px;color:#ffff;"></i>
-                                        </figcaption>
-                                        <img src="upload/photo-album/gallery/thumb/<?php echo $photoAlbum['image_name']; ?>" alt="">
-
-                                    </a>
-
-                                </figure>
-                             
-                        </div>
-                       <?php
-                            }
-                            ?>
-                        <?php
-                    } else {
-                        echo 'No images in the databse';
-                    }
+                
+                <?php
+                foreach (PhotoAlbum::all() as $photoAlbum) {
                     ?>
+                    <div class="col-md-4 col-sm-6">
 
+                        <a href="photo-album.php?id=<?php echo $photoAlbum['id']; ?>">
+                            <div class="single-place">
+                                <figure>
+                                    <img src="upload/photo-album/<?php echo $photoAlbum['image_name']; ?>" alt="">
+                                    <figcaption>
+                                        <h3><?php echo $photoAlbum['title']; ?></h3>   
+                                        <h4><?php
+                                                if (strlen($photoAlbum['description']) > 250) {
+                                                    echo substr($photoAlbum['description'], 0, 250) . '...';
+                                                } else {
+                                                    echo $photoAlbum['description'];
+                                                }
+                                                ?></h4>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </a> 
 
-                    <!-- single destination -->
-
-
-
-                </div>
+                    </div> 
+                    <?php
+                }
+                ?>
+                <!-- end single place -->
             </div>
-        </section>
-        <!-- top destination end here -->
+        </div> <!-- incredible place end here -->
+
+
 
         <!-- footer start here -->
         <?php

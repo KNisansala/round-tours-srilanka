@@ -17,7 +17,7 @@ include_once(dirname(__FILE__) . '/Comments.php');
 include_once(dirname(__FILE__) . '/Slider.php');
 include_once(dirname(__FILE__) . '/Page.php');
 include_once(dirname(__FILE__) . '/Banner.php');
-
+include_once(dirname(__FILE__) . '/AlbumPhoto.php');
 
 function dd($data) {
     var_dump($data);

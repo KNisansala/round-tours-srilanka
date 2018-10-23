@@ -611,7 +611,7 @@
     }
     .single .blog-sidebar .single-sidebar {
 
-        height: 323px;
+        height:210px;
         margin-bottom: -53px;
         margin-top: 58px;
 
@@ -688,15 +688,24 @@
 
     .title-line-12 h2 {
 
-        font-size: 25px !important;
+        font-size: 22px !important;
         text-align: center !important;
         margin-top: 30px !important;
 
     }
     .testimonial-area-5 .single-testimonial .testimonial-messages p {
-    margin: 9px;
-   }
+        margin: 9px;
+    }
 
+    .section-paddings1 {
+        margin-top: 0px;
+    }
+
+    .single-bredcurms .bredcrums-content h2 {
+
+        font-size: 32px;
+
+    }
 }
 
 

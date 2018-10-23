@@ -11,7 +11,7 @@ if (isset($_POST['create'])) {
     $PHOTO_ALBUM->description = $_POST['description'];
 
     $dir_dest = '../../upload/photo-album/';
-    $dir_dest_thumb = '../../upload/photo-album/thumb/';
+
     $handle = new Upload($_FILES['image']);
     $img = Helper::randamId();
     $imgName = null;
@@ -21,8 +21,8 @@ if (isset($_POST['create'])) {
         $handle->file_new_name_ext = 'jpg';
         $handle->image_ratio_crop = 'C';
         $handle->file_new_name_body = $img;
-        $handle->image_x = 900;
-        $handle->image_y = 500;
+        $handle->image_x = 360;
+        $handle->image_y = 270;
 
         $handle->Process($dir_dest);
 
@@ -30,23 +30,8 @@ if (isset($_POST['create'])) {
             $info = getimagesize($handle->file_dst_pathname);
             $imgName = $handle->file_dst_name;
         }
-
-        if ($handle->uploaded) {
-            $handle->image_resize = true;
-            $handle->file_new_name_ext = 'jpg';
-            $handle->image_ratio_crop = 'C';
-            $handle->file_new_name_body =$img;
-            $handle->image_x = 263;
-            $handle->image_y = 228;
-
-            $handle->Process($dir_dest_thumb);
-
-            if ($handle->processed) {
-                $info = getimagesize($handle->file_dst_pathname);
-                $imgName = $handle->file_dst_name;
-            }
-        }
     }
+
 
     $PHOTO_ALBUM->image_name = $imgName;
 
@@ -58,15 +43,15 @@ if (isset($_POST['create'])) {
 
 
     if ($VALID->passed()) {
-        $PHOTO_ALBUM->create();
+         $result = $PHOTO_ALBUM->create();
 
         if (!isset($_SESSION)) {
             session_start();
         }
-        $VALID->addError("Your data was saved successfully", 'success');
+       $VALID->addError("Your data was saved successfully", 'success');
         $_SESSION['ERRORS'] = $VALID->errors();
 
-        header('Location: ' . $_SERVER['HTTP_REFERER']);
+        header('Location: ../view-album-photos.php?id=' . $result->id);
     } else {
 
         if (!isset($_SESSION)) {
@@ -81,7 +66,6 @@ if (isset($_POST['create'])) {
 
 if (isset($_POST['update'])) {
     $dir_dest = '../../upload/photo-album/';
-    $dir_dest_thumb = '../../upload/photo-album/thumb/';
     $handle = new Upload($_FILES['image']);
 
     $imgName = null;
@@ -93,8 +77,8 @@ if (isset($_POST['update'])) {
         $handle->file_new_name_ext = FALSE;
         $handle->image_ratio_crop = 'C';
         $handle->file_new_name_body = $_POST ["oldImageName"];
-        $handle->image_x = 900;
-        $handle->image_y = 500;
+        $handle->image_x = 360;
+        $handle->image_y = 270;
 
         $handle->Process($dir_dest);
 
@@ -103,25 +87,6 @@ if (isset($_POST['update'])) {
             $imgName = $handle->file_dst_name;
         }
     }
-
-    if ($handle->uploaded) {
-        $handle->image_resize = true;
-        $handle->file_new_name_body = TRUE;
-        $handle->file_overwrite = TRUE;
-        $handle->file_new_name_ext = FALSE;
-        $handle->image_ratio_crop = 'C';
-        $handle->file_new_name_body = $_POST ["oldImageName"];
-        $handle->image_x = 263;
-        $handle->image_y = 228;
-
-        $handle->Process($dir_dest_thumb);
-
-        if ($handle->processed) {
-            $info = getimagesize($handle->file_dst_pathname);
-            $imgName = $handle->file_dst_name;
-        }
-    }
-
 
     $PHOTO_ALBUM = new PhotoAlbum($_POST['id']);
 
