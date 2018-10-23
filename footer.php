@@ -69,7 +69,7 @@
                                     <li> <img class="map" alt=""><a href="about-us.php">About-us</a></li>
                                     <li> <img class="map" alt=""><a href="tour-packages.php">Tour Package</a></li> 
                                     <li> <img class="map" alt=""><a href="destination.php">Destination</a></li>   
-                                    <li> <img class="map" alt=""><a href="photo-album.php">Photo Album</a></li>
+                                    <li> <img class="map" alt=""><a href="photo-album-type.php">Photo Album</a></li>
                                     <li> <img class="map" alt=""><a href="contact.php">Contact</a></li>
                                     <li> <img class="map" alt=""><a href="booking.php">Book Now</a></li>
                                     
@@ -154,12 +154,12 @@
                 <div class="col-md-7 col-xs-12">
                     <ul class="payicon pull-right">
                         <li>We Accept</li>
-                        <li><img src="images/payicon01.png" alt=""></li>
-                        <li><img src="images/payicon02.png" alt=""></li>
-                        <li><img src="images/payicon03.png" alt=""></li>
-                        <li><img src="images/payicon04.png" alt=""></li>
-                        <li><img src="images/payicon05.png" alt=""></li>
-                        <li><img src="images/payicon06.png" alt=""></li>
+                        <li><img src="images/payicon01.png" alt="">
+                        <img src="images/payicon02.png" alt="">
+                        <img src="images/payicon03.png" alt="">
+                        <img src="images/payicon04.png" alt="">
+                        <img src="images/payicon05.png" alt="">
+                        <img src="images/payicon06.png" alt=""></li>
                     </ul>
                 </div>
             </div>

@@ -84,15 +84,15 @@
                         <div class="address">
                             <p>
                                 <strong>Address</strong>
-                                <br> No.205, Bokundara , Piliyandala, Sri Lanka.
+                                <br> Round Tours Srilanka,No:08,School Lane,Hirimbura,Galle,Srilanka.
 
                             <p>
                                 <strong>Website</strong>
-                                <br> sublime.lk
+                                <br> www.roundtourssrilanka.galle.website
                             </p>
                             <p>
                                 <strong>Email</strong>
-                                <br> mail@sublime.lk
+                                <br> mmsanhar@yahoo.com
                             </p>
                         </div>
                     </div>

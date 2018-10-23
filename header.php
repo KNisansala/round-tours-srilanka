@@ -41,7 +41,7 @@
                             <li><a href="about-us.php">About Us</a></li>
                             <li><a href="tour-packages.php">Tour Packages</a></li>
                             <li><a href="destination.php">Destination</a></li>
-                            <li><a href="photo-album.php">Photo Album</a></li>
+                            <li><a href="photo-album-type.php">Photo Album</a></li>
                             <li><a href="guest-comment.php">Guest Comment</a></li>
                             <li><a href="contact.php">Contact Us</a></li>
                         </ul>

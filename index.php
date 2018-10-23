@@ -50,9 +50,9 @@ include_once(dirname(__FILE__) . '/class/include.php');
     </head>
     <body> 
         <!-- Preloader -->
-                <div id="preloader">
-                    <div id="status">&nbsp;</div>
-                </div>	
+        <div id="preloader">
+            <div id="status">&nbsp;</div>
+        </div>	
 
         <!-- header area start here -->
         <?php
@@ -67,7 +67,7 @@ include_once(dirname(__FILE__) . '/class/include.php');
 
         <section class="tabbased-search-area tabbased-search-area-2">
             <div class="container">
-                 tab menu 2 start 
+                <!--tab menu 2 start--> 
                 <div class="row">
                     <div class="col-md-12">
                         <div class="tabbable-menu background-opacity">
@@ -76,28 +76,29 @@ include_once(dirname(__FILE__) . '/class/include.php');
                             </ul>
                         </div>
                     </div>
-                </div>  tab menu 2 end 
+                </div>  
+                <!--tab menu 2 end--> 
 
-                 tab content 2 start 
+                <!--tab content 2 start--> 
                 <div class="row">
                     <div class="col-md-12 bg-shadoow-image">
                         <div class="tab-content tab-content-2" id="tab-content1">
-                             hotels form 
+                            
                             <div class="tab-pane active" id="hotels">
                                 <div class="hotels-form">
                                     <form action="booking.php" method="get">
 
                                         <div class="hotel-input-4 input-b-2">
                                             <div class="selectop">
-                                            <select class="form-control1" name="tour"  style="background-color: #eee;">
-                                                <option value=''>Select the Package</option>
-                                                <?php
-                                                foreach (TourPackage::all() as $tour_package) {
+                                                <select class="form-control1" name="tour"  style="background-color: #eee;">
+                                                    <option value=''>Select the Package</option>
+                                                    <?php
+                                                    foreach (TourPackage::all() as $tour_package) {
+                                                        ?>
+                                                        <option value='<?php echo $tour_package['id']; ?>'><?php echo $tour_package['title']; ?></option>
+                                                    <?php }
                                                     ?>
-                                                    <option value='<?php echo $tour_package['id']; ?>'><?php echo $tour_package['title']; ?></option>
-                                                <?php }
-                                                ?>
-                                            </select>
+                                                </select>
                                             </div>
 
                                         </div>
@@ -122,7 +123,8 @@ include_once(dirname(__FILE__) . '/class/include.php');
                             </div>
                         </div>
                     </div>
-                </div>  tab content 2 end 
+                </div>  
+                <!--tab content 2 end--> 
             </div>
         </section> 
         <!--end header tab based search area-->
@@ -139,13 +141,14 @@ include_once(dirname(__FILE__) . '/class/include.php');
                                 <img src="images/welcome/wel1.jpg" alt="" class="img-thumbnail img-responsive">
                             </div>
                         </div>
-                    </div>  welcome area left side end 
+                    </div> 
+                    <!--welcome area left side end--> 
 
                     <div class="col-md-6">
                         <div class="single-welcome-text">
                             <div class="section-title-version-2">
                                 <h2>Welcome to Round Tour Sri Lanka</h2>
-                                <h5>“Ayubowan” </h5>
+                                <h5>Ayubowan </h5>
                                 <div class="welcome-content">
                                     <p> Accompanied by palms clasped together with a gentle bow of the head is the way a visitor is greeted in Sri Lanka. It is hard to beat Sri Lanka’s charismatic multicultural, multi faceted ambience and magnificent setting in the tropics. The island of Sri Lanka is a land of great variety and texture, a visitor to Sri Lanka is exposed to an upbeat of colours and rhythms of many cultures, smiles of hospitality, spicy food, a nature lovers paradise with breath taking scenic landscapes and mosaic of lush green paddy fields, cooler climates and wildlife safaris from the moment he sets foot in Sri Lanka. An ideal holiday destination, though beach lovers will have to make some tough choices throughout most of the country, as the coastline seems endless, offering some of world’s finest tropical sandy beaches
                                     </p>
@@ -153,7 +156,8 @@ include_once(dirname(__FILE__) . '/class/include.php');
                                 </div>
                             </div>
                         </div>
-                    </div>   welcome area right side end 
+                    </div>  
+                    <!--welcome area right side end--> 
                 </div>
             </div>
         </section> 
@@ -170,7 +174,7 @@ include_once(dirname(__FILE__) . '/class/include.php');
                             </spam>
                         </div>
                     </div>
-                     tour packages carosual 
+                    <!--tour packages carosual--> 
                     <div class="popular-packages-carasoul owl-carousel">
                         <?php
                         foreach (TourPackage::all() as $tour) {
@@ -219,7 +223,8 @@ include_once(dirname(__FILE__) . '/class/include.php');
                         }
                         ?>
 
-                    </div>  tour packages carosual end 
+                    </div>  
+                    <!--tour packages carosual end--> 
                 </div>
             </div>
         </section>
@@ -239,37 +244,76 @@ include_once(dirname(__FILE__) . '/class/include.php');
                         </div>
                     </div>
                 </div>
-                <div class="destination-slider-active owl-carousel">
+                <div class="destination-slider-active owl-carousel hidden-lg hidden-md hidden-sm">
                     <?php
-                    foreach (Destination::all() as $destination) {
-                        ?>
+                    foreach (Destination::all() as $key => $destination) {
+                        if ($key < 1) {
+                            ?>
 
-                        <div class="single-destination">
-                            <figure>
-                                <a href="view-destination.php?id=<?php echo $destination['id']; ?>"><img src="upload/destination/<?php echo $destination['image_name']; ?>" alt="">
-                                </a>
-                                <figcaption>
-                                    <a href="view-destination.php?id=<?php echo $destination['id']; ?>" class="travel-booking-btn hvr-shutter-out-horizontal">Read More</a>
+                            <div class="single-destination">
+                                <figure>
+                                    <a href="view-destination.php?id=<?php echo $destination['id']; ?>"><img src="upload/destination/<?php echo $destination['image_name']; ?>" alt="">
+                                    </a>
+                                    <figcaption>
+                                        <a href="view-destination.php?id=<?php echo $destination['id']; ?>" class="travel-booking-btn hvr-shutter-out-horizontal">Read More</a>
 
-                                </figcaption>
-                            </figure>
-                            <div class="des-city">
-                                <a href="view-destination.php?id=<?php echo $destination['id']; ?>"> <h4> <?php   echo $destination['title']; ?> </h4></a>
-                                <p><?php
-                                    if (strlen($destination['short_description']) > 45) {
-                                        echo substr($destination['short_description'], 0, 48) . '...';
-                                    } else {
-                                        echo $destination['short_description'];
-                                    }
-                                    ?>
-                                </p>
-                            </div>
-                        </div> 
-                    
-                    <!--single popular destination  end-->
+                                    </figcaption>
+                                </figure>
+                                <div class="des-city">
+                                    <a href="view-destination.php?id=<?php echo $destination['id']; ?>"> <h4> <?php echo $destination['title']; ?> </h4></a>
+                                    <p><?php
+                                        if (strlen($destination['short_description']) > 45) {
+                                            echo substr($destination['short_description'], 0, 48) . '...';
+                                        } else {
+                                            echo $destination['short_description'];
+                                        }
+                                        ?>
+                                    </p>
+                                </div>
+                            </div> 
+
+                            <!--single popular destination  end-->
 
 
-                        <?php
+                            <?php
+                        }
+                    }
+                    ?>
+
+                </div>
+                <div class="destination-slider-active owl-carousel hidden-xs">
+                    <?php
+                    foreach (Destination::all() as $key => $destination) {
+                        if ($key <5) {
+                            ?>
+
+                            <div class="single-destination">
+                                <figure>
+                                    <a href="view-destination.php?id=<?php echo $destination['id']; ?>"><img src="upload/destination/<?php echo $destination['image_name']; ?>" alt="">
+                                    </a>
+                                    <figcaption>
+                                        <a href="view-destination.php?id=<?php echo $destination['id']; ?>" class="travel-booking-btn hvr-shutter-out-horizontal">Read More</a>
+
+                                    </figcaption>
+                                </figure>
+                                <div class="des-city">
+                                    <a href="view-destination.php?id=<?php echo $destination['id']; ?>"> <h4> <?php echo $destination['title']; ?> </h4></a>
+                                    <p><?php
+                                        if (strlen($destination['short_description']) > 45) {
+                                            echo substr($destination['short_description'], 0, 48) . '...';
+                                        } else {
+                                            echo $destination['short_description'];
+                                        }
+                                        ?>
+                                    </p>
+                                </div>
+                            </div> 
+
+                            <!--single popular destination  end-->
+
+
+                            <?php
+                        }
                     }
                     ?>
 
@@ -326,10 +370,10 @@ include_once(dirname(__FILE__) . '/class/include.php');
                 ?>
                 <!-- single testimonial end -->
             </div>
-            
+
         </section><!-- testimonial area end here -->
-        
-        
+
+
         <section class="section-paddings">
             <div class="container">
                 <div class="row">
@@ -347,7 +391,7 @@ include_once(dirname(__FILE__) . '/class/include.php');
                             <img src="images/gallery/gal1.jpg" alt="">
                             <figcaption>
                                 <a href="images/gallery/gal1.jpg"><i class="fa fa-pencil"></i></a>
-                                <!--<h4>Place <span>Eiffel Tower</span></h4>-->
+                                <h4>Place <span> Demodara nine arch bridge </span></h4>
 
                             </figcaption>
                         </figure>
@@ -358,7 +402,7 @@ include_once(dirname(__FILE__) . '/class/include.php');
                             <img src="images/gallery/galltumb1.jpg" alt="">
                             <figcaption>
                                 <a href="images/gallery/gall1.jpg"><i class="fa fa-pencil"></i></a>
-                                <!--<h4>Place <span>Eiffel Tower</span></h4>-->
+                                <h4>Place <span>Horton Place</span></h4>
 
                             </figcaption>
                         </figure>
@@ -369,7 +413,7 @@ include_once(dirname(__FILE__) . '/class/include.php');
                             <img src="images/gallery/galltumb2.jpg" alt="">
                             <figcaption>
                                 <a href="images/gallery/gall2.jpg"><i class="fa fa-pencil"></i></a>
-                                <!--<h4>Place <span>Eiffel Tower</span></h4>-->
+                                <h4>Place <span>Horton Place</span></h4>
 
                             </figcaption>
                         </figure>
@@ -380,7 +424,7 @@ include_once(dirname(__FILE__) . '/class/include.php');
                             <img src="images/gallery/galltumb3.jpg" alt="">
                             <figcaption>
                                 <a href="images/gallery/gall3.jpg"><i class="fa fa-pencil"></i></a>
-                                <!--<h4>Place <span>Eiffel Tower</span></h4>-->
+                                <h4>Place <span>Nuwara Eliya</span></h4>
 
                             </figcaption>
                         </figure>
@@ -391,7 +435,7 @@ include_once(dirname(__FILE__) . '/class/include.php');
                             <img src="images/gallery/gal5.jpg" alt="">
                             <figcaption>
                                 <a href="images/gallery/5b55ffa49a52204f77142a4b25bf96c5.jpg"><i class="fa fa-pencil"></i></a>
-                                <!--<h4>Place <span>Eiffel Tower</span></h4>-->
+                                <h4>Place <span>Udawalawa Safari</span></h4>
 
                             </figcaption>
                         </figure>
@@ -402,7 +446,7 @@ include_once(dirname(__FILE__) . '/class/include.php');
                             <img src="images/gallery/gal6.jpg" alt="">
                             <figcaption>
                                 <a href="images/gallery/20180714_112059.jpg"><i class="fa fa-pencil"></i></a>
-                                <!--<h4>Place <span>Eiffel Tower</span></h4>-->
+                                <h4>Place <span>Yala Safari</span></h4>
 
                             </figcaption>
                         </figure>
@@ -414,7 +458,7 @@ include_once(dirname(__FILE__) . '/class/include.php');
                             <img src="images/gallery/gal7.jpg" alt="">
                             <figcaption>
                                 <a href="images/gallery/124-fresco-sigiriya.jpg"><i class="fa fa-pencil"></i></a>
-                                <!--<h4>Place <span>Eiffel Tower</span></h4>-->
+                                <h4>Place <span>Sigiriya</span></h4>
 
                             </figcaption>
                         </figure>
@@ -425,7 +469,7 @@ include_once(dirname(__FILE__) . '/class/include.php');
                             <img src="images/gallery/gal8.jpg" alt="">
                             <figcaption>
                                 <a href="images/gallery/beach4.jpg"><i class="fa fa-pencil"></i></a>
-                                <!--<h4>Place <span>Eiffel Tower</span></h4>-->
+                                <h4>Place <span>Hikkaduwa</span></h4>
 
                             </figcaption>
                         </figure>
