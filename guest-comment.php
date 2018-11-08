@@ -10,10 +10,10 @@ if (!isset($_SESSION)) {
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <meta name="description" content="TRABBLE - Tour, Travel, Travel Agency Template">
-        <meta name="keywords" content="Tour, Travel, Travel Agency Template">
+        <meta name="description" content="This trip was easily the trip of a lifetime for our family of four, and it will be quite some time before we stop talking about it!!  We have a done a lot of travel with our children alongside us">
+        <meta name="keywords" content="Round Tours Sri Lanka Gust Comment,Gust Comment in Round Tour Sri Lanka,Gust Comment">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Round Tours Sri Lanka</title>
+        <title>Gust Comment||Round Tours Sri Lanka</title>
         <!-- Google Fonts Includes -->
         <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
         <!-- Favi icon -->
@@ -51,8 +51,22 @@ if (!isset($_SESSION)) {
         <!--sweetAlert css-->
         <link href="control-panel/plugins/sweetalert/sweetalert.css" rel="stylesheet" type="text/css"/>
         <style>
-            @media only screen and (min-width: 576px) and (max-width: 768px) {.refresh-img {margin: -29px 0px 18px 150px;}    }
+            @media only screen and (min-width: 576px) and (max-width: 768px) {.refresh-img {margin: -29px 0px 18px 150px;}}
+           @media only screen and (min-width: 768px) and (max-width: 991px) {.refresh-img {margin: -29px 0px 20px 149px;}}
+           .section-title-3i{
+               margin-top: 0px;
+           }
+           @media only screen and (max-width: 768px) {
+                .header-bottom-area .logo-area {
+                    margin-top: -34px;
+                    position: absolute;
+                }
+            }
+        
         </style>
+        
+         
+        
     </head>
     <body>
         <!-- Preloader -->
@@ -84,8 +98,8 @@ if (!isset($_SESSION)) {
             </div>
         </section><!-- blog breadcrumb version one end here -->
 
-        <section class="section-paddings">
-            <div class="container">
+        <section class="pt-70 pb-70">
+            <div class="container ">
                 <div class="row">
                     <div class="col-md-10 col-md-offset-1 col-sm-12 col-xs-12">
 
@@ -150,7 +164,7 @@ if (!isset($_SESSION)) {
 
         <!-- Choose trabble version two start  -->
 
-        <div class="container">
+        <div class="container pb-70">
             <div class="section-title-3i">
                 <h2>All Reviews</h2>
             </div>

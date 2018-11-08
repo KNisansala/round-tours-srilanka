@@ -4,16 +4,16 @@
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <meta name="description" content="TRABBLE - Tour, Travel, Travel Agency Template">
-        <meta name="keywords" content="Tour, Travel, Travel Agency Template">
+        <meta name="description" content="For more details or any inquiry contact us">
+        <meta name="keywords" content="Round Tours Sri Lanka Contact,Contact details in Round Tour Sri Lanka, best travel agent, best tour operator in sri lanka, travel guide">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Round Tours Sri Lanka</title>
+        <title>Contact||Round Tours Sri Lanka</title>
         <!-- Google Fonts Includes -->
         <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
         <!-- Favi icon -->
         <link rel="shortcut icon" type="image/x-icon" href="images/logo/logo2.png"
-        <!-- bootstrap v3.3.6 css -->
-        <link rel="stylesheet" href="css/bootstrap.min.css">
+              <!-- bootstrap v3.3.6 css -->
+              <link rel="stylesheet" href="css/bootstrap.min.css">
         <!-- animate css -->
         <link rel="stylesheet" href="css/animate.css">
         <!-- Button Hover animate css -->
@@ -40,6 +40,17 @@
         <link rel="stylesheet" href="css/responsive.css">
         <!-- modernizr css -->
         <link href="contact-us-form/style.css" rel="stylesheet" type="text/css"/>
+
+        <style>  
+            @media only screen and (max-width: 768px) {
+                .header-bottom-area .logo-area {
+                    margin-top: -34px;
+                    position: absolute;
+                }
+            }
+
+        </style>
+
     </head>
     <body>
         <!-- Preloader -->
@@ -61,7 +72,7 @@
                             <div class="bredcrums-content">
                                 <h2>Contact</h2>
                                 <ul>
-                                   <li><a href="./">Home</a></li>
+                                    <li><a href="./">Home</a></li>
                                     <li class="active">Contact</li>
                                 </ul>
                             </div>
@@ -72,9 +83,9 @@
         </section><!-- blog breadcrumb version one end here -->
 
 
-        
-        
-        <section class="section-paddings">
+
+
+        <section class="pt-70 pb-70">
             <div class="container">
                 <div class="row">
                     <div class="col-md-5 col-sm-6 col-xs-12">
@@ -84,7 +95,7 @@
                         <div class="address">
                             <p>
                                 <strong>Address</strong>
-                                <br> Round Tours Srilanka,No:08,School Lane,Hirimbura,Galle,Srilanka.
+                                <br> Round Tours Sri lanka,No:08, School Lane, Hirimbura, Galle, Sri lanka.
 
                             <p>
                                 <strong>Website</strong>
@@ -105,39 +116,39 @@
                                 <div id="message"></div> 						
                                 <!-- Contact Form -->
                                 <!--<form class="form" method="post" name="contactform" id="contactform">-->
-                                    <div class="form-group">
-                                        <input type="text" placeholder="FullName" class="form-control input-validatar" name="txtFullName" id="txtFullName">
-                                        <span id="spanFullName"></span>
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="email" placeholder="Email" class="form-control input-validatar" name="txtEmail" id="txtEmail">
-                                        <span id="spanEmail"></span>
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="text" placeholder="Subject" class="form-control input-validatar" name="txtSubject" id="txtSubject">
-                                        <span id="spanSubject"></span>
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="text" placeholder="Country " class="form-control input-validatar" name="txtCountry" id="txtCountry">
-                                        <span id="spanCountry"></span>
-                                    </div>
+                                <div class="form-group">
+                                    <input type="text" placeholder="FullName" class="form-control input-validatar" name="txtFullName" id="txtFullName">
+                                    <span id="spanFullName"></span>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" placeholder="Email" class="form-control input-validatar" name="txtEmail" id="txtEmail">
+                                    <span id="spanEmail"></span>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" placeholder="Subject" class="form-control input-validatar" name="txtSubject" id="txtSubject">
+                                    <span id="spanSubject"></span>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" placeholder="Country " class="form-control input-validatar" name="txtCountry" id="txtCountry">
+                                    <span id="spanCountry"></span>
+                                </div>
 
-                                    <div class="form-group">
-                                        <textarea name="message" rows="6" class="form-control input-validatar" placeholder="Message" id="txtMessage"></textarea>
-                                        <span id="spanComments"></span>
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="text" placeholder="Security Code" class="form-control input-validatar" name="captchacode" id="captchacode">
-                                        <span id="capspan"></span>
-                                    </div>
+                                <div class="form-group">
+                                    <textarea name="message" rows="6" class="form-control input-validatar" placeholder="Message" id="txtMessage"></textarea>
+                                    <span id="spanComments"></span>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" placeholder="Security Code" class="form-control input-validatar" name="captchacode" id="captchacode">
+                                    <span id="capspan"></span>
+                                </div>
 
-                                    <span><?php include("./contact-us-form/captchacode-widget.php"); ?></span>
-                                    <img src="contact-us-form/img/checking.gif" id="checking"/>
-                                    <div class="form-group">
-                                        <button type="submit" id="btnSubmit" class="button primary"><i class="fa fa-send"></i>Submit</button>
-                                    </div>
+                                <span><?php include("./contact-us-form/captchacode-widget.php"); ?></span>
+                                <img src="contact-us-form/img/checking.gif" id="checking"/>
+                                <div class="form-group">
+                                    <button type="submit" id="btnSubmit" class="button primary"><i class="fa fa-send"></i>Submit</button>
+                                </div>
 
-                                    <div id="dismessage" align="center" class="msg-success"></div>
+                                <div id="dismessage" align="center" class="msg-success"></div>
 
                                 <!--</form>/ End Contact Form -->
                             </div>
@@ -147,10 +158,10 @@
             </div>
         </section>
 
-                <!-- google map start  -->
+        <!-- google map start  -->
         <div class="map-wrapper">
             <div class="map-area">
-                <div id="googleMap"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d439677.1231566874!2d80.1719846043145!3d5.910608818235198!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae173bb5c8067f1%3A0x4768397502edf93!2sSublime+Holdings!5e0!3m2!1sen!2slk!4v1537154780770"  height="600" frameborder="0" style="border:0;width:100%" allowfullscreen></iframe></div>
+                <div id="googleMap"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1983.7517254772342!2d80.2190042579937!3d6.062627266111728!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae173d83d82396f%3A0xb7b2efbd64ccdef6!2sRound+Tours+Srilanka!5e0!3m2!1sen!2slk!4v1540373659211"  height="600" frameborder="0" style="border:0;width:100%" allowfullscreen></iframe></div>
             </div>
         </div>
 
@@ -213,7 +224,4 @@
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
 
         <script src="contact-us-form/scripts.js" type="text/javascript"></script>
-    </body>
-
-    <!-- Mirrored from getnajmul.com/theme/trabble/contact.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 07 Sep 2018 02:32:14 GMT -->
-</html>
+    </html>

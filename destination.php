@@ -6,14 +6,15 @@ include_once(dirname(__FILE__) . '/class/include.php');
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <meta name="description" content="TRABBLE - Tour, Travel, Travel Agency Template">
-        <meta name="keywords" content="Tour, Travel, Travel Agency Template">
+        <meta name="description" content=" Its diverse landscapes range from rainforest and arid plains to highlands and sandy beaches. It’s famed for its ancient Buddhist ruins, including the 5th-century citadel Sigiriya, with its palace and frescoes. The city of Anuradhapura, Sri Lanka's ancient capital, has many ruins dating back more than 2,000 years">
+        <meta name="keywords" content="Round Tour Sri Lanka Destination ,Destination<?php foreach (Destination::all() as $Destination) { ?><?php echo ",";
+    echo $Destination['title']; ?> <?php } ?>. ">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Round Tour Sri Lanka</title>
         <!-- Google Fonts Includes -->
         <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
         <!-- Favi icon -->
-        <link rel="shortcut icon" type="image/x-icon" href="images/logo/logo2.png"
+        <link rel="shortcut icon" type="image/x-icon" href="images/logo/logo2.png">
               <!-- bootstrap v3.3.6 css -->
               <link rel="stylesheet" href="css/bootstrap.min.css">
         <!-- animate css -->
@@ -46,6 +47,14 @@ include_once(dirname(__FILE__) . '/class/include.php');
         <link rel="stylesheet" href="css/responsive.css">
         <!-- modernizr css -->
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+        <style>  
+            @media only screen and (max-width: 768px) {
+                .header-bottom-area .logo-area {
+                    margin-top: -34px;
+                    position: absolute;
+                }
+            }
+        </style>
     </head>
     <body>
         <!-- Preloader -->
@@ -78,7 +87,7 @@ include_once(dirname(__FILE__) . '/class/include.php');
         </section><!-- blog breadcrumb version one end here -->
 
         <!-- popular destination strat -->
-        <section class="blog-contents-version-one pt-100 pb-70 section-blog-bg blog-2 section-blog-bg-2">
+        <section class="blog-contents-version-one pt-100 pb-70 pt-70 section-blog-bg blog-2 section-blog-bg-2">
             <div class="container">
                 <div class="row">
                     <!-- single travel blog-->
@@ -88,25 +97,25 @@ include_once(dirname(__FILE__) . '/class/include.php');
                         <div class="col-md-4 col-sm-6 col-xs-12">
                             <div class="single-travel-blog single-travel-blog-2">
                                 <div class="blog-image">
-                                    <a href="#"><img src="upload/destination/thumb1/<?php echo $destination['image_name'];?>" alt="">
+                                    <a href="#"><img src="upload/destination/thumb1/<?php echo $destination['image_name']; ?>" alt="">
                                     </a>
                                 </div>
                                 <div class="blog-content">
                                     <div class="blog-post-content">
-                                        <a href="view-destination.php?id=<?php echo $destination['id'];?>"><h4><?php echo $destination['title']; ?></h4></a>
+                                        <a href="view-destination.php?id=<?php echo $destination['id']; ?>"><h4><?php echo $destination['title']; ?></h4></a>
                                         <p>
-                                           <?php
-                                                if (strlen($destination['short_description']) > 100) {
-                                                    echo substr($destination['short_description'], 0, 90) . '...';
-                                                } else {
-                                                    echo $destination['short_description'];
-                                                }
-                                                ?>
-                                            
+                                            <?php
+                                            if (strlen($destination['short_description']) > 105) {
+                                                echo substr($destination['short_description'], 0, 95) . '...';
+                                            } else {
+                                                echo $destination['short_description'];
+                                            }
+                                            ?>
+
                                         </p>
                                     </div>
                                     <div class="read-more-btn">
-                                        <a href="view-destination.php?id=<?php echo $destination['id'];?>">Read More <i class="fa fa-angle-right"> </i></a>
+                                        <a href="view-destination.php?id=<?php echo $destination['id']; ?>">Read More <i class="fa fa-angle-right"> </i></a>
                                     </div>
                                     <ul class="soical-share">
                                         <li><a href="#"><i class="fa fa-facebook"></i></a>
@@ -183,6 +192,4 @@ include_once(dirname(__FILE__) . '/class/include.php');
         <!-- main js -->
         <script src="js/custom.js"></script>
     </body>
-
-    <!-- Mirrored from getnajmul.com/theme/trabble/blog-version-two.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 07 Sep 2018 02:32:00 GMT -->
 </html>

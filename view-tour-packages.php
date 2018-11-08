@@ -17,10 +17,11 @@ $tour_dates = TourDate::getTourDatesById($id);
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <meta name="description" content="TRABBLE - Tour, Travel, Travel Agency Template">
-        <meta name="keywords" content="Tour, Travel, Travel Agency Template">
+        <meta name="description" content="Round Tour Sri Lanka is the best Way for the gusts who looking extraordinary travel experience with perfectly match their desires">
+        <meta name="keywords" content="Round Tour Sri Lanka Tour Packages, Tour Packages<?php foreach (TourPackage::all() as $AllTour) { ?><?php echo ",";
+    echo $AllTour['title']; ?> <?php } ?>. ">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title><?php echo $TOUR->title; ?></title>
+        <title><?php echo $TOUR->title; ?>||Tour Packages||Round Tours Sri Lanka</title>
         <!-- Google Fonts Includes -->
         <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
         <!-- Favi icon -->
@@ -62,6 +63,33 @@ $tour_dates = TourDate::getTourDatesById($id);
         <link rel="stylesheet" href="css/responsive.css">
         <!-- modernizr css -->
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+        <style>
+            @media only screen and (min-width: 576px) and (max-width: 768px) 
+            {.header-top-right{
+                 padding-top:0px;
+             } 
+             .header-top-right .book-btn{
+                 margin-left:0px;
+             }
+             .header-top-right .booknow{
+                 margin-top:0px;
+                 text-align: center;
+             }
+            }
+
+            @media only screen and (max-width: 412px) {
+                .single-bredcurms {
+                    margin-bottom: 48px;
+                }
+            }
+            @media only screen and (max-width: 768px) {
+                .header-bottom-area .logo-area {
+                    margin-top: -34px;
+                    position: absolute;
+                }
+            }
+
+        </style>
     </head>
     <body>
         <!-- Preloader -->
@@ -86,7 +114,7 @@ $tour_dates = TourDate::getTourDatesById($id);
                                     <li><a href="./">Home</a></li>
                                     <li><a href="tour-packages.php">Tour Packages</a></li>
                                     <li class="active">
-                                        <?php echo $TOUR->title; ?>
+<?php echo $TOUR->title; ?>
                                     </li>
                                 </ul>
                             </div>
@@ -113,12 +141,12 @@ $tour_dates = TourDate::getTourDatesById($id);
                                 <div class="col-md-12 " data-animation="fadeInUp" data-time="300">
                                     <h2 class="big-heading">
                                         Day <span class="daySty">
-                                            <?php echo $tour_date['title']; ?>
+    <?php echo $tour_date['title']; ?>
                                         </span>
                                     </h2>
                                     <span class ="hearderline"></span>
                                     <p>
-                                        <?php echo $tour_date['description']; ?>
+    <?php echo $tour_date['description']; ?>
                                     </p>
                                 </div>
                                 <div class="col-md-12 col-margin">
@@ -151,9 +179,9 @@ $tour_dates = TourDate::getTourDatesById($id);
                             <?php
                         }
                         ?>
-                        <div class="header-top-right text-right booknow">
-                            <div class="col-md-7 col-xs-9 book-tab">
-                                <div class="book-btn booknow">
+                        <div class="col-md-12 header-top-right text-center booknow">
+                            <div class="book-tab">
+                                <div class="book-btn1 booknow ">
                                     <a href="booking.php?tour=<?php echo $TOUR->id; ?>">Book Now</a>
                                 </div>
                             </div>
@@ -164,21 +192,32 @@ $tour_dates = TourDate::getTourDatesById($id);
                     <div class="col-md-4 col-sm-12 col-xs-12">
                         <!-- Blog Sidebar -->
                         <div class="blog-sidebar">
-                            <h3 sideimg>Other Tour Package</h3>
+                            <h3 sideimg>Other Tour Packages</h3>
                             <!-- Single Sidebar 2 -->
                             <?php
                             foreach (TourPackage::all() as $ViewOther) {
                                 ?>
-                                <div class="single-sidebar category">
-                                    <a href="view-tour-packages.php?id=<?php echo $ViewOther['id']; ?>">
-                                        <h3><?php echo $ViewOther['title']; ?></h3>
+
+                                <div class="col-md-12 col-sm-6 col-xs-12   single-sidebar category">
+
+                                    <a href="view-tour-packages.php?id=<?php echo $ViewOther['id']; ?>" title="<?php echo $ViewOther['title'] ?>">
+                                        <h3>
+
+                                            <?php
+                                            if (strlen($ViewOther['title']) > 32) {
+                                                echo substr($ViewOther['title'], 0, 29) . '...';
+                                            } else {
+                                                echo $ViewOther['title'];
+                                            }
+                                            ?>
+                                        </h3>
                                     </a>      
                                     <div class="col-md-6 col-sm-4 col-xs-4" viewdisimg>
                                         <a href="">
                                             <img src="upload/tour-package/thumb/<?php echo $ViewOther['image_name']; ?>" alt="">
                                         </a>
                                     </div>
-                                    <div class="col-md-6 col-sm-8 col-xs-8 qua hidden-xs hidden-sm ">
+                                    <div class="col-md-6 col-sm-8 col-xs-8 qua hidden-xs ">
                                         <div class="qua">
                                             <p><?php
                                                 if (strlen($ViewOther['short_description']) > 40) {
@@ -190,7 +229,7 @@ $tour_dates = TourDate::getTourDatesById($id);
                                             </p>
                                         </div>
                                     </div> 
-                                    
+
                                     <div class="col-md-6 col-sm-8 col-xs-8 qua  hidden-lg hidden-sm hidden-md ">
                                         <div class="qua">
                                             <p><?php
@@ -203,11 +242,8 @@ $tour_dates = TourDate::getTourDatesById($id);
                                             </p>
                                         </div>
                                     </div> 
-                                    
-                                    
-                                    
-                                    
-                                </div>.<!--/ End Single Sidebar -->
+
+                                </div><!--/ End Single Sidebar -->
                                 <?php
                             }
                             ?>
@@ -215,11 +251,11 @@ $tour_dates = TourDate::getTourDatesById($id);
 
 
 
-                        
-                        
-                        
-                        
-                        
+
+
+
+
+
 
                     </div>
 

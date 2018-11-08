@@ -1705,6 +1705,7 @@ header {
 }
 .tabbased-search-area-2 .tab-content-2 .hotel-input-4-23 {
     width: 25% !important;
+
 }
 .tabbased-search-area-2 .tab-content-2 .flights-form .tour-input-20 .custom-select, .tabbased-search-area-2 .tab-content-2 .flights-form .tour-input-15 .custom-select, .tabbased-search-area-2 .tab-content-2 .flights-form .tour-input-7-5 .custom-select {
     background: #f2f2f2;
@@ -4557,7 +4558,7 @@ aside .booking-form .form-group .booking-confirm {
     .title-line-12 h2{
         margin-left: 108px;
     }
-    
+
 }
 
 @media(max-width :412px )  
@@ -4570,7 +4571,7 @@ aside .booking-form .form-group .booking-confirm {
 
 @media(max-width :960px )  
 {
-    
+
     .header-top-right .book-btn a {
         font-size: 14px;
         padding: 8px 16px;
@@ -4589,7 +4590,23 @@ aside .booking-form .form-group .booking-confirm {
 
 
 .icon {
-  color: white;
-  font-size: 100px;
-  
+    color: white;
+    font-size: 100px;
+
+}
+.header-top-right .book-btn1{
+    display: inline-block;
+    padding: 16px;
+    background: #214db7;
+    transition: all ease-in-out 0.3s;
+}
+
+.header-top-right .book-btn1 a {
+    color: #ffffff;
+    font-size: 15px;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+.header-top-right .book-btn1:hover {
+    background: #f17b37;
 }

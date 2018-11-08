@@ -4,7 +4,7 @@
             <!-- footer left -->
             <div class="col-md-3 col-sm-4 f-phone-responsive">
                 <div class="col-sm-12 single-footer">
-                    <div class="footer-title">
+                    <div class="footer-title" style="text-align: center;">
                         <div class="col-md-12  f-phone-responsive">
                             <a href="index.php"><img src="images/logo/logo1.png" alt="" class="logofooter"></a>
                         </div>
@@ -13,9 +13,11 @@
                         <form action="#">
                             <div class="footer-left">
                                 <div class="footer-logo">
-                                    <p>Lorem ipsum dolor sit amet conset ctetur adipiscin elit Etiam at ipsum at ligula vestibulum sodales Sed is luctus orci vel nibh.</p>
+                                    <p>
+                                     "Ayubowan" , accompanied by palms clasped together with a gentle bow of the head is the way a visitor is greeted in Sri Lanka. It is hard to beat Sri Lanka's charismatic multicultural, multi faceted ambience and magnificent setting in the tropics.   
+                                    </p>
                                 </div>  
-                                <div class="footer-social-media">
+<!--                                <div class="footer-social-media">
                                     <div class="social-footer-title">
                                         <h3>Follow Us</h3>
                                     </div>
@@ -27,7 +29,7 @@
                                         <li class="linkedin"><a href="https://www.linkedin.com/company/13588872/"><i class="fa fa-linkedin"></i></a>
                                         </li>
                                     </ul>
-                                </div> 
+                                </div> -->
                             </div>
                         </form>
                     </div>
@@ -44,9 +46,9 @@
 
                             <div class="footer-left">
                                 <ul class="footer-contact">
-                                    <li><img class="map" src="images/icon/locl2.png" alt="">No.205, Bokundara , Piliyandala, Sri Lanka.</li><br>
-                                    <li><img class="map" src="images/icon/phone.png" alt="">+94 71 666 7557 | <br> +94 11 3663 500 | <br> +94 91  312 7744</li><br>
-                                    <li><img class="map" src="images/icon/gmail.png" alt="">mail@sublime.lk</li>
+                                    <li>Round Tours Sri lanka,<br> No:08, School Lane,<br>  Hirimbura, Galle, <br>Sri lanka.</li><br>
+                                    <li>+94 777 910 172 | <br> +94 779 148 838 </li><br>
+                                    <li>mmsanhar@yahoo.com</li>
                                 </ul>                    
                             </div>
                         </form>
@@ -142,7 +144,7 @@
         </div>
         <div class="row">
             <div class="footer-bottom">
-                <div class="col-md-5">
+                <div class="col-md-6">
                     <div class="copyright">
                         <p>Copyright &copy; 2018 <a href="http://sublime.lk/"><span> Sublime Holdings. </span></a> All rights reserved </p>
                     </div>
@@ -151,7 +153,7 @@
                     -->
 
                 </div>
-                <div class="col-md-7 col-xs-12">
+                <div class="col-md-6 col-xs-12">
                     <ul class="payicon pull-right">
                         <li>We Accept</li>
                         <li><img src="images/payicon01.png" alt="">

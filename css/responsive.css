@@ -1,5 +1,9 @@
 /*      Tablet Layout: 768px.    */
 @media only screen and (max-width: 768px) {
+    .header-bottom-area .logo-area {
+        margin-top: -34px;
+        position: absolute;
+    }
     .single-item{margin-bottom: 30px;}
     .single-item:last-child{margin-bottom: 0px;}
 
@@ -9,14 +13,26 @@
     .mean-bar { position: fixed !important;}
     .tap-v-responsive{ 
         width:100%;
-        margin-left: 24px;
-        margin-top: -24px;
+        margin-left: 0px;
+        margin-top: -64px;
 
     }
-    .logo-area {  width: 25%; margin: 0px auto;} 
+    .tabbased-search-area-2 .tab-content-2 .search-btn-2 button {
+
+        font-size: 13px;
+        padding: 9px 25px;
+
+    }
+    .read-more {
+        padding: 9px 30px !important;
+
+    }
+    .welcome-area .single-welcome-text .welcome-content a {
+        margin-top: 16px;
+    }
+    .logo-area {  width: 25%; margin: 0px;} 
     .header-top-left { display: none;}  
-    .logo-area { position: absolute;top: -70px;}
-    .book-btn { margin-top: 52px;}
+    .book-btn { margin-top: 26px;}
     .slider-area .tparrows {display: none;}
     /*---- tab form ----*/
     .tabbased-search-area {
@@ -39,13 +55,14 @@
     .count-down-bg .count-timer .time-wrapper .timer li { margin: 10px;}
     .phone-layout-s { padding-bottom: 30px;}
     .phone-layout-s:last-child { padding-bottom: 0;}
-    .footer-area { padding-top: 100px;}
+    .footer-area { padding-top: 20px;
+                   padding-bottom: 20px;}
     .footer-area .single-footer .footer-title { padding: 0px 0 20px;}
     .footer-area .single-footer { padding:0 !important;}
     .footer-area .single-footer .single-recent-post .recent-post li { display: inline-flex;}
     .footer-social-media { text-align: center;}
     .footer-area .footer-bottom .payicon{width:100%; text-align: center;}
-    .copyright { text-align: center;}
+    .copyright { text-align: center; margin-top: 19px;}
     .footer-area .footer-bottom .payicon li {
         margin-right: 5px;
         margin-top: -5px;
@@ -56,7 +73,7 @@
     .footer-area .image-overlay > img { width: 100% !important;}
     .slider-area-2 .tparrows {display: none;}
     .tabbased-search-area-2 .bg-shadoow-image {
-        padding: 100px 15px 0; 
+        padding: 80px 15px 0; 
         margin-top: 0px;
         background: #2c3035 ;
         box-shadow: none;
@@ -187,11 +204,40 @@
     .single-item{margin-bottom: 30px;}
     .single-item:last-child{margin-bottom: 0px;}
 
+    .slid {
+        height:384px;
+    }
 
+    .view-all {
+        padding: 12px 40px !important;
+        margin-bottom: 55px;
+    }
+
+    .section-paddings {
+        padding-top: 30px;
+        margin-bottom: 63px;
+    }
+    .header-top-left { display: none;}  
     .header-top-area .header-top-left .header-top-contact li {
         display: inline-flex;
         padding: 68px 10px 0 0;
         color: #fff;
+    }
+    .blog-sidebar h3{
+        margin-top: 25px;
+    }
+    .category p {
+
+        font-size: 14px;
+        margin-top: 0px;
+
+    }
+    .refresh-img {
+
+        width: 23px;
+        height: 30px;
+        margin: -29px 0px 20px 149px;
+
     }
     .header-top-right{
         text-align: right;
@@ -203,8 +249,13 @@
     .tabbased-search-area {
         background: #2c3035;
         position: relative;
-        margin-top:-200px;
+        margin-top:-165px;
         padding: 100px 0;
+    }
+
+    .header-bottom-area .logo-area {
+        margin-top: -96px;
+        position: absolute;
     }
     .tab-menu li {padding: 14px !important}
     .custom-select a {width: 100%;}
@@ -226,10 +277,47 @@
     .popular-country .destination-countrys .tab-content figure figcaption .city-name .tower-bridge li:last-child {
         margin-left: 0px;
     }
+    .tabbased-search-area-2 .tab-content-2 .search-btn-2 button {
 
-    .tabbased-search-area-2 .bg-shadoow-image { padding: 100px 15px 50px; margin-top: -30px;}
-    .tabbased-search-area .tab-content .hotels-form .hotel-input-2, .tabbased-search-area .tab-content .flights-form .hotel-input-2 {width: 50% !important;}
-    .tabbased-search-area .tab-content .hotels-form .hotel-input-4, .tabbased-search-area .tab-content .flights-form .hotel-input-4 {width: 50%;}
+        background: #214db7 none repeat scroll 0 0;
+        border: medium none;
+        border-radius: 2px;
+        color: #ffffff;
+        display: block;
+        font-size: 15px;
+        padding: 9px 37px;
+        text-transform: uppercase;
+        transition: all 0.3s ease-in-out 0s;
+        margin-top: 27px;
+        margin-right: 282px;
+
+    }
+    .footer-area .single-footer {
+
+        padding: 34px 0;
+        text-align: center;
+    }
+    .testimonial-area-5 .single-testimonial .testimonial-messages p {
+        font-size: 14px;
+    }
+    .herounit-bg {
+        padding-bottom: 70px;
+        padding-top: 0px;
+
+
+    }
+    .welcome-area .single-welcome-text .welcome-content a {
+        margin-top: 40px;
+        margin-left: 12px;
+    }
+    .tabbased-search-area-2 .bg-shadoow-image {
+        padding: 100px 15px 22px;
+        margin-top: -109px;
+        margin-bottom: -81px;
+    }
+    .tabbased-search-area .tab-content .hotels-form .hotel-input-2, .tabbased-search-area .tab-content .flights-form .hotel-input-2 {width: 25% !important;
+                                                                                                                                     padding-top: 10px;}
+    .tabbased-search-area .tab-content .hotels-form .hotel-input-4, .tabbased-search-area .tab-content .flights-form .hotel-input-4 {width: 99%;}
     .tabbased-search-area .tab-content .hotels-form .hotel-input-1, .tabbased-search-area .tab-content .flights-form .hotel-input-1 { width: 25% !important;margin-top: 10px;}
     .img-rounded {width: 100%;}
     .padding-bottom { margin-bottom: 30px;}
@@ -268,26 +356,87 @@
     .header-top-right .book-btn 
     { float: none;
       width: 164px; 
-      margin-left: 270px;
-      margin-bottom: 18px;
+      margin-left: 540px;
+      margin-bottom: 33px;
       text-align: center;
+      margin-top:20px;
     }
     .package-tab-menu .package-tab-menu li a { padding: 15px 33px;}
     .single .blog-comments .single-comments .head { width: 20%;}
     .single .blog-comments .single-comments .body {width: 80%;}
     .single .blog-comments .single-comments h4 {text-align: center;}
 
-    .single-sidebar 
-    {
+    .tabbased-search-area-2 .tab-content-2 .search-btn-2 {
 
+
+        margin-left: 249px;
+
+    }
+
+    .single .blog-sidebar .single-sidebar {
+        height: 174px;
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+    .top-destination-area .col-sm-4 .col-md-12{
+        padding-left: 0px;
+        padding-right:0px;
+    }
+
+    .destination-slider .owl-nav .owl-next {
+        left: 621px;
+
+    }
+
+    .qua{
+        margin-top:-0px;
+        margin-left: -25px;
+    }
+    .category .col-sm-4{
+        padding-left: 0px;
+    }
+    .blog-sidebar .category h3{
+        text-align: left;
+        margin-top: 0px;
+
+    }
+    .section-title, .section-title-white, .section-title-white-2 {
+        margin-bottom: 60px;
+        margin-top: 82px;
+
+    }
+    .single-package-carasoul{
+        margin-bottom: 20px;
+
+    }
+    .testimonial-area-5 {
+        padding: 8px 0;
+        margin-bottom: -38px;
+    }
+
+    .pt-70{
+        margin-top:0px;
+
+    }
+    .pb-70{
+        margin-bottom: 0px;
     }
 
 }
 
 /*======================  Mobile Layout: 320px. =======================  */
+@media only screen and (max-width: 991px){
+    .form-control1{
+        height: 40px;
+        padding:5px 12px;
+    }
+    .tabbased-search-area .tab-content .hotels-form input, .tabbased-search-area .tab-content .flights-form input {
+        height: 40px;
+        padding:5px 12px;
 
+    }
 
-
+}
 
 /*  Wide Mobile Layout: 480px    */
 @media only screen and (min-width: 480px) and (max-width: 767px) {
@@ -317,23 +466,15 @@
 @media(max-width :960px )  
 {
 
-    .header-top-right .book-btn a {
-        font-size: 14px;
-        padding: 8px 16px;
-    }
-
     .section-title-version-2 h2, .section-title-version-2-white h2, .section-title-version-2-black h2 {
         margin-top: 86px;
     }
     .slid {
         margin: -1px;
     }
-    .single .blog-sidebar .single-sidebar {
 
-        height:225px;    
-    }
     h1, h2, h3, h4, h5, h6 {
-        padding-top: 30px;
+        padding-top: 12px;
     }
     ul {
         padding-bottom: 16px;
@@ -394,15 +535,19 @@
 }
 @media(max-width :320px )  
 {
+    .footer-area .single-footer {
+        padding: 1 !important;
+    }
     .title-line-12 h2{
         font-size: 21px !important;
     }
     .view-all {
-        margin-left: 90px;
+        margin-left: 0px;
+        margin-bottom: 20px;
     }
 
     .slid {
-        width: 710px;
+        width: 388px;
         background: #cccccc;
         color: #fff;
         margin: -1px;
@@ -441,6 +586,12 @@
         margin-right: 6px;
         padding:38px;
         padding-bottom: 912px;
+    }
+    .welcome-area .single-welcome-text .welcome-content a {
+
+        margin-top: 16px;
+        margin-left: 12px;
+
     }
 
 
@@ -500,6 +651,26 @@
         padding:38px;
         padding-bottom: 912px;
     }
+    .view-all {
+
+        margin-bottom: 12px;
+
+    }
+    .footer-area .footer-bottom .copyright p {
+
+        text-align: center;
+        margin-top: 44px;
+
+    }
+    .welcome-area .single-welcome-text .welcome-content a {
+        margin-left: 13px;
+    }
+    .header-bottom-area .logo-area {
+        margin-top: 50px;
+        position: absolute;
+
+    }
+
 }  
 
 
@@ -507,6 +678,46 @@
 {
 
 
+    .testimonial-area-5{
+        padding:40px 0px;
+
+    }
+    .testimonial-area-5 .section-title-white{
+        margin-top: 0px;
+
+    }
+    .testimonial-area-5 .section-title-white h2{
+        margin-top: 0px;
+
+    }
+    .form-control1{
+        height: 40px;
+        padding:5px 12px;
+    }
+
+    .grid-item h4{
+        margin: 0px 25px 10px 0px;
+        text-align: left;
+        padding-top: 0px;
+    }
+
+    .tabbased-search-area .tab-content .hotels-form input, .tabbased-search-area .tab-content .flights-form input {
+
+        height: 40px;
+        padding:5px 12px;
+
+    }
+
+
+    .home-destination .section-title{
+        margin-top: 0px;
+        margin-bottom: 50px;
+
+    }
+    .home-destination .section-title h2{
+        margin-top: 0px;
+
+    }
     .title-line-12 h2{
         margin-left: 108px;
     }
@@ -567,13 +778,15 @@
     }
 
     .section-title-version-2 h2, .section-title-version-2-white h2, .section-title-version-2-black h2 {
-        margin-top: 35px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        padding-top:0;
     }
     .single-welcome-text {
         margin-top: -54px;
     }
     .tour-package-bg {
-        padding: 9px 15px;
+        padding: 0px 15px 22px;
     }
     .welcomearea {
         margin-top: -6px;
@@ -611,13 +824,14 @@
     }
     .single .blog-sidebar .single-sidebar {
 
-        height:210px;
+        height:160px;
         margin-bottom: -53px;
         margin-top: 58px;
 
     }
     .section-paddings {
         margin-top: -102px;
+        margin-bottom:40px;
 
     }
     .booknow {
@@ -626,7 +840,7 @@
 
     }
     .single-bredcurms {
-        margin-bottom: 41px;
+        margin-bottom: 0px;
     }
     .slid {
         margin-bottom: -245px;
@@ -643,13 +857,13 @@
         margin-top: 33px;
     }
     .contact-title h2 {
-        margin-top: 48px;
+        margin-top: 0px;
     }
     .footer-area .footer-bottom .copyright p {
         text-align: center;
     }
     .welcome-area .single-welcome-area .single-imag .img-thumbnail {
-        margin-top: 111px;
+        margin-top: -50px;
     }
 
     .footer-area .footer-bottom .payicon li {
@@ -672,13 +886,13 @@
 
     .galleryheading{
 
-        margin-top: 162px;
+        margin-top: 108px;
 
     }
     .post .post-description {
 
         padding: 15px;
-        margin-top: 73px;
+        margin-top: 55px;
 
     }
     .sliderwelcome h2{
@@ -706,9 +920,79 @@
         font-size: 32px;
 
     }
+
+    .single-place h3 {
+
+        color: #fff;
+        text-align:left;
+
+    }
+
+    .footer-area .footer-bottom:before {
+        background: #717273 none repeat scroll 0 0;
+        bottom: 0;
+        content: "";
+        height: 1px;
+        left: 0px;
+        position: absolute;
+        top: -36px;
+        width: 100%;
+        z-index: 8;
+    }
+    .single-place p {
+
+        color: #fff;
+        margin: -12px 47px 19px -15px
+
+    }
+    .single-bre{
+        margin-bottom: 41px;
+    }
+    .welcome-area .single-welcome-text .welcome-content a {
+
+        margin-top: 16px;
+        margin-left: 12px;
+
+    }
+    .view-all {
+        padding: 12px 40px !important;
+        margin-bottom: 12px;
+
+    }
+
+}
+@media only screen and (max-width: 600px){
+    .tabbased-search-area .tab-content .hotels-form .hotel-input-4, .tabbased-search-area .tab-content .flights-form .hotel-input-4 {
+        width: 25%;
+        float: none;
+        border-right: 1px solid #ccc;
+    }
+
+    .welcome-area .single-welcome-text .welcome-content a {
+        margin-top: 16px;
+        margin-left: 13px;
+    }
+    .view-all {
+        margin-bottom: 11px;
+    }
+
 }
 
 
-
+@media only screen and (min-width: 996px){
+    .main-section.section-paddings{
+        padding-top: 0px;
+    }
+    .container1 {
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+    .main-section .container1{
+        margin-bottom:0px;
+    }
+    .slid{
+        height:394px;
+    }
+}
 
 /*resposive setting end here*/

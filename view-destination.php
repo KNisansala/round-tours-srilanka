@@ -13,10 +13,11 @@ $DESTINATION = new Destination($id);
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <meta name="description" content="TRABBLE - Tour, Travel, Travel Agency Template">
-        <meta name="keywords" content="Tour, Travel, Travel Agency Template">
+        <meta name="description" content=" Its diverse landscapes range from rainforest and arid plains to highlands and sandy beaches. It’s famed for its ancient Buddhist ruins, including the 5th-century citadel Sigiriya, with its palace and frescoes. The city of Anuradhapura, Sri Lanka's ancient capital, has many ruins dating back more than 2,000 years">
+        <meta name="keywords" content="Round Tour Sri Lanka Destination ,Destination<?php foreach (Destination::all() as $Destination) { ?><?php echo ",";
+    echo $Destination['title']; ?> <?php } ?>. ">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title><?php echo $DESTINATION->title; ?></title>
+        <title><?php echo $DESTINATION->title; ?>||Destination||Round Tours Sri Lanka</title>
         <!-- Google Fonts Includes -->
         <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
         <!-- Favi icon -->
@@ -55,6 +56,13 @@ $DESTINATION = new Destination($id);
         <link rel="stylesheet" href="css/responsive.css">
         <!-- modernizr css -->
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+        <style> @media only screen and (max-width: 768px) {
+                .header-bottom-area .logo-area {
+                    margin-top: -34px;
+                    position: absolute;
+                }
+            }
+        </style>
     </head>
     <body>
         <!-- Preloader -->
@@ -69,7 +77,7 @@ $DESTINATION = new Destination($id);
 
         <!-- blog breadcrumb version one strat here -->
         <section class="breadcrumb-blog-version-one">
-            <div class="single-bredcurms" style="background-image:url('images/bercums/contact-page.jpg');">
+            <div class="single-bredcurms single-bre" style="background-image:url('images/bercums/package1.jpg');">
                 <div class="container">
                     <div class="row">
                         <div class="col-sm-12">
@@ -77,7 +85,7 @@ $DESTINATION = new Destination($id);
                                 <h2><?php echo $DESTINATION->title; ?></h2>
                                 <ul>
                                     <li><a href="./">Home</a></li>
-                                   <li> <a href="destination.php">Destination</a></li>   
+                                    <li> <a href="destination.php">Destination</a></li>   
                                     <li class="active"><?php echo $DESTINATION->title; ?></li>
                                 </ul>
                             </div>
@@ -102,7 +110,7 @@ $DESTINATION = new Destination($id);
                                     <?php
                                     foreach ($PHOTOS as $photo) {
                                         ?>
-                                        <div class="slid img-responsive"><img src="upload/destination/gallery/<?php echo $photo['image_name']; ?>" alt=""/></div>
+                                        <div class="slid"><img img-responsive src="upload/destination/gallery/<?php echo $photo['image_name']; ?> " alt=""/></div>
                                         <?php
                                     }
                                     ?>
@@ -124,27 +132,27 @@ $DESTINATION = new Destination($id);
 
                     <div class="col-md-4 col-sm-12 col-xs-12">
 
-        <!-- Blog Sidebar -->
-                        <div class="blog-sidebar">
-                            <h3 sideimg>Other Destination</h3>
+                        <!-- Blog Sidebar -->
+                        <div class="blog-sidebar ">
+                            <h3 sideimg>Other Destinations</h3>
                             <!-- Single Sidebar 2 -->
                             <?php
                             foreach (Destination::all() as $destinationPlace) {
                                 ?>
-                                <div class="single-sidebar category">
+                                <div class="col-md-12 col-sm-6 col-xs-12  single-sidebar category">
                                     <a href="view-destination.php?id=<?php echo $destinationPlace['id']; ?>">
                                         <h3><?php echo $destinationPlace['title']; ?></h3>
                                     </a>      
                                     <div class="col-md-6 col-sm-4 col-xs-4">
-                                        <a href="">
+                                        <a href="view-destination.php?id=<?php echo $destinationPlace['id']; ?>">
                                             <img src="upload/destination/thumb/<?php echo $destinationPlace['image_name']; ?>" alt="">
                                         </a>
                                     </div>
                                     <div class="col-md-6 col-sm-8 col-xs-8 qua">
                                         <div class="qua">
                                             <p><?php
-                                                if (strlen($destinationPlace['short_description']) > 40) {
-                                                    echo substr($destinationPlace['short_description'], 0, 68) . '...';
+                                                if (strlen($destinationPlace['short_description']) > 48) {
+                                                    echo substr($destinationPlace['short_description'], 0, 48) . '...';
                                                 } else {
                                                     echo $destinationPlace['short_description'];
                                                 }
@@ -152,7 +160,10 @@ $DESTINATION = new Destination($id);
                                             </p>
                                         </div>
                                     </div> 
-                                </div>.<!--/ End Single Sidebar -->
+                                </div><!--/ End Single Sidebar -->
+
+
+
                                 <?php
                             }
                             ?>
@@ -250,8 +261,7 @@ $DESTINATION = new Destination($id);
                         },
                         600: {
                             items: 1,
-                            nav: false,
-                            navText: false
+                            height: 500
                         },
                         1000: {
                             items: 1,
