@@ -30,10 +30,10 @@ $TOUR = new TourPackage($tour);
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <meta name="description" content="TRABBLE - Tour, Travel, Travel Agency Template">
-        <meta name="keywords" content="Tour, Travel, Travel Agency Template">
+        <meta name="description" content="Round Tours Sri Lanka arrange and organize your travel desire with beyond expectation">
+        <meta name="keywords" content="booking tour packages,booking,book now,tour packages">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Round Tours Sri Lanka</title>
+        <title>Booking||Round Tours Sri Lanka</title>
         <!-- Google Fonts Includes -->
         <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
         <!-- Favi icon -->
@@ -68,6 +68,22 @@ $TOUR = new TourPackage($tour);
         <link href="booking-form/style.css" rel="stylesheet" type="text/css"/>
         <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
         <link rel="stylesheet" href="/resources/demos/style.css">
+        <style>  
+            @media only screen and (max-width: 768px) {
+                .header-bottom-area .logo-area {
+                    margin-top: -34px;
+                    position: absolute;
+                }
+            }
+            .section-title-3i{
+                margin-top: 0px;
+            }
+        </style>
+
+        <style>
+
+        </style>
+
     </head>
     <body>
         <!-- Preloader -->
@@ -99,7 +115,7 @@ $TOUR = new TourPackage($tour);
             </div>
         </section><!-- blog breadcrumb version one end here -->
 
-        <section class="section-paddings">
+        <section class="pt-70 pb-70">
             <div class="container">
                 <div class="row">
                     <div class="col-md-5 col-sm-6 col-xs-12">
@@ -153,11 +169,13 @@ $TOUR = new TourPackage($tour);
                                                 <?php
                                                 foreach (TourPackage::all() as $tour_package) {
                                                     ?>
-                                                    <option  value='<?php echo $tour_package['id']; ?>' <?php if ($tour_package['id'] === $tour) {
-                                                    echo 'selected="TRUE"';
-                                                }; ?>><?php echo $tour_package['title']; ?></option>
-                                                <?php }
-                                                ?>
+                                                    <option  value='<?php echo $tour_package['id']; ?>' <?php
+                                                    if ($tour_package['id'] === $tour) {
+                                                        echo 'selected="TRUE"';
+                                                    };
+                                                    ?>><?php echo $tour_package['title']; ?></option>
+                                                         <?php }
+                                                         ?>
 
                                             </select>
                                         </div>

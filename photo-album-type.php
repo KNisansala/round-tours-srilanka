@@ -7,16 +7,18 @@ include_once(dirname(__FILE__) . '/class/include.php');
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <meta name="description" content="TRABBLE - Tour, Travel, Travel Agency Template">
-        <meta name="keywords" content="Tour, Travel, Travel Agency Template">
+        <meta name="description" content="Enjoy your holiday with Round Tours Sri Lanka wirth unforgetable memories">
+        <meta name="keywords" content="Round Tour Sri Lanka Photo Album,Photo Gallary<?php foreach (PhotoAlbum::all() as $PhotoAlbum) { ?><?php echo ",";
+    echo $PhotoAlbum['title'];
+    ?> <?php } ?>. ">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Round Tour Sri Lanka</title>
+        <title>Photo Album||Round Tour Sri Lanka</title>
         <!-- Google Fonts Includes -->
         <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
         <!-- Favi icon -->
         <link rel="shortcut icon" type="image/x-icon" href="images/logo/logo2.png">
-              <!-- bootstrap v3.3.6 css -->
-              <link rel="stylesheet" href="css/bootstrap.min.css">
+        <!-- bootstrap v3.3.6 css -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
         <!-- animate css -->
         <link rel="stylesheet" href="css/animate.css">
         <!-- Button Hover animate css -->
@@ -49,6 +51,15 @@ include_once(dirname(__FILE__) . '/class/include.php');
         <link href="fancybox-master/css/jquery.fancybox.min.css" rel="stylesheet" type="text/css"/>
         <!-- modernizr css -->
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+        <style>  
+            @media only screen and (max-width: 768px) {
+                .header-bottom-area .logo-area {
+                    margin-top: -34px;
+                    position: absolute;
+                }
+            }
+
+        </style>
     </head>
     <body>
         <!-- Preloader -->
@@ -84,9 +95,9 @@ include_once(dirname(__FILE__) . '/class/include.php');
 
 
         <!-- incredible place start here -->
-        <div class="section-paddings incredible-places section-paddings1">
+        <div class="pb-70 pt-70 incredible-places ">
             <div class="container">
-                
+
                 <?php
                 foreach (PhotoAlbum::all() as $photoAlbum) {
                     ?>
@@ -99,12 +110,12 @@ include_once(dirname(__FILE__) . '/class/include.php');
                                     <figcaption>
                                         <h3><?php echo $photoAlbum['title']; ?></h3>   
                                         <h4><?php
-                                                if (strlen($photoAlbum['description']) > 250) {
-                                                    echo substr($photoAlbum['description'], 0, 250) . '...';
-                                                } else {
-                                                    echo $photoAlbum['description'];
-                                                }
-                                                ?></h4>
+                                            if (strlen($photoAlbum['description']) > 250) {
+                                                echo substr($photoAlbum['description'], 0, 250) . '...';
+                                            } else {
+                                                echo $photoAlbum['description'];
+                                            }
+                                            ?></h4>
                                     </figcaption>
                                 </figure>
                             </div>

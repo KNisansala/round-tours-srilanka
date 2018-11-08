@@ -127,7 +127,7 @@ class TourDate {
 
     public function getTourDatesById($tour) {
 
-        $query = "SELECT * FROM `tour_date` WHERE `tour`= $tour ORDER BY queue ASC";
+        $query = "SELECT * FROM `tour_date` WHERE `id`= $tour ORDER BY queue ASC";
 
         $db = new Database();
 

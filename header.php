@@ -7,8 +7,8 @@
                 <div class="header-top-left">
                     <div class="col-md-9 col-sm-9 col-xs-12">
                         <ul class="header-top-contact">
-                            <li><i class="fa fa-map-marker" aria-hidden="true"></i>No.205, Bokundara , Piliyandala, Sri Lanka.</li>
-                            <li><i class="fa fa-phone" aria-hidden="true"></i>+94 71 666 7557 </li>
+                            <li><i class="fa fa-map-marker" aria-hidden="true"></i>Round Tours Sri lanka,No:08, School Lane, Hirimbura, Galle, Sri lanka</li>
+                            <li><i class="fa fa-phone" aria-hidden="true"></i>+94 777 910 172 </li>
                             <li><i class="fa fa-envelope-o" aria-hidden="true"></i>mail@sublime.lk</li>
                         </ul>
                     </div>

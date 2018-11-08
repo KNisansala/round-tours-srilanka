@@ -728,6 +728,7 @@ header {
     position: relative;
     z-index: 2;
     line-height: 25px;
+    text-align: center;
 }
 .section-title-white h2, .section-title-white-2 h2 {
     color: #ffffff;
@@ -1314,15 +1315,21 @@ header {
     background: #2f3133 url("../images/bgimage/footer2.jpg") no-repeat scroll 99% center/cover;
     padding-bottom: 0px;
 }
+
+.logofooter{
+    text-align: center;
+}
 .footer-area .single-footer {
     padding: 80px 0;
-    text-align: center;
+    text-align: left;
+    padding:20px 0px 40px;
 }
 .footer-area .single-footer .footer-title {
     font-weight: 600;
     font-size: 20px;
     color: #ffffff;
-    padding: 20px 0;
+    padding: 20px 0px;
+    text-align: left;
 }
 .footer-area .single-footer .footer-left .footer-logo p {
     color: #ffffff;
@@ -1674,7 +1681,7 @@ header {
 .tabbased-search-area-2 .bg-shadoow-image {
     background: transparent url("../images/bgimage/two.png") no-repeat scroll center center/cover;
     box-shadow: 0 0 25px rgba(0, 0, 0, 0.15);
-    padding: 100px 50px 50px;
+    padding: 100px 50px 25px;
     margin-top: -30px;
 }
 .tabbased-search-area-2 .tab-content-2 .hotels-form input, .tabbased-search-area-2 .tab-content-2 .flights-form input {
@@ -1714,7 +1721,7 @@ header {
     padding: 16px 50px;
     text-transform: uppercase;
     transition: all 0.3s ease-in-out 0s;
-    margin-top: 50px;
+    margin-top: 19px;
     margin-right: 282px;
 }
 .tabbased-search-area-2 .tab-content-2 .search-btn-2 button:hover {
@@ -1840,7 +1847,7 @@ header {
 .single-package-carasoul {
     overflow: hidden;
     position: relative;
-    margin-bottom: 30px;
+    margin-bottom: 0px;
 }
 .single-package-carasoul .package-location {
     position: relative;
@@ -1901,9 +1908,11 @@ header {
     border-top: 1px solid #214db7;
     padding: 14px 0;
     position: relative;
+    /*background-color: #214db7;*/
 }
 .single-package-carasoul .package-details .package-ratings-review .two-column {
     padding: 0 25px;
+    text-align: center;
 }
 .single-package-carasoul .package-details .package-ratings-review .two-column li {
     display: inline-block;
@@ -3153,7 +3162,7 @@ header {
     visibility: hidden;
     transition: all ease-in-out 0.5s;
     z-index: 33;
-    margin-top: -6px;
+    margin-top: -14px;
 }
 .top-destination-area figure figcaption h4 {
     color: #ffffff;
@@ -3502,7 +3511,7 @@ header {
 .testimonial-area-5 .single-testimonial .testimonial-messages p {
     margin: 0 auto;
     max-width: 764px;
-    font-size: 20px;
+    font-size: 14px;
     color: #ffffff;
     text-align: center;
 }
@@ -4098,7 +4107,7 @@ aside .booking-form .form-group .booking-confirm {
     outline: none;
 }
 .contact-form .form-group textarea {
-    height: 210px;
+    height: 120px;
 }
 .contact-form .form-group .button {
     width: 135px;
@@ -4854,10 +4863,12 @@ viewdisidis{
     padding-top: 26px;
     padding-bottom: 17px;
     margin-top: 31px;
+    text-align: left;
 }
-.category h3{
-    font-size: 15px;
 
+.category .blog-sidebar h3{
+    font-size: 15px;
+    text-align: left;
 }
 
 .category p{
@@ -4866,6 +4877,7 @@ viewdisidis{
 }
 .blog-sidebar h3{
     font-size: 19px;
+    color:#214dd7;
 }
 .daySty{
     color:#1da1f2;
@@ -4927,7 +4939,7 @@ viewdisidis{
 .form-group .securitybox{
     width: 70%;
     float: left;
-   
+
 }
 .buttoncomment {
     width: 27%;
@@ -4951,8 +4963,8 @@ viewdisidis{
     border: 1px solid #eee;
     margin-bottom: 15px;
     color: #000;
-     
-    
+
+
 }
 
 .capchacode{
@@ -5003,3 +5015,45 @@ guestcomment .button i {
     color: #fff;
     margin: 15px 48px 15px -21px;
 }
+
+.pt-40{
+    padding-top:40px;
+}
+.pb-40{
+    padding-bottom:40px;
+}
+.pt-70{
+    padding-top: 70px;
+}
+.copyright p{
+    margin:0px 12px 36px;
+}
+
+.header-top-right .book-btn1{
+    display: inline-block;
+    padding: 10px 16px;
+    background: #214db7;
+    transition: all ease-in-out 0.3s;
+}
+
+.header-top-right .book-btn1 a {
+    color: #ffffff;
+    font-size: 15px;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+.header-top-right .book-btn1:hover {
+    background: #f17b37;
+}
+
+
+/*Slider text*/
+.tp-parallax-wrap{
+    position: absolute;
+    display: block;
+    visibility: visible;
+    left: 40px;
+    top: 487px;
+    z-index: 6;
+}
+

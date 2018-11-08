@@ -3,17 +3,19 @@ include_once(dirname(__FILE__) . '/class/include.php');
 ?>
 <!DOCTYPE html>
 <html class="no-js" lang="zxx">
- <head>
+    <head>
         <meta charset="UTF-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <meta name="description" content="TRABBLE - Tour, Travel, Travel Agency Template">
-        <meta name="keywords" content="Tour, Travel, Travel Agency Template">
+
+        <meta name="description" content="Round Tour Sri Lanka is the best Way for the gusts who looking extraordinary travel experience with perfectly match their desires">
+        <meta name="keywords" content="Round Tour Sri Lanka Tour Packages, Tour Packages<?php foreach (TourPackage::all() as $AllTour) {   ?><?php echo ","; echo $AllTour['title']; ?> <?php }?>. ">
+
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Round Tour Sri Lanka</title>
+        <title>Tour Packages||Round Tour Sri Lanka</title>
         <!-- Google Fonts Includes -->
         <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
         <!-- Favi icon -->
-        <link rel="shortcut icon" type="image/x-icon" href="images/logo/logo2.png"
+        <link rel="shortcut icon" type="image/x-icon" href="images/logo/logo2.png">
               <!-- bootstrap v3.3.6 css -->
               <link rel="stylesheet" href="css/bootstrap.min.css">
         <!-- animate css -->
@@ -44,6 +46,19 @@ include_once(dirname(__FILE__) . '/class/include.php');
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/4.0.1/ekko-lightbox.min.css">
         <!-- modernizr css -->
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+        <style> 
+            @media only screen and (max-width: 768px) {
+                .header-bottom-area .logo-area {
+                    margin-top: -34px;
+                    position: absolute;
+                }
+            }
+
+            .single-package-carasoul{
+                margin-bottom: 25px;
+            }
+        </style>
+
     </head>
     <body>
         <!-- Preloader -->
@@ -62,7 +77,7 @@ include_once(dirname(__FILE__) . '/class/include.php');
                     <div class="row">
                         <div class="col-sm-12">
                             <div class="bredcrums-content">
-                                <h2>Package</h2>
+                                <h2>Tour Packages</h2>
                                 <ul>
                                     <li><a href="./">Home</a></li>
                                     <li class="active">Tour Packages</li>
@@ -75,67 +90,79 @@ include_once(dirname(__FILE__) . '/class/include.php');
         </section><!-- blog breadcrumb version one end here -->
 
         <!-- popular destination strat -->
-        <section class="blog-contents-version-one pt-100 pb-70 popular-packages">
+        <section class="blog-contents-version-one pt-100 pb-70 pt-70 popular-packages">
             <div class="container">
                 <div class="row">
                     <!-- single package -->
                     <?php
-                        foreach (TourPackage::all() as $AllTour) {
-                            ?>
-                    <div class="col-md-4 col-sm-6 col-xs-12">
-                        <div class="single-package-carasoul">
-                            <div class="package-location">
-                                <img src="upload/tour-package/<?php echo $AllTour['image_name'];?>" alt="">
-                                <span>
-                                 <?php echo $AllTour['price']; ?>$
-                                </span>
-                            </div>
-                            <div class="package-details">
-                                <div class="package-places">
-                                    <a href="view-tour-packages.php?id=<?php echo $AllTour['id']; ?>"><h4><?php echo $AllTour['title']; ?></h4></a>    
-                                    <span> <i class="fa fa-clock-o"></i> 4Days, 5Nights Stay</span>
-                                    <div class="details">
-                                        <p><span>Included</span> : <?php
-                                                if (strlen($AllTour['short_description']) > 40) {
-                                                    echo substr($AllTour['short_description'], 0, 40) . '...';
+                    foreach (TourPackage::all() as $AllTour) {
+                        ?>
+                        <div class="col-md-4 col-sm-6 col-xs-12">
+                            <div class="single-package-carasoul">
+                                <div class="package-location">
+                                    <img src="upload/tour-package/<?php echo $AllTour['image_name']; ?>" alt="">
+                                    <span>
+    <?php echo $AllTour['price']; ?>$
+                                    </span>
+                                </div>
+                                <div class="package-details">
+                                    <div class="package-places">
+                                        <a href="view-tour-packages.php?id=<?php echo $AllTour['id']; ?>">
+                                            <h4>
+                                                <?php
+                                                if (strlen($AllTour['title']) > 23) {
+                                                    echo substr($AllTour['title'], 0, 20) . '...';
+                                                } else {
+                                                    echo $AllTour['title'];
+                                                }
+                                                ?>
+
+
+                                            </h4>
+                                        </a>    
+                                        <!--<span> <i class="fa fa-clock-o"></i> 4Days, 5Nights Stay</span>-->
+                                        <div class="details">
+                                            <p> <?php
+                                                if (strlen($AllTour['short_description']) > 64) {
+                                                    echo substr($AllTour['short_description'], 0, 66) . '...';
                                                 } else {
                                                     echo $AllTour['short_description'];
                                                 }
                                                 ?>
-                                        </p>
-                                                                                
+                                            </p>
+
+                                        </div>
+                                    </div>
+                                    <div class="package-ratings-review">
+                                        <ul class="two-column">
+                                            <li>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                            </li>
+                                            <li>
+                                                <p>(27 Reviews)</p>
+                                            </li>
+                                        </ul>
                                     </div>
                                 </div>
-                                <div class="package-ratings-review">
-                                    <ul class="two-column">
-                                        <li>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                        </li>
-                                        <li>
-                                            <p>(27 Reviews)</p>
-                                        </li>
-                                    </ul>
+                                <div class="package-long-btn hvr-shutter-out-horizontal btntourpack">
+
+                                    <a href="view-tour-packages.php?id=<?php echo $AllTour['id']; ?>">View</a>
+
                                 </div>
                             </div>
-                            <div class="package-long-btn hvr-shutter-out-horizontal btntourpack">
-                               
-                                <a href="view-tour-packages.php?id=<?php echo $AllTour['id']; ?>">View</a>
-                               
-                            </div>
                         </div>
-                    </div>
-                    
-                    <?php
-                      }
+
+                        <?php
+                    }
                     ?>
-                    
+
                     <!--End single package -->
 
-                    
+
                 </div>             
             </div>
         </section><!-- single popular destination  end-->
@@ -191,6 +218,4 @@ include_once(dirname(__FILE__) . '/class/include.php');
         <!-- main js -->
         <script src="js/custom.js"></script>
     </body>
-
-    <!-- Mirrored from getnajmul.com/theme/trabble/package-version-two.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 07 Sep 2018 02:31:41 GMT -->
 </html>

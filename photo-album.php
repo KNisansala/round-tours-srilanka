@@ -14,16 +14,19 @@ $PHOTOALBUM = new PhotoAlbum($id);
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <meta name="description" content="TRABBLE - Tour, Travel, Travel Agency Template">
-        <meta name="keywords" content="Tour, Travel, Travel Agency Template">
+        <meta name="description" content="Enjoy your holiday with Round Tours Sri Lanka wirth unforgetable memories">
+        <meta name="keywords" content="Round Tour Sri Lanka Photo Album,Photo Gallary<?php foreach (PhotoAlbum::all() as $PhotoAlbum) { ?><?php
+            echo ",";
+            echo $PhotoAlbum['title'];
+            ?> <?php } ?>. ">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Round Tour Sri Lanka</title>
+        <title><?php echo $PHOTOALBUM->title;?></title>
         <!-- Google Fonts Includes -->
         <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
         <!-- Favi icon -->
         <link rel="shortcut icon" type="image/x-icon" href="images/logo/logo2.png">
-              <!-- bootstrap v3.3.6 css -->
-              <link rel="stylesheet" href="css/bootstrap.min.css">
+        <!-- bootstrap v3.3.6 css -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
         <!-- animate css -->
         <link rel="stylesheet" href="css/animate.css">
         <!-- Button Hover animate css -->
@@ -56,6 +59,15 @@ $PHOTOALBUM = new PhotoAlbum($id);
         <link href="fancybox-master/css/jquery.fancybox.min.css" rel="stylesheet" type="text/css"/>
         <!-- modernizr css -->
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+        <style>  
+            @media only screen and (max-width: 768px) {
+                .header-bottom-area .logo-area {
+                    margin-top: -34px;
+                    position: absolute;
+                }
+            }
+
+        </style>
     </head>
     <body>
         <!-- Preloader -->
@@ -91,23 +103,22 @@ $PHOTOALBUM = new PhotoAlbum($id);
         </section><!-- blog breadcrumb version one end here -->
 
         <!-- top destination start here -->
-        <section class="top-destination-area pt-100 pb-70">
+        <section class="top-destination-area pt-70 pb-70 ">
             <div class="container">
                 <div class="row">
                     <!-- single destination -->
                     <?php
-                            
                     $PHOTOS = AlbumPhoto::getAlbumPhotosById($PHOTOALBUM->id);
-                    
+
                     $count = count($PHOTOS);
                     if ($count > 0) {
                         ?>
-                      <?php
-                                foreach ($PHOTOS as $photoAlbum) {
-                                    ?>
-                        <div class="col-md-3 col-sm-3 col-xs-12">
-                            <figure>
-                              
+                        <?php
+                        foreach ($PHOTOS as $photoAlbum) {
+                            ?>
+                            <div class="col-md-3 col-sm-4 col-xs-12">
+                                <figure>
+
                                     <a href="upload/photo-album/gallery/<?php echo $photoAlbum['image_name']; ?>" class="" data-fancybox="images" >
                                         <figcaption>
                                             <i class="fa fa-search" style="font-size:30px;color:#ffff;"></i>
@@ -117,11 +128,11 @@ $PHOTOALBUM = new PhotoAlbum($id);
                                     </a>
 
                                 </figure>
-                             
-                        </div>
-                       <?php
-                            }
-                            ?>
+
+                            </div>
+                            <?php
+                        }
+                        ?>
                         <?php
                     } else {
                         echo 'No images in the databse';
