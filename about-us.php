@@ -3,12 +3,12 @@
 
     <!-- Mirrored from getnajmul.com/theme/trabble/single-package.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 07 Sep 2018 02:31:41 GMT -->
     <head>
-        <meta charset="UTF-8">
+        <meta charset="UTF-8">        
+        <title>About Us||Round Tour Sri Lanka</title>
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <meta name="description" content=" If you decide to travel in Sri Lanka with me, I will organize tailor made tours according to your utmost satisfaction. From the day you come to Sri Lanka and until the day you leave the country you can have fully honest service and protection from me as a well experienced driver.">
         <meta name="keywords" content="About Round Tour Sri Lanka,About In Round Tour Sri Lanka">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>About Us||Round Tour Sri Lanka</title>
         <!-- Google Fonts Includes -->
         <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
         <!-- Favi icon -->
@@ -91,18 +91,18 @@
                     <div class="col-md-6">
                         <div class="single-welcome-area">
                             <div class="single-imag">
-                                <img src="images/welcome/wel2.jpg" alt="" class="img-thumbnail img-responsive">
+                                <img src="images/welcome/wel3.jpg" alt="" class="img-thumbnail img-responsive">
                             </div>
-                            <div class="overlay-image">
+<!--                            <div class="overlay-image">
                                 <img src="images/welcome/wel1.jpg" alt="" class="img-thumbnail img-responsive">
-                            </div>
+                            </div>-->
                         </div>
                     </div> <!-- welcome area left side end -->
 
                     <div class="col-md-6">
                         <div class="single-welcome-text">
                             <div class="section-title-version-2">
-                                <h2>Round Tour Sri Lanka</h2>
+                                <h2>Round Tours Sri Lanka</h2>
 
                                 <div class="welcome-content">
                                     <p> 
@@ -114,7 +114,7 @@
 
                                         Usually I arrange middle class hotels and guest houses as they are economical and situated in fantastic beautiful places. Five stars Hotels also can be arranged according to your requirements.
 
-                                        <br>"Ayubowan" , accompanied by palms clasped together with a gentle bow of the head is the way a visitor is greeted in Sri Lanka. It is hard to beat Sri Lanka's charismatic multicultural, multi faceted ambience and magnificent setting in the tropics. The island of Sri Lanka is a land of great variety and texture, a visitor to Sri Lanka is exposed to an upbeat of colours and rhythms of many cultures, smiles of hospitality, spicy food, a nature lovers paradise with breath taking scenic landscapes and mosaic of lush green paddy fields, cooler climates and wildlife safaris from the moment he sets foot in Sri Lanka. An ideal holiday destination, though beach lovers will have to make some tough choices throughout most of the country, as the coastline seems endless, offering some of world's finest tropical sandy beaches.
+                                        <br> <br>Accompanied by palms clasped together with a gentle bow of the head is the way a visitor is greeted in Sri Lanka. It is hard to beat Sri Lanka's charismatic multicultural, multi faceted ambience and magnificent setting in the tropics. The island of Sri Lanka is a land of great variety and texture, a visitor to Sri Lanka is exposed to an upbeat of colours and rhythms of many cultures, smiles of hospitality, spicy food, a nature lovers paradise with breath taking scenic landscapes and mosaic of lush green paddy fields, cooler climates and wildlife safaris from the moment he sets foot in Sri Lanka. An ideal holiday destination, though beach lovers will have to make some tough choices throughout most of the country, as the coastline seems endless, offering some of world's finest tropical sandy beaches.
                                     </p>
 
                                 </div>

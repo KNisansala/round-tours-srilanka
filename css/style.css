@@ -200,7 +200,7 @@ body {
 /*=====basce css end here=========*/
 /*============================== theme buttons css goes here ===============================*/
 .travel-primary-btn, .travel-primary-btn-sm, .read-more, .view-all,.quick-shop, .thailan-btn, .travel-primary-btn-2 {
-    background: #214db7;
+    background: #51b2e3;
     display: inline-block;
     padding: 12px 29px !important;
     border-radius: 3px;
@@ -691,7 +691,7 @@ header {
 /*===================================================== 04.section title css goes here =======================================================*/
 .section-title, .section-title-white, .section-title-white-2 {
     margin-bottom: 60px;
-    margin-top: 10px;
+    margin-top: -8px;
 }
 .section-title h2, .section-title-white h2, .section-title-white-2 h2 {
     background-color: transparent;
@@ -1712,7 +1712,7 @@ header {
     display: inline-block;
 }
 .tabbased-search-area-2 .tab-content-2 .search-btn-2 button {
-    background: #214db7 none repeat scroll 0 0;
+    background: #51b2e3 none repeat scroll 0 0;
     border: medium none;
     border-radius: 2px;
     color: #ffffff;
@@ -1905,8 +1905,8 @@ header {
     color: #454545;
 }
 .single-package-carasoul .package-details .package-ratings-review {
-    border-top: 1px solid #214db7;
-    padding: 14px 0;
+    /*border-top: 1px solid #214db7;*/
+    padding: 0px 20px;
     position: relative;
     /*background-color: #214db7;*/
 }
@@ -1917,8 +1917,11 @@ header {
 .single-package-carasoul .package-details .package-ratings-review .two-column li {
     display: inline-block;
 }
-.single-package-carasoul .package-details .package-ratings-review .two-column li:last-child {
+.single-package-carasoul .package-details   {
     float: right;
+}
+.package-ratings-review .two-column li:last-child{
+
 }
 .single-package-carasoul .package-details .package-ratings-review .two-column li i {
     color: #ffef3b;
@@ -5057,3 +5060,65 @@ guestcomment .button i {
     z-index: 6;
 }
 
+/*Tour package Readmore button*/
+.readmorebtn a:link, a:visited {
+    background-color: #51b2e3;
+    color: white;
+    padding: 7px 44px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: -11px;
+    margin-bottom: 8px;
+    font-size: 14px;
+    border: 1px solid #51b2e3;
+}
+
+
+.readmorebtn a:hover, a:active {
+    color: #51b2e3;
+    background-color: #fff;
+    border: 1px solid #51b2e3;
+}
+
+.readmorebtn1 a:link, a:visited {
+    background-color: #51b2e3;
+    color: white;
+    padding: 7px 44px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+
+.readmorebtn1 a:hover, a:active {
+    color: #51b2e3;
+    background-color: #fff;
+    border: 1px solid #51b2e3;
+}
+.tripadviserhead {
+    margin-top: -363px;
+    bottom: 134px;
+    width: 350px;
+}
+.tripaddvisergust{
+    z-index: 10;
+
+}
+.social-icons-subnav, .social-icons-subnav i {
+    text-shadow: none;
+    padding-left: 12px;
+    height: 28px;
+    text-align: center;
+    color: #fff;
+    border-radius: 1px;
+    font-size: 2px;
+    -moz-border-radius: 1px;
+    -webkit-border-radius: 1px;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+
+}

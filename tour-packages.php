@@ -8,7 +8,8 @@ include_once(dirname(__FILE__) . '/class/include.php');
         <meta http-equiv="x-ua-compatible" content="ie=edge">
 
         <meta name="description" content="Round Tour Sri Lanka is the best Way for the gusts who looking extraordinary travel experience with perfectly match their desires">
-        <meta name="keywords" content="Round Tour Sri Lanka Tour Packages, Tour Packages<?php foreach (TourPackage::all() as $AllTour) {   ?><?php echo ","; echo $AllTour['title']; ?> <?php }?>. ">
+        <meta name="keywords" content="Round Tour Sri Lanka Tour Packages, Tour Packages<?php foreach (TourPackage::all() as $AllTour) { ?><?php echo ",";
+    echo $AllTour['title']; ?> <?php } ?>. ">
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Tour Packages||Round Tour Sri Lanka</title>
@@ -16,8 +17,8 @@ include_once(dirname(__FILE__) . '/class/include.php');
         <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
         <!-- Favi icon -->
         <link rel="shortcut icon" type="image/x-icon" href="images/logo/logo2.png">
-              <!-- bootstrap v3.3.6 css -->
-              <link rel="stylesheet" href="css/bootstrap.min.css">
+        <!-- bootstrap v3.3.6 css -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
         <!-- animate css -->
         <link rel="stylesheet" href="css/animate.css">
         <!-- Button Hover animate css -->
@@ -133,25 +134,17 @@ include_once(dirname(__FILE__) . '/class/include.php');
 
                                         </div>
                                     </div>
-                                    <div class="package-ratings-review">
+                                    <div class="package-ratings-review readmorebtn">
                                         <ul class="two-column">
                                             <li>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
+
                                             </li>
                                             <li>
-                                                <p>(27 Reviews)</p>
+                                               
+                                                <a href="view-tour-packages.php?id=<?php echo $AllTour['id']; ?>">Read More</a>
                                             </li>
                                         </ul>
                                     </div>
-                                </div>
-                                <div class="package-long-btn hvr-shutter-out-horizontal btntourpack">
-
-                                    <a href="view-tour-packages.php?id=<?php echo $AllTour['id']; ?>">View</a>
-
                                 </div>
                             </div>
                         </div>

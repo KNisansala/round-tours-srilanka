@@ -6,7 +6,7 @@
                 <div class="col-sm-12 single-footer">
                     <div class="footer-title" style="text-align: center;">
                         <div class="col-md-12  f-phone-responsive">
-                            <a href="index.php"><img src="images/logo/logo1.png" alt="" class="logofooter"></a>
+                            <a href="./"><img src="images/logo/logo1.png" alt="" class="logofooter"></a>
                         </div>
                     </div>
                     <div class="footer-contact-form">
@@ -14,7 +14,7 @@
                             <div class="footer-left">
                                 <div class="footer-logo">
                                     <p>
-                                     "Ayubowan" , accompanied by palms clasped together with a gentle bow of the head is the way a visitor is greeted in Sri Lanka. It is hard to beat Sri Lanka's charismatic multicultural, multi faceted ambience and magnificent setting in the tropics.   
+                                     Accompanied by palms clasped together with a gentle bow of the head is the way a visitor is greeted in Sri Lanka. It is hard to beat Sri Lanka's charismatic multicultural, multi faceted ambience and magnificent setting in the tropics.   
                                     </p>
                                 </div>  
 <!--                                <div class="footer-social-media">
@@ -36,7 +36,7 @@
                 </div>
             </div>  
             <div class="col-md-3 col-sm-4 f-phone-responsive">
-                <div class="single-footer">
+                <div class="single-footer footertext">
                     <div class="footer-title">
                         <h3> Contact Us </h3>
                     </div>
@@ -146,7 +146,7 @@
             <div class="footer-bottom">
                 <div class="col-md-6">
                     <div class="copyright">
-                        <p>Copyright &copy; 2018 <a href="http://sublime.lk/"><span> Sublime Holdings. </span></a> All rights reserved </p>
+                        <p>Copyright &copy; 2018 <a href="http://www.roundtourssrilanka.galle.website/"><span> Round Tours Sri Lanka.  </span></a> All rights reserved. </p>
                     </div>
 
                     <!--                    <div class="copyright">                        <a target="_blank" href="http://sublime.lk/">Copyright © 2018. Sublime Holdings. All rights reserved</a>                    </div>

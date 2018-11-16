@@ -102,6 +102,10 @@
                                 <br> www.roundtourssrilanka.galle.website
                             </p>
                             <p>
+                                <strong>Mobile</strong>
+                                <br> +94 777 910 172
+                            </p>
+                            <p>
                                 <strong>Email</strong>
                                 <br> mmsanhar@yahoo.com
                             </p>
