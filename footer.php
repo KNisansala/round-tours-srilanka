@@ -6,7 +6,7 @@
                 <div class="col-sm-12 single-footer">
                     <div class="footer-title" style="text-align: center;">
                         <div class="col-md-12  f-phone-responsive">
-                            <a href="./"><img src="images/logo/logo1.png" alt="" class="logofooter"></a>
+                            <a href="./"><img src="images/logo/logofotter.png" alt="" class="logofooter"></a>
                         </div>
                     </div>
                     <div class="footer-contact-form">
@@ -14,22 +14,10 @@
                             <div class="footer-left">
                                 <div class="footer-logo">
                                     <p>
-                                     Accompanied by palms clasped together with a gentle bow of the head is the way a visitor is greeted in Sri Lanka. It is hard to beat Sri Lanka's charismatic multicultural, multi faceted ambience and magnificent setting in the tropics.   
+                                        Accompanied by palms clasped together with a gentle bow of the head is the way a visitor is greeted in Sri Lanka. It is hard to beat Sri Lanka's charismatic multicultural, multi faceted ambience and magnificent setting in the tropics.   
                                     </p>
                                 </div>  
-<!--                                <div class="footer-social-media">
-                                    <div class="social-footer-title">
-                                        <h3>Follow Us</h3>
-                                    </div>
-                                    <ul class="footer-social-link">
-                                        <li class="facebook"><a href="https://www.facebook.com/sublime.lk/"><i class="fa fa-facebook"></i></a>
-                                        </li>
-                                        <li class="twitter"><a href="https://twitter.com/sublimelk"><i class="fa fa-twitter"></i></a>
-                                        </li>
-                                        <li class="linkedin"><a href="https://www.linkedin.com/company/13588872/"><i class="fa fa-linkedin"></i></a>
-                                        </li>
-                                    </ul>
-                                </div> -->
+                               
                             </div>
                         </form>
                     </div>
@@ -46,9 +34,14 @@
 
                             <div class="footer-left">
                                 <ul class="footer-contact">
-                                    <li>Round Tours Sri lanka,<br> No:08, School Lane,<br>  Hirimbura, Galle, <br>Sri lanka.</li><br>
-                                    <li>+94 777 910 172 | <br> +94 779 148 838 </li><br>
+                                    <li>Round Tours Sri lanka,<br> No:08, School Lane,<br>  Hirimbura, Galle, <br>Sri lanka.</li> <br>
+                                    <li> <img src="images/social media icons/viber.png" class="social-icon2"> 
+                                        <img src="images/social media icons/imo.png" class="social-icon2"> 
+                                        <img src="images/social media icons/whatsapp.png" class="social-icon2"> 
+                                    </li>
+                                    <li> +94777910172 </li><br>
                                     <li>mmsanhar@yahoo.com</li>
+
                                 </ul>                    
                             </div>
                         </form>
@@ -74,7 +67,7 @@
                                     <li> <img class="map" alt=""><a href="photo-album-type.php">Photo Album</a></li>
                                     <li> <img class="map" alt=""><a href="contact.php">Contact</a></li>
                                     <li> <img class="map" alt=""><a href="booking.php">Book Now</a></li>
-                                    
+
                                 </ul>                   
 
                             </div>
@@ -92,49 +85,22 @@
             <div class="col-md-3 col-sm-4 hidden-sm f-phone-responsive">
                 <div class="single-footer">
                     <div class="footer-title">
-                        <h3>Photo Albam</h3>
+                        <h3>Day Tours In Sri Lanka</h3>
                     </div>
                     <ul class="footer-gallery">
-                        <li>
-                            <a href="photo-album.php">
-                                <div class="image-overlay">
-                                    <img src="images/destination/de4.jpg" alt="">
-                                    <div class="overly-city">
-                                        <span>Galle</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="photo-album.php">
-                                <div class="image-overlay">
-                                    <img src="images/destination/de1.jpg" alt="">
-                                    <div class="overly-city">
-                                        <span>Yala</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="photo-album.php">
-                                <div class="image-overlay">
-                                    <img src="images/destination/de3.jpg" alt="">
-                                    <div class="overly-city">
-                                        <span>Hikkaduwa</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="photo-album.php">
-                                <div class="image-overlay">
-                                    <img src="images/destination/de5.jpg" alt="">
-                                    <div class="overly-city">
-                                        <span>Arugam bay</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
+                        
+
+                        <li> <i class="fa fa-check-square-o" aria-hidden="true"></i> </i> Airport Pickup / Drop  </li>
+                            <li> <i class="fa fa-check-square-o" aria-hidden="true"></i>Udawalawa & Yala Safari </li>
+                            <li> <i class="fa fa-check-square-o" aria-hidden="true"></i>Wheals Watching </li>
+                            <li> <i class="fa fa-check-square-o" aria-hidden="true"></i>White Water Rafting  </li>
+                            <li> <i class="fa fa-check-square-o" aria-hidden="true"></i>Pinnawala Elephant Orphenege </li>                        
+                            <li> <i class="fa fa-check-square-o" aria-hidden="true"></i>Visit Brief Bava Garden Aluthgama </li>
+                            <li><i class="fa fa-check-square-o" aria-hidden="true"></i>Day Tour(Kandy,Under Ground temple,sneak farm) </li>
+                            <li><i class="fa fa-check-square-o" aria-hidden="true"></i>Sinharaja Rain Forest </li>
+                            <li><i class="fa fa-check-square-o" aria-hidden="true"></i> Colombo City Tour </li>
+                       
+
                     </ul>
                 </div>
             </div> 
@@ -155,13 +121,16 @@
                 </div>
                 <div class="col-md-6 col-xs-12">
                     <ul class="payicon pull-right">
-                        <li>We Accept</li>
-                        <li><img src="images/payicon01.png" alt="">
-                        <img src="images/payicon02.png" alt="">
-                        <img src="images/payicon03.png" alt="">
-                        <img src="images/payicon04.png" alt="">
-                        <img src="images/payicon05.png" alt="">
-                        <img src="images/payicon06.png" alt=""></li>
+                        <li> <a href="https://www.facebook.com/roundtourssrilanka/"> <img src="images/social media icons/fb.png" style="width: 25px;"></a>
+                        </li>
+                        <li class="twitter"><a href="https://twitter.com/SriRound"> <img src="images/social media icons/twitter-square-logo.png" style="width: 25px;"></a>
+                        </li>
+                        <li class="Instagram-Caption"><a href="https://www.instagram.com/round_tours_srilanka/"><img src="images/social media icons/inst.png" style="width: 25px;"></a>
+                        </li>
+                        <li class="tripadviser"><a href="https://www.tripadvisor.com.au/Attraction_Review-g297896-d13147684-Reviews-Round_Tours_SriLanka-Galle_Galle_District_Southern_Province.html"><img src="images/social media icons/trip.png" style="width: 25px;"></a>
+                        </li>
+                        <li class="Wechat"><a href="images/social media icons/mmqrcode1543473240815.png" target="_blank"> <img src="images/social media icons/weChat.png" style="width: 25px;"></a></a>
+                        </li>
                     </ul>
                 </div>
             </div>

@@ -48,6 +48,7 @@ include_once(dirname(__FILE__) . '/auth.php');
                             </div>
                             <div class="body">
                                 <form class="form-horizontal"  method="post" action="post-and-get/tour-package.php" enctype="multipart/form-data"> 
+                                 
                                     <div class="col-md-12">
                                         <div class="form-group form-float">
                                             <div class="form-line">

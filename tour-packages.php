@@ -102,9 +102,7 @@ include_once(dirname(__FILE__) . '/class/include.php');
                             <div class="single-package-carasoul">
                                 <div class="package-location">
                                     <img src="upload/tour-package/<?php echo $AllTour['image_name']; ?>" alt="">
-                                    <span>
-    <?php echo $AllTour['price']; ?>$
-                                    </span>
+                                    
                                 </div>
                                 <div class="package-details">
                                     <div class="package-places">

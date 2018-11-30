@@ -6,52 +6,45 @@
             <div class="row">
                 <div class="header-top-left">
                     <div class="col-md-12 col-sm-9 col-xs-12">
+
+                        <!--edith start here--> 
                         <ul class="header-top-contact">
-                            <div class="col-md-8 col-sm-9 col-xs-12">
-                                <li><i class="fa fa-map-marker" aria-hidden="true"></i>No:08, School Lane, Hirimbura, Galle</li>
-                                <li><i class="fa fa-phone" aria-hidden="true"></i>+94 777 910 172 </li>
-                                <li><i class="fa fa-envelope-o" aria-hidden="true"></i>mmsanhar@yahoo.com</li>
-                            </div>
-                            <div class="col-md-4 col-sm-9 col-xs-12 social-icons-subnav">
-                            <li class="facebook"><a href="#"><i class="fa fa-facebook"></i></a>
-                            </li>
-                            <li class="twitter"><a href="#"><i class="fa fa-twitter"></i></a>
-                            </li>
-                            <li class="linkedin"><a href="#"><i class="fa fa-linkedin"></i></a>
-                            </li>
-                            <li class="gplus"><a href="#"><i class="fa fa-google-plus"></i></a>
-                            </li>
-                            <li class="youtube"><a href="#"><i class="fa fa-youtube-play"></i></a>
-                            </li>
+                            <div class="container">
+                                <div class="col-md-4 headercon col-sm-9 col-xs-12" >
+                                    <li><i class="fa fa-phone" aria-hidden="true"></i>+94 777 910 172 </li>
+                                    <li><i class="fa fa-envelope-o" aria-hidden="true"></i>mmsanhar@yahoo.com</li>
+                                </div>
+                                <div class="col-md-7 headercon col-sm-9 col-xs-12" >
+                                    <div class="social-icons-subnav">
+                                        <li> <a href="https://www.facebook.com/roundtourssrilanka/"> <img src="images/social media icons/fb.png" style="width: 25px;"></a>
+                                        </li>
+                                        <li class="twitter"><a href="https://twitter.com/SriRound"> <img src="images/social media icons/twitter-square-logo.png" style="width: 25px;"></a>
+                                        </li>
+                                        <li class="Instagram-Caption"><a href="https://www.instagram.com/round_tours_srilanka/"><img src="images/social media icons/inst.png" style="width: 25px;"></a>
+                                        </li>
+                                        <li class="tripadviser"><a href="https://www.tripadvisor.com.au/Attraction_Review-g297896-d13147684-Reviews-Round_Tours_SriLanka-Galle_Galle_District_Southern_Province.html"><img src="images/social media icons/trip.png" style="width: 25px;"></a>
+                                        </li>
+                                        <li class="Wechat"><a href="images/social media icons/mmqrcode1543473240815.png" target="_blank"> <img src="images/social media icons/weChat.png" style="width: 25px;"></a>
+                                        </li>
+
+                                    </div>
+                                </div>
+                                <div class="col-md-1 headercon col-sm-9 col-xs-12" >
+                                    <div class="googleTranslater">
+
+                                        <li class="row translater"> 
+                                            <div id="google_translate_element"></div>
+                                        </li>
+                                    </div>
+                                </div>
                             </div>
                         </ul>
 
+                        <!--end here-->
 
                     </div>
                 </div>
-                <!--                <div class="header-top-right text-right">
-                                    <div class="col-md-2 col-xs-12 book-tab">
-                                                                <div class="book-btn">
-                                                                    <a href="booking.php">Book Now</a>
-                                        
-                                                                </div>
-                                        <div class="footer-social-media">
-                                            <ul class="footer-social-link">
-                                                <li class="facebook"><a href="#"><i class="fa fa-facebook"></i></a>
-                                                </li>
-                                                <li class="twitter"><a href="#"><i class="fa fa-twitter"></i></a>
-                                                </li>
-                                                <li class="linkedin"><a href="#"><i class="fa fa-linkedin"></i></a>
-                                                </li>
-                                                <li class="gplus"><a href="#"><i class="fa fa-google-plus"></i></a>
-                                                </li>
-                                                <li class="youtube"><a href="#"><i class="fa fa-youtube-play"></i></a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                
-                                    </div>
-                                </div>-->
+
             </div>
         </div>
     </div> <!-- header top end -->
@@ -66,7 +59,7 @@
                     </div>
                 </div>
                 <!-- main menu start here -->
-                <div class="col-md-10">
+                <div class="col-md-10 header-navi-text">
                     <nav>
                         <ul class="main-menu text-right">
                             <li><a href="./">Home</a></li>

@@ -18,10 +18,8 @@ $tour_dates = TourDate::getTourDatesById($id);
         <meta charset="UTF-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <meta name="description" content="Round Tour Sri Lanka is the best Way for the gusts who looking extraordinary travel experience with perfectly match their desires">
-        <meta name="keywords" content="Round Tour Sri Lanka Tour Packages, Tour Packages<?php foreach (TourPackage::all() as $AllTour) { ?><?php
-            echo ",";
-            echo $AllTour['title'];
-            ?> <?php } ?>. ">
+        <meta name="keywords" content="Round Tour Sri Lanka Tour Packages, Tour Packages<?php foreach (TourPackage::all() as $AllTour) { ?><?php echo ",";
+    echo $AllTour['title']; ?> <?php } ?>. ">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title><?php echo $TOUR->title; ?>||Tour Packages||Round Tours Sri Lanka</title>
         <!-- Google Fonts Includes -->

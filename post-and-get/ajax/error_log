@@ -1,0 +1,1 @@
+[06-Nov-2018 06:28:32 America/New_York] PHP Strict Standards:  Non-static method Helper::randamId() should not be called statically in /home/gallnwxt/sites/roundtourssrilanka/post-and-get/ajax/create-guest-comment.php on line 20

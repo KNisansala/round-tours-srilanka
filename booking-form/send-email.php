@@ -2,11 +2,18 @@
 
 //----------------------Company Information---------------------
 
+//$comany_name = "Round Tours Sri Lanka";
+//$website_name = "roundtourssrilanka.com";
+//$comConNumber = "+94 766367615";
+//$comEmail = "info@galle.website";
+//$from = 'info@galle.website';
+
 $comany_name = "Round Tours Sri Lanka";
-$website_name = "www.roundtoursrilanka.lk";
-$comConNumber = "+94 766367605";
-$comEmail = "sachithgalle@gmail.com";
-$from = 'sachithgalle@gmail.com';
+$website_name = "roundtourssrilanka.com";
+$comConNumber = "+94 777 910 172";
+$comEmail = "info@galle.website";
+$from = 'info@galle.website';
+
 
 
 //----------------------CAPTCHACODE---------------------
@@ -70,7 +77,7 @@ if (
     echo json_encode($response);
     exit();
 } else {
-    $response['status'] = 'Incorrect';
+    $response['status'] = 'incorrect';
     $response['msg'] = "Could not be sent your message";
     echo json_encode($response);
     exit();

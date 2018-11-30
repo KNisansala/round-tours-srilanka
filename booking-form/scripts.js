@@ -14,8 +14,8 @@ jQuery(document).ready(function () {
     jQuery("#txtDepart").blur(function () {
         validateEmpty("txtDepart", "spanDepart");
     });
-    jQuery("#txtTourPackage").blur(function () {
-        validateEmpty("txtTourPackage", "spanTourPackage");
+    jQuery("#txtPackage").blur(function () {
+        validateEmpty("txtPackage", "spanPackage");
     });
     jQuery("#txtNoOfAdults").blur(function () {
         validateEmpty("txtNoOfAdults", "spanNoOfAdults");
@@ -27,6 +27,7 @@ jQuery(document).ready(function () {
         validateEmpty("captchacode", "capspan");
     });
     jQuery("#btnSubmit").bind('click', function () {
+        
         if (!validate()) {
             return;
         }
@@ -52,20 +53,23 @@ jQuery(document).ready(function () {
 //--------------------------------------------------function to check button click --------------------------------------------------
 
 function validate() {
+    
     if (
             validateEmpty("txtFullName", "spanFullName") &
             ValidateEmail("txtEmail", "spanEmail") &
             validateEmpty("txtArrival", "spanArrival") &
             validateEmpty("txtDepart", "spanDepart") &
-            validateEmpty("txtTourPackage", "spanTourPackage") &
+            validateEmpty("txtPackage", "spanPackage") &
             validateEmpty("txtNoOfAdults", "spanNoOfAdults") &
             validateEmpty("txtNoOfChildren", "spanNoOfChildren") &
             validateEmpty("captchacode", "capspan")
 
             )
     {
+        
         return true;
     } else {
+        
         return false;
     }
 }
@@ -87,7 +91,7 @@ function sendForm() {
             email: jQuery('#txtEmail').val(),
             arrival_time: jQuery('#txtArrival').val(),
             departure_time: jQuery('#txtDepart').val(),
-            tour_package: jQuery('#txtTourPackage').val(),
+            tour_package: jQuery('#txtPackage').val(),
             no_of_adults: jQuery('#txtNoOfAdults').val(),
             no_of_children: jQuery('#txtNoOfChildren').val(),
             message: jQuery('#txtMessage').val(),
@@ -113,7 +117,7 @@ function sendForm() {
                 jQuery('#txtEmail').val("");
                 jQuery('#txtArrival').val("");
                 jQuery('#txtDepartT').val("");
-                jQuery('#txtTourPackage').val("");
+                jQuery('#txtPackage').val("");
                 jQuery('#txtNoOfAdults').val("");
                 jQuery('#txtNoOfChildren').val("");
                 jQuery('#txtMessage').val("");
