@@ -1,47 +1,30 @@
 $(document).ready(function () {
-    jQuery("#txtFullName").blur(function () {
-        validateEmpty("txtFullName", "spanFullName");
-    });
-
-    jQuery("#txtCountry").blur(function () {
-        ValidateEmail("txtCountry", "spanCountry");
-    });
-
-    jQuery("#txtprofileimg").blur(function () {
-        validateEmpty("txtprofileimg", "spanprofileimg");
-    });
-
-    jQuery("#captchacode").blur(function () {
-        validateEmpty("captchacode", "capspan");
-    });
 
     $('#btnSubmit').click(function (e) {
         e.preventDefault();
-        if (!validate()) {
-            return;
-        }
-        sendForm();
-    });
+        jQuery("#txtFullName").blur(function () {
+            validateEmpty("txtFullName", "spanFullName");
+        });
 
-    function validate() {
-        if (
-                validateEmpty("txtFullName", "spanFullName") &
-                validateEmpty("txtCountry", "spanCountry") &
-                validateEmpty("txtprofileimg", "spanprofileimg") &
-                validateEmpty("captchacode", "capspan")
+        jQuery("#txtEmail").blur(function () {
+            ValidateEmail("txtEmail", "spanEmail");
+        });
 
-                )
-        {
-            return true;
-        } else {
-            return false;
-        }
-    }
+        jQuery("#txtprofileimg").blur(function () {
+            validateEmpty("txtprofileimg", "spanprofileimg");
+        });
 
-    function sendForm() {
+        jQuery("#txtCountry").blur(function () {
+            validateEmpty("txtCountry", "spanCountry");
+        });
+
+        jQuery("#captchacode").blur(function () {
+            validateEmpty("captchacode", "capspan");
+        });
+
 
         var formData = new FormData($('#guestcomment')[0]);
- 
+
         $.ajax({
             url: "post-and-get/ajax/create-guest-comment.php",
             type: "POST",
@@ -63,7 +46,7 @@ $(document).ready(function () {
             contentType: false,
             processData: false
         });
-    };
+    });
     function validateEmpty(field, validatorspan)
     {
 
@@ -87,5 +70,3 @@ $(document).ready(function () {
     }
 
 });
-
-

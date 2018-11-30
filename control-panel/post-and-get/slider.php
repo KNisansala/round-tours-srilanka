@@ -9,7 +9,7 @@ if (isset($_POST['create'])) {
 
     $SLIDER->title = $_POST['title'];
     $SLIDER->description = $_POST['description'];
-    $SLIDER->url =  $_POST['url'];
+    $SLIDER->url = $_POST['url'];
 
     $dir_dest = '../../upload/slider/';
 
@@ -22,8 +22,8 @@ if (isset($_POST['create'])) {
         $handle->file_new_name_ext = 'jpg';
         $handle->image_ratio_crop = 'C';
         $handle->file_new_name_body = Helper::randamId();
-        $handle->image_x = 1600;
-        $handle->image_y = 800;
+        $handle->image_x = 1920;
+        $handle->image_y = 1080;
 
         $handle->Process($dir_dest);
 
@@ -78,8 +78,8 @@ if (isset($_POST['update'])) {
         $handle->file_new_name_ext = FALSE;
         $handle->image_ratio_crop = 'C';
         $handle->file_new_name_body = $_POST ["oldImageName"];
-        $handle->image_x = 1600;
-        $handle->image_y = 800;
+        $handle->image_x = 1920;
+        $handle->image_y = 1080;
 
         $handle->Process($dir_dest);
 
@@ -132,9 +132,9 @@ if (isset($_POST['save-date'])) {
 
     foreach ($_POST['sort'] as $key => $img) {
         $key = $key + 1;
-        
+
         $SLIDER = Slider::arrange($key, $img);
-        
+
         header('Location: ' . $_SERVER['HTTP_REFERER']);
     }
 }

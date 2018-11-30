@@ -106,7 +106,7 @@ $TOUR = new TourPackage($tour);
                                 <h2>Booking</h2>
                                 <ul>
                                     <li><a href="./">Home</a></li>
-                                    <li class="active"><a href="contact.html">Booking</a></li>
+                                    <li class="active">Booking</li>
                                 </ul>
                             </div>
                         </div>
@@ -163,7 +163,7 @@ $TOUR = new TourPackage($tour);
                                     <div class="col-md-12 col-sm-12 col-xs-12">
                                         <div class="form-group">
                                             <!--<input type="" placeholder="Tour Packages " class="form-control input-validatar" name="txtDepart" id="txtDepart">-->
-                                            <span id="spanDepart"></span>
+                                            
                                             <select class="form-control" name="txtPackage" id="txtPackage" style="background-color: #eee;">
                                                 <option value='0'>Select the Package</option>
                                                 <?php
@@ -178,6 +178,7 @@ $TOUR = new TourPackage($tour);
                                                          ?>
 
                                             </select>
+                                            <span id="spanPackage"></span>
                                         </div>
                                     </div>
 
@@ -217,7 +218,8 @@ $TOUR = new TourPackage($tour);
                                     <div class="col-md-6 col-sm-12 col-xs-12">
 
                                         <div class="form-group">
-                                            <button type="submit" id="btnSubmit" class="button primary"><i class="fa fa-send"></i>Book Now</button>
+                                            <!--<input type="hidden" id="btnSubmit">-->
+                                            <button type="submit" id="btnSubmit" name="btnSubmit" class="button primary"><i class="fa fa-send"></i>Book Now</button>
                                         </div>
 
                                         <div id="dismessage" align="center" class="msg-success"></div>
